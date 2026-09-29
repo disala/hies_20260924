@@ -32,83 +32,110 @@ Language=EN
 7000290 K01 290 - [ICT] 
 7000300 K01 300 - For son or daughter Col 4(Relationship=3) the age difference with the head should be at least 12 years in section 1  (RN: %s)
 7000310 K01 310 - For Parents Col 4 (Relationship=4) the age difference with the head should be at least 12 years in section 1 (Persons)  (RN: %s)
-7000320 K01 320 -[ICT] If marital status (Col 11) > 1 (ever married) the age (Col-7) >= 12 years in section 1 (Persons) (RN: %s)
-7000330 K01 330 [ICT] If (col-5) = 2 & (col-11) = 1 & Age (Col.7) >= 15 then (Col.12) can not be blank in section 1 (Persons) (RN: %s)
-7000340 K01 340 If (col-5) = 1 & (col-11) = 2 & Age (Col.7) < = 15 then (Col.12) can  be blank in section 1 (Persons) (RN: %s)
-7000350 K01 350 Recheck marital status (Col 10) > 1 (ever married) the age (Col-7) <= 17 years in section 1 (Persons) (RN: %s)
-7000360 K01 360 Head of the household should be at least 12 years old  (Col 7 >=12) in section 1 (Persons) (RN: %s)
-7000370 K01 370 If there is a record  for wife or husband Col 4 (Relationship=2) her or his marital status (Col-11) should be 2 or 3 in section 1 (RN: %s)
-7000380 K01 380 If there is a record  for wife or husband Col 4 (Relationship=2) the heads marital status should be married (Col 11)=2 or 3 in section 1 (Persons) (RN: %s)
-7000390 K01 390 If there is a record  for son or daughter Col 4 (Relationship=3) the marital status of the head (Col-11) canot be 1 (Never married) in section 1 (Persons) (RN: %s)
-7000400 K01 400 For Parents Col 4 (Relationship = 4) the marital status (Col-11) can not be 1 (Never married) in section 1 (Persons) (RN: %s)
-7000410 K01 410 If the head of the household (Relationship = 1) is married then  (Col-11 = 2 or 3)  the spouse Col 4 (Relationship = 2) record should be available in section 1 (Persons) (RN: %s)
-7000420 K01 420 If Current education status (Col-13) = 1 (Pre school) then Age (Col-7) should be between 3 - 5 in section 1 (RN: %s)
-7000430 K01 430 If Current education status (Col-13) = 2 (School) then Age (Col-7) should be 5 - 19 in section 1 (Persons)(RN: %s)
-7000440 K01 440 If Current education status (Col-13) = 2 (School) in section 1 (Persons) then Col-4 of section 2 (School Education) should be 1 (school going) for the person (RN: %s)
-7000450 K01 450 If Current education status (Col-13) = 3 (University) then Age (Col-7) should be 18 - 40 in section 1 (Persons) (RN: %s)
-7000460 K01 460 If Current education status (Col-13) = 3 (University) then Level of education (Col-14) can not be less than 13 in section 1 (Persons) (RN: %s)
-7000470 K01 470 If Current education status (Col-13) = 4 (Other edu) then Age (Col-7 should be 5 - 30 in section 1 (Persons) (RN: %s)
-7000480 K01 480 If Current education status (Col-13) = 5 (Technical) then Age (Col-7) should be 10 - 40 in section 1 (Persons) (RN: %s)
-7000490 K01 490 If studying in grade 1 (Col 14 = 00 ) then Age (Col-7) should be less than 7 years in section 1 (Persons) (RN: %s)
-7000500 K01 500 If the main activity is student (Col-16=8) then age (Col-7) should be less than 30 years in section 1 (Persons) (RN: %s)
-7000510 K01 510 If not a student in normal activity (Col-16<>8) then he can not be in a school (col 13<>2) in section 1 (Persons) (RN: %s)
-7000520 K01 520 [ICT] If a Pentioner in normal activity (Col-16=2|4) in section 1 (Persons) there must be an pention income (col-5) in section 5.5.1 (Other monetory Income) (RN: %s)
-7000530 K01 530 [ICT] to write
+7000320 K01 320 - [ICT] If marital status (Col 11) > 1 (ever married) the age (Col-7) >= 12 years in section 1 (Persons) (RN: %s)
+7000330 K01 330 - [ICT] If (col-5) = 2 & (col-11) = 1 & Age (Col.7) >= 15 then (Col.12) can not be blank in section 1 (Persons) (RN: %s)
+7000340 K01 340 - If (col-5) = 1 & (col-11) = 2 & Age (Col.7) < = 15 then (Col.12) can  be blank in section 1 (Persons) (RN: %s)
+7000350 K01 350 - Recheck marital status (Col 10) > 1 (ever married) the age (Col-7) <= 17 years in section 1 (Persons) (RN: %s)
+7000360 K01 360 - Head of the household should be at least 12 years old  (Col 7 >=12) in section 1 (Persons) (RN: %s)
+7000370 K01 370 - If there is a record  for wife or husband Col 4 (Relationship=2) her or his marital status (Col-11) should be 2 or 3 in section 1 (RN: %s)
+7000380 K01 380 - If there is a record  for wife or husband Col 4 (Relationship=2) the heads marital status should be married (Col 11)=2 or 3 in section 1 (Persons) (RN: %s)
+7000390 K01 390 - If there is a record  for son or daughter Col 4 (Relationship=3) the marital status of the head (Col-11) canot be 1 (Never married) in section 1 (Persons) (RN: %s)
+7000400 K01 400 - For Parents Col 4 (Relationship = 4) the marital status (Col-11) can not be 1 (Never married) in section 1 (Persons) (RN: %s)
+7000410 K01 410 - If the head of the household (Relationship = 1) is married then  (Col-11 = 2 or 3)  the spouse Col 4 (Relationship = 2) record should be available in section 1 (Persons) (RN: %s)
+7000420 K01 420 - If Current education status (Col-13) = 1 (Pre school) then Age (Col-7) should be between 3 - 5 in section 1 (RN: %s)
+7000430 K01 430 - If Current education status (Col-13) = 2 (School) then Age (Col-7) should be 5 - 19 in section 1 (Persons)(RN: %s)
+7000440 K01 440 - If Current education status (Col-13) = 2 (School) in section 1 (Persons) then Col-4 of section 2 (School Education) should be 1 (school going) for the person (RN: %s)
+7000450 K01 450 - If Current education status (Col-13) = 3 (University) then Age (Col-7) should be 18 - 40 in section 1 (Persons) (RN: %s)
+7000460 K01 460 - If Current education status (Col-13) = 3 (University) then Level of education (Col-14) can not be less than 13 in section 1 (Persons) (RN: %s)
+7000470 K01 470 - If Current education status (Col-13) = 4 (Other edu) then Age (Col-7 should be 5 - 30 in section 1 (Persons) (RN: %s)
+7000480 K01 480 - If Current education status (Col-13) = 5 (Technical) then Age (Col-7) should be 10 - 40 in section 1 (Persons) (RN: %s)
+7000490 K01 490 - If studying in grade 1 (Col 14 = 00 ) then Age (Col-7) should be less than 7 years in section 1 (Persons) (RN: %s)
+7000500 K01 500 - If the main activity is student (Col-16=8) then age (Col-7) should be less than 30 years in section 1 (Persons) (RN: %s)
+7000510 K01 510 - If not a student in normal activity (Col-16<>8) then he can not be in a school (col 13<>2) in section 1 (Persons) (RN: %s)
+7000520 K01 520 - [ICT] If a Pentioner in normal activity (Col-16=2|4) in section 1 (Persons) there must be an pention income (col-5) in section 5.5.1 (Other monetory Income) (RN: %s)
+7000530 K01 530 - [ICT] to write
 
-7000540 K02 540 Everybody aged 0 - 17 (inclusive 17) in column 7 of section 1 of HIES Questionnaire should be available in section 1 of Child Module(CM) (RN: %s)
-7000550 K02 550 The serial number in section 1 of CM should be a number in column 1 of section 1 in HIES Quectionier (RN: %s)
-7000560 K02 560 The serial number of the section 1 of CM can notbe repeated. (DUP: %s)
-7000570 K02 570 Age in section 1 of CM cannot be blank (RN: %s)
-7000580 K02 580 [ICT] ?
-7000590 K02 590 The place of residence of the biological mother of the child cannot be blank in C1_1 in CM (RN: %s)
-7000600 K02 600 The place of residence of biological mother of child should be 1-4 for quection C1_1 in CM (RN: %s)
-7000610 K02 610 If the place of residence of the biological mother of the child in CM C1_1 is equal to 1, then question C1_2 in CM cannot be blank (RN: %s)
-7000620 K02 620 If the place of residence of the biological mother of the child in CM C1_1 is equal to 2-4, then question C1_2 in CM should be blank (RN: %s)
-7000630 K02 630 The place of residence of the biological father of the child cannot be blank in C1_3 in CM (RN: %s)
-7000640 K02 640 The place of residence of biological father of child should be 1-4 for quection C1_3 in CM (RN: %s)
+7000540 K02 540 - Everybody aged 0 - 17 (inclusive 17) in column 7 of section 1 of HIES Questionnaire should be available in section 1 of Child Module(CM) (RN: %s)
+7000550 K02 550 - The serial number in section 1 of CM should be a number in column 1 of section 1 in HIES Quectionier (RN: %s)
+7000560 K02 560 - The serial number of the section 1 of CM can notbe repeated. (DUP: %s)
+7000570 K02 570 - Age in section 1 of CM cannot be blank (RN: %s)
+7000580 K02 580 - [ICT] ?
+7000590 K02 590 - The place of residence of the biological mother of the child cannot be blank in C1_1 in CM (RN: %s)
+7000600 K02 600 - The place of residence of biological mother of child should be 1-4 for quection C1_1 in CM (RN: %s)
+7000610 K02 610 - If the place of residence of the biological mother of the child in CM C1_1 is equal to 1, then question C1_2 in CM cannot be blank (RN: %s)
+7000620 K02 620 - If the place of residence of the biological mother of the child in CM C1_1 is equal to 2-4, then question C1_2 in CM should be blank (RN: %s)
+7000630 K02 630 - The place of residence of the biological father of the child cannot be blank in C1_3 in CM (RN: %s)
+7000640 K02 640 - The place of residence of biological father of child should be 1-4 for quection C1_3 in CM (RN: %s)
 
 
 7000650 K02 650 - do - If the place of residence of the biological father of the child in CM C1_3 is equal to 1, then question C1_4 in CM cannot be blank (RN: %s)
 7000660 K02 660 - do - If the place of residence of the biological father of the child in CM C1_3 is equal to 2-4, then question C1_4 in CM should be blank (RN: %s)
 7000670 K02 670 - do - [ICT] blank row
 
-7000680 K02 680 Everybody aged 0 - 5 (ages 0,1,2,3,4) in column 7 in section 1 of HIES Questionnaire should be available in section 2 of CM (RN: %s)
-7000690 [ICT] same? 7000550 Check
-7000700 [ICT] same 7000560 check
+7000680 K02 680 - Everybody aged 0 - 5 (ages 0,1,2,3,4) in column 7 in section 1 of HIES Questionnaire should be available in section 2 of CM (RN: %s)
+7000690 K02 690 - [ICT] same? 7000550 Check
+7000700 K02 700 - [ICT] same 7000560 check
 
 
-7000710 K02 710 Weight of the child in C2 in CM cannot be blank (RN: %s)
-7000720 K02 720 Weight of the child in C2 in CM should be in the range of 0.500 kg 500g and 20.000kg 000g and the numbers 99.994, 99.995 and 99.996 should be accept (RN: %s)
-7000730 K02 730 The date of the child's weight was measured in C3 in CM cannot be blank (RN: %s)
-7000740 K02 740 Hight of the child in C4 in CM cannot be blank (RN: %s)
+7000710 K02 710 - Weight of the child in C2 in CM cannot be blank (RN: %s)
+7000720 K02 720 - Weight of the child in C2 in CM should be in the range of 0.500 kg 500g and 20.000kg 000g and the numbers 99.994, 99.995 and 99.996 should be accept (RN: %s)
+7000730 K02 730 - The date of the child's weight was measured in C3 in CM cannot be blank (RN: %s)
+7000740 K02 740 - Hight of the child in C4 in CM cannot be blank (RN: %s)
 
-7000750 K02 750 Hight of the child in C4 in CM should be in the range of 30cm to 120 cm.Also 994, 995, 996 should accept. (RN: %s)
-7000760 K02 760 The date of the child's hight was measured in C5 in CM cannot be blank (RN: %s)
-7000770 K02 770 [ICT]  Blank row
+7000750 K02 750 - Hight of the child in C4 in CM should be in the range of 30cm to 120 cm.Also 994, 995, 996 should accept. (RN: %s)
+7000760 K02 760 - The date of the child's hight was measured in C5 in CM cannot be blank (RN: %s)
+7000770 K02 770 - [ICT]  Blank row
 
-7000780 [ICT] Same 7000680 
-7000790 [ICT] Same 690 ?
+7000780 K02 780 - [ICT] Same 7000680 
+7000790 K02 790 - [ICT] Same 690 ?
 
-7000800 [ICT] Same 7000550
-7000810 K02 810 C6 in CM children's books (A), picture books (B) and children newspapers (C) for the child's use should be coded as 1 or 2 (RN: %s)
-7000820 K02 820 Number of books should mention only if codes for children's books(A), Picture books(B) for the child to use : C6 in CM  is 1, and number of books should be in the range 00-10 (RN: %s)
-7000830 K02 830 [ICT] Not defined variable
-7000840 K02 840 C7 in CM The things that child to play: for Homemade toys(A), Toys from a shop(B), House hold objects, Digital divices(D) should be taken the codes 1,2 or 8 (RN: %s)
-7000850 K02 850 For quection C8 in CM: In the past 3 days, read books with child(A), told stories to child(B), sang songs with child(C), play with child(D), named, count or draw things(E) should be coded 1 or 2 (RN: %s)
-7000860 K02 860 For quection C9 in CM : In the past week more than one hour, has the child stay alone or taking care of child aged bellow 10 years: should be coded as 1 or 2 (RN: %s)
-7000870 K02 870 If C9 in CM is 1 then C9A or C9B cannot be blank (RN: %s)
-7000880 K02 880 If C9 in CM  is 2 then C9A or C9B should be blank (RN: %s)
-7000890 K02 890 [ICT -blank row]
-7000900 K02 900	C10 of section 4 in CM cannot be blanck and should be coded 1 or 2 (RN: %s)
+7000800 K02 800 - [ICT] Same 7000550
+7000810 K02 810 - C6 in CM children's books (A), picture books (B) and children newspapers (C) for the child's use should be coded as 1 or 2 (RN: %s)
+7000820 K02 820 - Number of books should mention only if codes for children's books(A), Picture books(B) for the child to use : C6 in CM  is 1, and number of books should be in the range 00-10 (RN: %s)
+7000830 K02 830 - [ICT] Not defined variable
+7000840 K02 840 - C7 in CM The things that child to play: for Homemade toys(A), Toys from a shop(B), House hold objects, Digital divices(D) should be taken the codes 1,2 or 8 (RN: %s)
+7000850 K02 850 - For quection C8 in CM: In the past 3 days, read books with child(A), told stories to child(B), sang songs with child(C), play with child(D), named, count or draw things(E) should be coded 1 or 2 (RN: %s)
+7000860 K02 860 - For quection C9 in CM : In the past week more than one hour, has the child stay alone or taking care of child aged bellow 10 years: should be coded as 1 or 2 (RN: %s)
+7000870 K02 870 - If C9 in CM is 1 then C9A or C9B cannot be blank (RN: %s)
+7000880 K02 880 - If C9 in CM  is 2 then C9A or C9B should be blank (RN: %s)
+7000890 K02 890 - [ICT -blank row]
+7000900 K02 900	- C10 of section 4 in CM cannot be blanck and should be coded 1 or 2 (RN: %s)
 
 
-7000910 K03 910 Everybody aged 3 - 19 and usual residents (col-3 = 1) in section 1 should be available in section 2 (School education) (RN: %s)
-7000920 K03 920 Total count of persons aged 3 - 19  and usual residents (col-3 = 1) in section 1 should be equal to total count of persons in section 2 (School education) (%s)
+7000910 K03 910 - Everybody aged 3 - 19 and usual residents (col-3 = 1) in section 1 should be available in section 2 (School education) (RN: %s)
+7000920 K03 920 - Total count of persons aged 3 - 19  and usual residents (col-3 = 1) in section 1 should be equal to total count of persons in section 2 (School education) (%s)
 
-7001510 K04 1510 Names of the all Persons in section 1 and column 3 filled with code 1 should be included In here shortly (RN: %s)
-7001520 K04 1520 Serial numbers of the all persons in section 1 column 3 and filled with code 1 should be included In column 2. Count of persons in here should be equal to count of persons with code 1 in section 1 column 3 (RN: %s)
-7001530 K04 1530 column 3 can not be blank for all person, has to be filled with 1 or 2. if it is 2, he/she need to be directed to column 6 (RN: %s)
-
+7001510 K04 1510 - Names of the all Persons in section 1 and column 3 filled with code 1 should be included In here shortly (RN: %s)
+7001520 K04 1520 - Serial numbers of the all persons in section 1 column 3 and filled with code 1 should be included In column 2. Count of persons in here should be equal to count of persons with code 1 in section 1 column 3 (RN: %s)
+7001530 K04 1530 - column 3 can not be blank for all person, has to be filled with 1 or 2. if it is 2, he/she need to be directed to column 6 (RN: %s)
+7001540 K04 1540 - [ICT- 9 explanation not included] If 1 for column 3, column 4 should be 1, 2, 3, 4, 5, 6 or 9. If it is 9, need to explain. If 2 for column 3, this should be empty (RN: %s)
+7001550 K04 1550 - [ICT- 9 explanation not included] If 1 for column 3, this should be 1, 2, 3, 4, 5 or 9. If it is 9, need to explain. If 2 for column 3, this should be empty (RN: %s)
+7001560 K04 1560 - Column 6 can not be blank for all person, has to be filled with 1 or 2. if it is 2, he/she need to be directed to column 8 (RN: %s)
+7001570 K04 1570 - If 1 for column 6, column 7 should be 1, 2, 3, 4, 5 or 9. If it is 9, need to explain. If 2 for column 6, this should be empty (RN: %s)
+7001580 K04 1580 - Column 8 can not be blank for all person, has to be filled with 1 or 2. if it is 2, he/she need to be directed to column 11 (RN: %s)
+7001590 K04 1590 - If 1 for column 8, column 9 should be 1, 2, 3, 4, 5, 6 or 9. If it is 9, need to explain. If 2 for column 8, this should be empty (RN: %s)
+7001600 K04 1600 - If 1 for column 8, column 10 should be 1, 2, 3, 4, 5, 6 or 9. If it is 9, need to explain. If 2 for column 8, this should be empty (RN: %s)
+7001610 K04 1610 - Column 11 can not be blank for all persons, has to be filled with 1 or 2. if it is 2, he/she need to be directed to column 13 (RN: %s)
+7001620 K04 1620 - If 1 for column 11, column 12 should be 1, 2, 3, 4, 5, 6 or 9. If it is 9, need to explain. If 2 for column 11, this should be empty (RN: %s)
+7001630 K04 1 (RN: %s)
+7001640 K04 1 (RN: %s)
+7001650 K04 1 (RN: %s)
+7001660 K04 1 (RN: %s)
+7001670 K04 1 (RN: %s)
+7001680 K04 1 (RN: %s)
+7001690 K04 1 (RN: %s)
+7001700 K04 1 (RN: %s)
+7001710 K04 1 (RN: %s)
+7001720 K04 1 (RN: %s)
+7001730 K04 1 (RN: %s)
+7001740 K04 1 (RN: %s)
+7001750 K04 1 (RN: %s)
+7001760 K04 1 (RN: %s)
+7001770 K04 1 (RN: %s)
+7001780 K04 1 (RN: %s)
+7001790 K04 1 (RN: %s)
+7001800 K04 1 (RN: %s)
+7001810 K04 1 (RN: %s)
 
 1000 Household Income And Expenditure Survey
 1001 Do you want to exit from the program?
