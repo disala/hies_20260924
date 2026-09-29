@@ -1,0 +1,18 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+ShowInApplicationListing=Never
+
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\Module.ent
+InputData=|type=None
+Paradata=.\Module.cslog
+CommonStore= ..\support\j.sam
+
+[ExternalFiles]
+HIESANDCHILDDIC_DICT=|type=None
+MENU_DICT=|type=None
+DISASTERMODDIC=..\checking\DISASTER_DS1103101400032.csdb

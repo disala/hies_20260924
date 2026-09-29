@@ -1,0 +1,548 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=foodinsmoddic
+Name=FOODINSMODDIC_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=C1E4A1B80C25E4545CB3A721DF83F0E7BEAA6502AD8E97FBA8533324CE802A20
+
+[Languages]
+EN=English
+SI=Sinhala
+TA=Tamil
+
+[Level]
+Label=foodinsmoddic Level
+Name=FOODINSMODDIC_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Moduleno
+Name=MODULENO
+Start=2
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Enumeratorsid
+Name=ENUID
+Start=3
+Len=6
+DataType=Alpha
+
+[Item]
+Label=A0_MRCB
+Name=A0_MRCB
+Start=9
+Len=6
+DataType=Numeric
+
+[Item]
+Label=PSU Number
+Name=PSU
+Start=15
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=SSU Number
+Name=SSU
+Start=18
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HouseHold Number
+Name=HH
+Start=20
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=control
+Name=CONTROL
+RecordTypeValue='2'
+RecordLen=21
+
+[Record]
+Label=foodinsmoddic Record
+Name=FOODINSMODDIC_REC
+RecordTypeValue='1'
+RecordLen=51
+
+[Item]
+Label=FIM01_Worried about not having enough food
+Name=FIM01
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM01_Worried about not having enough food
+Name=FIM01_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM02_Unable to eat healthy and nutritious food
+Name=FIM02
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM02_Unable to eat healthy and nutritious food
+Name=FIM02_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM03_Ate only a few kind of food
+Name=FIM03
+Start=24
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM03_Ate only a few kind of food
+Name=FIM03_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM04_Had to skip a meal
+Name=FIM04
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM04_Had to skip a meal
+Name=FIM04_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM05_Ate less than you thought
+Name=FIM05
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM05_Ate less than you thought
+Name=FIM05_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM06_Ran out of food
+Name=FIM06
+Start=27
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM06_Ran out of food
+Name=FIM06_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM07A_Hungry but did not eat
+Name=FIM07A
+Start=28
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM07A_Hungry but did not eat
+Name=FIM07A_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM07B_If yes to FIM07A
+Name=FIM07B
+Start=29
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM07B_If yes to FIM07A
+Name=FIM07B_VS1
+Value=1;Once or twice|වරක් හෝ දෙවරක්|ஒரு தடவை அல்லது இரு தடவை
+Value=2;In some months, but not every months|සමහර මාසවලදී, නමුත් සෑම මාසයක්ම නොවේ|சில மாதங்களில் ஆனால் ஒவ்வொரு மாதங்களிலும் அல்ல
+Value=3;In every month|සෑම මාසයකම|ஒவ்வொரு மாதமும்
+Value=8;Don’t know|දන්නේ නැහැ|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM08A_Went without eating for a whole day
+Name=FIM08A
+Start=30
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM08A_Went without eating for a whole day
+Name=FIM08A_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=8;Don’t know|නොදනී|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIM08B_If yes to FIM08A
+Name=FIM08B
+Start=31
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIM08B_If yes to FIM08A
+Name=FIM08B_VS1
+Value=1;Once or twice|වරක් හෝ දෙවරක්|ஒரு தடவை அல்லது இரு தடவை
+Value=2;In some months, but not every months|සමහර මාසවලදී, නමුත් සෑම මාසයක්ම නොවේ|சில மாதங்களில் ஆனால் ஒவ்வொரு மாதங்களிலும் அல்ல
+Value=3;In every month|සෑම මාසයකම|ஒவ்வொரு மாதமும்
+Value=8;Don’t know|දන්නේ නැහැ|தெரியாது
+Value=9;Refused|ප්‍රතික්ෂේප කරන ලදී|மறுக்கப்பட்டது
+
+[Item]
+Label=FIMSEC2Q2_Rely on less preferred and less expensive food (i.e. cheaper lower quality food)?
+Name=FIMSEC2Q2
+Start=32
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q2_Rely on less preferred and less expensive food (i.e. cheaper lower quality food)?
+Name=FIMSEC2Q2_VS1
+Value=0:7
+
+[Item]
+Label=FIMSEC2Q3_Borrow food or relied on help from relative(s) or friend(s)?
+Name=FIMSEC2Q3
+Start=33
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q3_Borrow food or relied on help from relative(s) or friend(s)?
+Name=FIMSEC2Q3_VS1
+Value=0:7
+
+[Item]
+Label=FIMSEC2Q4_Reduce number of meals eaten in a day?
+Name=FIMSEC2Q4
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q4_Reduce number of meals eaten in a day?
+Name=FIMSEC2Q4_VS1
+Value=0:7
+
+[Item]
+Label=FIMSEC2Q5_Limit portion size at meals (different from above: i.e. less food per meal)?
+Name=FIMSEC2Q5
+Start=35
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q5_Limit portion size at meals (different from above: i.e. less food per meal)?
+Name=FIMSEC2Q5_VS1
+Value=0:7
+
+[Item]
+Label=FIMSEC2Q6_Restrict consumption by adults in order for small children to eat?
+Name=FIMSEC2Q6
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q6_Restrict consumption by adults in order for small children to eat?
+Name=FIMSEC2Q6_VS1
+Value=0:7
+
+[Item]
+Label=FIMSEC2Q8_Sold household assets/goods (radio, furniture, refrigerator, television, etc.)
+Name=FIMSEC2Q8
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q8_Sold household assets/goods (radio, furniture, refrigerator, television, etc.)
+Name=FIMSEC2Q8_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q9_Purchased food/non-food on credit (incur debts)
+Name=FIMSEC2Q9
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q9_Purchased food/non-food on credit (incur debts)
+Name=FIMSEC2Q9_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q10_Spent savings and/or skipped debt payment
+Name=FIMSEC2Q10
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q10_Spent savings and/or skipped debt payment
+Name=FIMSEC2Q10_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q11_Sent household members to eat elsewhere
+Name=FIMSEC2Q11
+Start=40
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q11_Sent household members to eat elsewhere
+Name=FIMSEC2Q11_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q12_Sold productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, etc.)
+Name=FIMSEC2Q12
+Start=41
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q12_Sold productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, etc.)
+Name=FIMSEC2Q12_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q13_Reduced expenses on health (including drugs) or education
+Name=FIMSEC2Q13
+Start=42
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q13_Reduced expenses on health (including drugs) or education
+Name=FIMSEC2Q13_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q14_Withdrew children from school
+Name=FIMSEC2Q14
+Start=43
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q14_Withdrew children from school
+Name=FIMSEC2Q14_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q15_Mortgaged/Sold house or land
+Name=FIMSEC2Q15
+Start=44
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q15_Mortgaged/Sold house or land
+Name=FIMSEC2Q15_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q16_Begged and/or scavenged (asked strangers for money/food)
+Name=FIMSEC2Q16
+Start=45
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q16_Begged and/or scavenged (asked strangers for money/food)
+Name=FIMSEC2Q16_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q17_Engaged in illegal income activities (theft, prostitution)
+Name=FIMSEC2Q17
+Start=46
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q17_Engaged in illegal income activities (theft, prostitution)
+Name=FIMSEC2Q17_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q18_Borrow money from a formal lender/bank (including pawning)
+Name=FIMSEC2Q18
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q18_Borrow money from a formal lender/bank (including pawning)
+Name=FIMSEC2Q18_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q19_Household have to sell your gold jewelries
+Name=FIMSEC2Q19
+Start=48
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q19_Household have to sell your gold jewelries
+Name=FIMSEC2Q19_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q20_Entire household have to migrate
+Name=FIMSEC2Q20
+Start=49
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q20_Entire household have to migrate
+Name=FIMSEC2Q20_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q21_Any household member has to migrate abroad
+Name=FIMSEC2Q21
+Start=50
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q21_Any household member has to migrate abroad
+Name=FIMSEC2Q21_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Item]
+Label=FIMSEC2Q22_Any household member has to migrate internally
+Name=FIMSEC2Q22
+Start=51
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FIMSEC2Q22_Any household member has to migrate internally
+Name=FIMSEC2Q22_VS1
+Value=1;No, because I did not need to|නැහැ, මට අවශ්‍ය නොවූ නිසා|இல்லை, ஏனென்றால் எனக்கு அது தேவையில்லை
+Value=2;No, because I already sold those assets or have engaged in this activity within the last 12 months and cannot continue to do it|නැත, මම දැනටමත් එම වත්කම් විකුණා ඇති නිසා හෝ පසුගිය මාස 12 තුළ මෙම ක්‍රියාකාරකමෙහි යෙදී ඇති නිසා එය දිගටම කරගෙන යාමට නොහැකි නිසා|இல்லை, ஏனென்றால் நான் ஏற்கனவே அந்த சொத்துக்களை விற்றுவிட்டேன் அல்லது கடந்த 12 மாதங்களுக்குள் இந்தச் செயலில் ஈடுபட்டிருந்ததுடன் அதைத் தொடர்ந்து செய்ய முடியாது
+Value=3;Yes|ඔව්|ஆம்
+Value=4;Not applicable (don’t have children/ these assets)|අදාළ නොවේ (දරුවන් / මෙම වත්කම් නැත)|பொருந்தாது (குழந்தைகள் / இந்த சொத்துக்கள் இல்லை)
+
+[Record]
+Label=FoodsecMod_Save
+Name=FOODSECMOD_SAVE
+RecordTypeValue='>'
+RecordLen=23
+
+[Item]
+Label=SaveStatus_FSMOD
+Name=SAVESTATUS_FSMOD
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=SaveStatus_FSMOD
+Name=SAVESTATUS_FSMOD_VS1
+Value=1;Module Completed (Save)|සුරකින්න, සම්පූර්ණ කර ඇත|தொகுதி முடிந்தது (சேமி)
+Value=2;Save But Not Completed|සුරකින්න, නමුත් සම්පූර්ණ කර නැත|சேமிக்கவும் ஆனால் முடிக்கப்படவில்லை
+Value=3;Exit Without Saving|සුරැකීමකින් තොරව පිටවන්න|சேமிக்காமல் வெளியேறவும்
+
+[Item]
+Label=FoodSecModComplete
+Name=COMP_FOODSECMOD
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=FoodSecModComplete
+Name=COMP_FOODSECMOD_VS1
+Value=1;Completed| සම්පූර්ණ කර ඇත|முடிக்கப்பட்டது
+Value=2;Not Completed| සම්පූර්ණ කර නැත|முடிக்கப்படவில்லை

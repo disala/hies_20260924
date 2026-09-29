@@ -1,0 +1,26 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=ASSIGNMENTS
+Name=ASSIGNMENTS
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\assignments.ent.apc
+[Message]
+File=.\assignments.ent.mgf
+[Help]
+File=.\assignments.ent.qsf
+[Forms]
+File=.\assignments.fmf
+[Dictionary Types]
+Dict-Type=..\dic\assignments.dcf,Input,.\assignments.fmf

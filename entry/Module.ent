@@ -1,0 +1,44 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=MODULE
+Name=MODULE
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=.\dic\hiesandchilddic.dcf
+File=.\dic\menu.dcf
+File=.\dic\assignments.dcf
+File=.\dic\disastermoddic.dcf
+File=.\dic\foodinsmoddic.dcf
+File=.\dic\foodsheetdic.dcf
+File=.\dic\housinginfodic.dcf
+File=.\dic\nonfooddic.dcf
+[AppCode]
+File=.\Module.ent.apc
+[Message]
+File=.\Module.ent.mgf
+[Help]
+File=.\Module.ent.qsf
+[Forms]
+File=.\Module.fmf
+[Dictionary Types]
+Dict-Type=.\dic\modulemenu.dcf,Input,.\Module.fmf
+Dict-Type=.\dic\hiesandchilddic.dcf,External
+Dict-Type=.\dic\menu.dcf,External
+Dict-Type=.\dic\assignments.dcf,External
+Dict-Type=.\dic\disastermoddic.dcf,External
+Dict-Type=.\dic\foodinsmoddic.dcf,External
+Dict-Type=.\dic\foodsheetdic.dcf,External
+Dict-Type=.\dic\housinginfodic.dcf,External
+Dict-Type=.\dic\nonfooddic.dcf,External

@@ -1,0 +1,11 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\assignments.ent
+InputData=..\..\support\assignments.csdb
+Paradata=.\assignments.cslog

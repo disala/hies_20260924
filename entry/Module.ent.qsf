@@ -1,0 +1,144 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+  - name: SI
+    label: Sinhala
+  - name: TA
+    label: Tamil
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: MODULEMENU_DICT.INTERVIEW_STATUS
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p><p><b><font color="#ff00ff"><br></font></b></p><p><font color="#a300c0"></font></p><p></p><p></p><p><b><font color="#ff00ff">Select Interview Status</font></b></p><p></p><p></p><p></p><p></p>
+          SI: |
+            <p style="text-align: center; "><font color="#0000ff"><b><span style="font-size: 18px;">ගෘහ ඒකක&nbsp; ආදායම් සහ වියදම් සමීක්ෂණය</span></b></font><br></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p>
+            
+            <p><b><font color="#ff00ff"><br></font></b></p><p><font color="#a300c0"></font></p><p></p><p></p><p><font color="#ff00ff"><b style="">සම්මුඛ පරීක්ෂණ තත්ත්වය&nbsp;</b><b>තෝරන්න&nbsp;</b></font></p><p><br></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p><p><b><font color="#ff00ff"><br></font></b></p><p><font color="#a300c0"></font></p><p></p><p></p><p><font color="#ff00ff"><b>நேர்கானல் தன்மையை தெரிவுசெய்க</b></font></p><div><b><font color="#0000ff"><br></font></b></div><p></p><p></p><p></p><p></p>
+  - name: MODULEMENU_DICT.INT_STATUS_OTHERSPECIFY
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p><p><b><font color="#ff00ff"><br></font></b></p><p><font color="#a300c0"></font></p><p></p><p></p><p><b><font color="#ff00ff">Select Interview Status - If Other Specify</font></b></p><p></p><p></p><p></p><p></p>
+          SI: |
+            <p style="text-align: center; "><font color="#0000ff"><b><span style="font-size: 18px;">ගෘහ ඒකක&nbsp; ආදායම් සහ වියදම් සමීක්ෂණය</span></b></font><br></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><font color="#a300c0"></font></p><p></p><p></p><p><font color="#ff00ff"><b style="">සම්මුඛ පරීක්ෂණ තත්ත්වය&nbsp;</b><b>තෝරන්න -&nbsp;</b></font><span style="background-color: rgb(248, 249, 250); font-family: inherit; font-size: 16px;"><font color="#ff00ff"><b>වෙනත් නම්, සඳහන් කරන්න</b></font></span></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p><p><b><font color="#ff00ff"><br></font></b></p><p><font color="#a300c0"></font></p><p></p><p></p><p><font color="#ff00ff"><b>நேர்கானல் தன்மையை தெரிவுசெய்க</b></font><b><font color="#ff00ff">&nbsp;-&nbsp;</font></b><font color="#ff00ff"><b>ஏனைய</b></font><b style="color: rgb(255, 0, 255);">வை (அடுத்து விபரிக்கவும்)</b></p><p></p><p></p><p></p><p></p>
+  - name: MODULEMENU_DICT.SAVEMENUDATA
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b style="color: rgb(255, 0, 255);">Save Module Menu Data</b></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+            <p><font color="#ff00ff"><b>මොඩියුල මෙනුවෙහි  දත්ත සුරකින්න </b></font></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><font color="#ff00ff"><b>தொகுதி மெனு தரவைச் சேமிக்கவும்</b></font></p>
+  - name: MODULEMENU_DICT.SELECTMODULE
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b style="color: rgb(255, 0, 255);">Select the Module</b></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+            <p><font color="#ff00ff"><b>අදාළ මොඩියුලය තෝරන්න</b></font></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><font color="#ff00ff"><b>தொகுதியைத் தெரிவுசெய்க</b></font></p>
+  - name: BLOCK000
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~MODULEMENU_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ MODULEMENU_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~MODULEMENU_DICT.HH~~</span></td></tr></tbody></table>
+  - name: MODULEMENU_DICT.COMPLETEMCODE
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(255, 0, 255);">Final Result Code</b></p>
+          SI: |
+            <p><font color="#ff00ff"><b>අවසාන ප්‍රතිඵල කේතය</b></font></p>
+          TA: |
+            <p><font color="#ff00ff"><b>இறுதி பெறுபேற்றுக் குறியீடு</b></font></p>
+  - name: MODULEMENU_DICT.FINAL_RESULTOTHER
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(255, 0, 255);">Special Notes</b></p>
+          SI: |
+            <p><font color="#ff00ff"><b>විශේෂ සටහන්</b></font></p>
+          TA: |
+            <p><font color="#ff00ff"><b>விசேட&nbsp; குறிப்புகள்</b></font></p>
+...

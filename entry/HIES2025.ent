@@ -1,0 +1,42 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HIES2025
+Name=HIES2025
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=.\dic\users.dcf
+File=.\dic\assignments.dcf
+File=.\dic\disastermoddic.dcf
+File=.\dic\foodinsmoddic.dcf
+File=.\dic\hiesandchilddic.dcf
+File=.\dic\nonfooddic.dcf
+File=.\dic\foodsheetdic.dcf
+[AppCode]
+File=.\HIES2025.ent.apc
+[Message]
+File=.\HIES2025.ent.mgf
+[Help]
+File=.\HIES2025.ent.qsf
+[Forms]
+File=.\HIES2025.fmf
+[Dictionary Types]
+Dict-Type=.\dic\menu.dcf,Input,.\HIES2025.fmf
+Dict-Type=.\dic\users.dcf,External
+Dict-Type=.\dic\assignments.dcf,External
+Dict-Type=.\dic\disastermoddic.dcf,External
+Dict-Type=.\dic\foodinsmoddic.dcf,External
+Dict-Type=.\dic\hiesandchilddic.dcf,External
+Dict-Type=.\dic\nonfooddic.dcf,External
+Dict-Type=.\dic\foodsheetdic.dcf,External

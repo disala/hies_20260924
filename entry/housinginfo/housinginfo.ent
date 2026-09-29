@@ -1,0 +1,27 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HOUSINGINFO
+Name=HOUSINGINFO
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\housinginfo.ent.apc
+[Message]
+File=.\housinginfo.ent.mgf
+[Help]
+File=.\housinginfo.ent.qsf
+[Forms]
+File=.\housinginfo.fmf
+[Dictionary Types]
+Dict-Type=..\dic\housinginfodic.dcf,Input,.\housinginfo.fmf

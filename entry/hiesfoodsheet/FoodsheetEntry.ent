@@ -1,0 +1,27 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=FOODSHEETENTRY
+Name=FOODSHEETENTRY
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\FoodsheetEntry.ent.apc
+[Message]
+File=.\FoodsheetEntry.ent.mgf
+[Help]
+File=.\FoodsheetEntry.ent.qsf
+[Forms]
+File=.\FoodsheetEntry.fmf
+[Dictionary Types]
+Dict-Type=..\dic\foodsheetdic.dcf,Input,.\FoodsheetEntry.fmf

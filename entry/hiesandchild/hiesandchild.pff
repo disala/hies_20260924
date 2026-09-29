@@ -1,0 +1,18 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\hiesandchild.ent
+InputData=|type=None
+Paradata=.\hiesandchild.cslog
+
+[UserFiles]
+HHmembers=
+HHmembersSchool=
+ListPersonsFor3A=
+ListPersonsFor3B=
+ListPersonsForEmpIncome=

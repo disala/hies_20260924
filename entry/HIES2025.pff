@@ -1,0 +1,25 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\HIES2025.ent
+InputData=|type=None
+Paradata=.\HIES2025.cslog
+CommonStore=..\support\j.sam
+
+[ExternalFiles]
+ASSIGNMENTS_DICT=..\support\assignments.csdb
+DISASTERMODDIC_DICT=|type=None
+FOODINSMODDIC_DICT=|type=None
+FOODSHEETDIC_DICT=|type=None
+HIESANDCHILDDIC_DICT=|type=None
+NONFOODDIC_DICT=|type=None
+NONFOODP2_DICT=|type=None
+USERS_DICT=..\support\users.csdb
+
+[UserFiles]
+AssignmentsReport=.\reports\AssignmentsReport.html

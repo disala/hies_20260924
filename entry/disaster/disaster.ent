@@ -1,0 +1,30 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=DISASTER
+Name=DISASTER
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\dic\menu.dcf
+[AppCode]
+File=.\disaster.ent.apc
+[Message]
+File=.\disaster.ent.mgf
+[Help]
+File=.\disaster.ent.qsf
+[Forms]
+File=.\disaster.fmf
+[Dictionary Types]
+Dict-Type=..\dic\disastermoddic.dcf,Input,.\disaster.fmf
+Dict-Type=..\dic\menu.dcf,External

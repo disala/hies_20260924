@@ -1,0 +1,149 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+  - name: SI
+    label: Sinhala
+  - name: TA
+    label: Tamil
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: BLOCK000
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p><p style="text-align: center;"><b><font color="#0000ff"><br></font></b></p>
+          SI: |
+            <p></p><p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+          TA: |
+            <p></p><p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+  - name: ASSIGNMENTS_DICT.HH
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td></tr><tr><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.SSU~~</span></td></tr>
+             <tr><td><font color="#0000ff"><b>Name Of the Main Head of The Household</b></font></td><td><font color="#0000ff"><b>Main Address</b></font></td></tr><tr><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.HEADNAME~~</span></td><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.ADD_LINE1~~,</span><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.ADD_LINE2~~</span></td></tr></tbody></table>
+            
+            
+            <p></p><p><font color="#0000ff"><b>HouseHold Number</b></font></p><p></p><p></p>
+          SI: |
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td></tr><tr><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.SSU~~</span></td></tr>
+             <tr><td><font color="#0000ff"><b>Name Of the Head of The Household</b></font></td><td><font color="#0000ff"><b>Address</b></font></td></tr><tr><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.HEADNAME~~</span></td><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.ADD_LINE1~~,</span><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.ADD_LINE2~~</span></td></tr></tbody></table>
+            
+            
+            <p></p><p><font color="#0000ff"><b>ගෘහ ඒකක අංකය</b></font></p><p></p><p></p>
+          TA: |
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td></tr><tr><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.SSU~~</span></td></tr>
+             <tr><td><font color="#0000ff"><b>Name Of the Head of The Household</b></font></td><td><font color="#0000ff"><b>Address</b></font></td></tr><tr><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.HEADNAME~~</span></td><td><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.ADD_LINE1~~,</span><span style="font-size: 14px;">~~ ASSIGNMENTS_DICT.ADD_LINE2~~</span></td></tr></tbody></table>
+            
+            
+            <p></p><p><font color="#0000ff"><b>குடித்தனக் கூறின்&nbsp; இலக்கம்</b></font></p><p></p><p></p>
+  - name: ASSIGNMENTS_DICT.NHH
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><b>Number of Households</b></font><p></p>
+          SI: |
+            <font color="#0000ff"><b>ගෘහ&nbsp;</b></font><b style="color: rgb(0, 0, 255);">ඒකක</b><font color="#0000ff"><b>&nbsp;සංඛ්‍යාව&nbsp;</b></font><p></p>
+          TA: |
+            <font color="#0000ff"><b>குடித்தனக் கூறின்&nbsp; எண்ணிக்கை</b></font><p></p>
+  - name: ASSIGNMENTS_DICT.HEADNAME
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><b>Name of the Head of Household</b></font><p></p>
+          SI: |
+            <font color="#0000ff"><b>ගෘහ මූලිකයාගේ නම</b></font><p></p>
+          TA: |
+            <font color="#0000ff"><b>குடித்தன தலைவரின் பெயர்</b></font><p></p>
+  - name: ASSIGNMENTS_DICT.ADD_LINE1
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><b>Address of new Household</b></font><p></p>
+          SI: |
+            <font color="#0000ff"><b>නව ගෘහ ඒකකයේ ලිපිනය</b></font><p></p>
+          TA: |
+            <font color="#0000ff"><b>புதிய குடித்தனக் கூறின் முகவரி</b></font><p></p>
+  - name: ASSIGNMENTS_DICT.ADD_LINE2
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.ADD_LINE3
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.ADD_LINE4
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.SAVESTATUS_NEWASSIGNMENT
+    conditions:
+      - questionText:
+          EN: |
+            <b style="color: rgb(0, 0, 255);">Save New Household&nbsp;</b><p></p>
+          SI: |
+            <font color="#0000ff"><b>නව ගෘහ ඒකකය&nbsp; සුරකින්න</b></font><p></p>
+          TA: |
+            <font color="#0000ff"><b>புதிய குடித்தனக் கூறினை சேமிக்கவும்</b></font><p></p>
+  - name: ASSIGNMENTS_DICT.A1_DISTRICT
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.A1_DISTRICTNAME
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.A2_DSDIVISION
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.A2_DSDIVISIONNAME
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.A3_GNDIVISION
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.A3_GNDIVISIONNAME
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: ASSIGNMENTS_DICT.A4_SECTOR
+    conditions:
+      - questionText:
+          EN: |
+            
+...

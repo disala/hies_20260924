@@ -1,0 +1,641 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+  - name: SI
+    label: Sinhala
+  - name: TA
+    label: Tamil
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: BLOCK000
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255);">For the last 12 months&nbsp;</b></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p><p></p><p><font color="#ff00ff"><b>පසුගිය මාස 12 සඳහා</b></font></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><font color="#ff00ff"><b>கடந்த 12 நாட்களுக்காக</b></font></p>
+  - name: FOODINSMODDIC_DICT.FIM01
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"></p><div style="text-align: left;"><b><font color="#ff00ff">FIM01</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;During the last 12 months, was there a time when you or others in your household worried about not having enough food to eat due to lack of money or other resources?</b></font></div><p></p>
+          SI: |
+            <p>&nbsp;<b><font color="#ff00ff">FIM01</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට ප්‍රමාණවත් පරිදි ආහාර නොමැති නිසා පසුතැවීමට සිදු වූයේද?</b></font></p><p><p></p></p>
+          TA: |
+            <p style="text-align: center;"></p><div style="text-align: left;"><b><font color="#ff00ff">FIM01</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;</b></font><b style="color: rgb(0, 0, 255);">கடந்த 12 மாதங்களில், நீங்கள் அல்லது குடும்பத்தில் உள்ளவர்கள் குறைந்த பணம் மற்றும்&nbsp; ஏனைய வளங்களின் பற்றாக்குறை காரணமாக போதுமான உணவினைப்பெற்றுக் கொள்ளாததையிட்டு கவலைப்பட்டிருந்த நேரம் உண்டா?</b></div><p></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM02
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM02</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;Still thinking about the last 12 months, was there a time when you or others in your household were unable to eat healthy and nutritious food due to lack of money or other resources?</b></font></p><p></p>
+          SI: |
+            <b><font color="#ff00ff">FIM02</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට සෞඛ්‍ය සම්පන්න හා පෝෂ්‍යදායී ආහාර&nbsp; වර්ග පරිභෝජනය කිරීමට නොහැකි වූයේද?</b></font><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM02</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 12 மாதங்களைக் கவனத்தில் கொள்கையில் நீங்கள் அல்லது உங்களது குடித்தன அங்கத்தவர்கள் பணம் மற்றும் ஏனைய வளங்களின் பற்றாக்குறை காரணமாக ஆரோக்கியமான (சுகாதாரமான) மற்றும் சத்துள்ள உணவினை உட்கொள்ள முடியாத நிலை இருந்த நேரம் உண்டா?</b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM03
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM03</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the last 12 months, Was there a time when you or others in your household ate only a few kinds of food due to&nbsp; lack of money or other resources?</b></font></p><p></p>
+          SI: |
+            <b><font color="#ff00ff">FIM03</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට ආහාර වර්ග සුළු ප්‍රමාණයකට සීමා වීමට සිදු වූයේද?</b></font><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM03</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 12 மாதங்களைக் கவனத்தில் கொள்ளும்போது நீங்கள் அல்லது உங்களது குடித்தன அங்கத்தவர்கள் பணம் மற்றும் ஏனைய வளங்களின்&nbsp; பற்றாக்குறை காரணமாக சொற்ப அளவிலான உணவுகளுக்கு மட்டுப்படுத்திக் கொள்ள வேண்டியிருந்த நேரம் உண்டா?</b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM04
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM04:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>During the last 12 months, Was there a time when you or others in your household had to skip a meal due to lack of money or other resources to get food?</b></font></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIM04:</font><font color="#0000ff">&nbsp;පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට ආහාර වේලක් හෝ මගහැරීමට සිදු වූයේද?</font></b></p><p></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM04:</font></b><b><font color="#0000ff">கடந்த 12 மாதத்தில், குறைந்த பணம் மற்றும் ஏனைய வளங்களின் பற்றாக்குறை காரணமாக நீங்கள் அல்லது குடும்பத்தில் உள்ளவர்கள் ஒருவேளை உணவினை தவிர்க்க வேண்டிய நிலை இருந்த நேரம் உண்டா?</font></b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM05
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM05: </font></b><font color="#0000ff"><b>Still thinking about the last 12 months, Was there a time when you or others in your household ate less than you thought due to lack of money or other resources?</b></font></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIM05:&nbsp;</font></b><font color="#0000ff"><b>පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට එක් එක් ආහාර වේල් සඳහා අවශ්‍ය ප්‍රමාණයට වඩා අඩු ප්‍රමාණයෙන් ආහාර පරිභෝජනය කිරීමට සිදු වූයේද?</b></font></p><p><br></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM05:&nbsp;</font></b><b><font color="#0000ff">கடந்த 12 மாதங்களைக் கவனத்தில் கொள்ளும்போது நீங்கள் அல்லது உங்களது குடித்தன அங்கத்தவர்கள் பணம் மற்றும் ஏனைய வளங்களின் பற்றாக்குறை காரணமாக ஒவ்வொரு உணவு வேளைகளிற்கும் தேவையான அளவிற்கும் பார்க்க குறைந்த அளவிலான உணவினை நுகர்வதற்கான நிலைமைகள் இருந்த நேரம் உண்டா?</font></b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM06
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM06:&nbsp;</font></b><font color="#0000ff"><b>During the last 12 months, Was there a time when you or your household members were hungry without foods due to lack of money or other resources for food?&nbsp;</b></font></p><p></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p><p></p><p><font color="#ff00ff"><b>පසුගිය මාස 12 සඳහා</b></font></p>
+            
+            <b><font color="#ff00ff">FIM06:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට ආහාර නොගෙන කුසගින්නේ සිටීමට සිදුවූයේද?</b></font><p></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM06:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 12 மாதங்களைக் கவனத்தில்கொள்ளும் போது நீங்கள் அல்லது உங்களது குடித்தன அங்கத்தவர்கள் பணம் மற்றும் ஏனைய வளங்களின் பற்றாக்குறை காரணமாக உணவு கிடைக்காத சந்தர்ப்பங்கள் இருந்த நேரம் உண்டா?</b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM07A
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM07A</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the last 12 months, Was there a time when you or your household members were hungry without foods due to lack of money or other resources for food?</b></font></p><p></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p><p></p><p><font color="#ff00ff"><b>පසුගිය මාස 12 සඳහා</b></font></p>
+            
+            <b><font color="#ff00ff">FIM07A</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට මුළු දවසක්ම ආහාර නොගෙන කුසගින්නේ සිටීමට සිදුවූයේද?</b></font><p></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM07A</font><font color="#0000ff">:&nbsp;</font></b><b><font color="#0000ff">கடந்த 12 மாதங்களைக் கவனத்தில் கொள்ளும்போது நீங்கள் அல்லது உங்களது குடித்தன அங்கத்தவர்கள் பணம் மற்றும் ஏனைய வளங்களின் பற்றாக்குறை காரணமாக உணவின்றி பசியோடு (பட்டினியோடு) இருந்த நேரம் உண்டா?</font></b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM07B
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            
+            <p style=" text-align:="" left;"=""><b><font color="#ff00ff">FIM07B</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>If that were the case</b></font></b></p><p></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p><p></p><p><font color="#ff00ff"><b>පසුගිය මාස 12 සඳහා</b></font></p>
+            
+            <b><font color="#ff00ff">FIM07B</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>එසේ සිදුවූයේ?</b></font><p></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM07B</font><font color="#0000ff">:</font></b><b><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>அப்படி இருந்திருந்தால் ?</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM08A
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM08A</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the last 12 months, Was there a time when you or others in your household went without eating for a whole day due to&nbsp; lack of money or other resources?</b></font></p><p></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p><p></p><p><font color="#ff00ff"><b>පසුගිය මාස 12 සඳහා</b></font></p>
+            
+            <b><font color="#ff00ff">FIM08A</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>පසුගිය මාස 12 තුල මුදල් හෝ අනෙකුත් සම්පත් හිඟකම නිසා ඔබගේ ගෘහ කාණ්ඩයේ සාමාජිකයින්ට ආහාර නොගෙන කුසගින්නේ සිටීමට සිදුවූයේද?</b></font><p></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM08A</font><font color="#0000ff">:&nbsp;</font></b><b><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>கடந்த 12 மாதங்களில், நீங்கள் அல்லது உங்கள் குடும்பத்தில் உள்ளவர்கள் பணப் பற்றாக்குறை மற்றும் ஏனைய வளங்களின் பற்றாக்குறை காரணமாக ஒரு நாள் முழுவதும் சாப்பிடாமல் இருந்த நேரம் உண்டா?</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIM08B
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM08B</font><font color="#0000ff">: If that were the case</font></b></p><p></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p><p></p><p><font color="#ff00ff"><b>පසුගිය මාස 12 සඳහා</b></font></p>
+            
+            <b><font color="#ff00ff">FIM08B</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>එසේ සිදුවූයේ</b></font><p></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading1()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIM08B</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">அப்படி இருந்திருந்தால் ?</b></p><p></p>
+  - name: BLOCK002
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading2()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255);">For the past 7 days&nbsp; -&nbsp;</b><b style=""><font color="#ff0000">Enter the number of days (0 to 7)</font></b></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading2()~~</b></p>
+            <p></p><p><b style="color: rgb(255, 0, 255);">පසුගිය&nbsp;</b><b style=""><font color="#ff00ff">දින 7 සඳහා -&nbsp;</font><font color="#ff0000">දින ගණන සටහන් කරන්න ( 0 සිට 7 දක්වා )&nbsp;</font></b></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b>~~sectionHeading2()~~</b></p>
+            <p></p><p><b style=""><font color="#ff00ff">கடந்த 7 நாட்களுக்காக - </font><font color="#ff0000">நாட்களின் எண்ணிக்கையை உள்ளிடுக. (0 முதல் 7 வரை)</font></b></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q2
+    conditions:
+      - questionText:
+          EN: |
+            <b><font color="#ff00ff">FIMSEC2Q2</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;In your household in the past 7 days, because you or anyone in your household did not have food or money to buy food;</b></font><div><font color="#0000ff"><b>Rely on less preferred and less expensive food (i.e. cheaper lower quality food)?&nbsp;</b></font></div><div><br></div><p></p>
+          SI: |
+            <b><font color="#ff00ff">FIMSEC2Q2</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">ඔබට&nbsp; හෝ&nbsp; ඔබගේ නිවසේ&nbsp; කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් නොමැති වීම නිසා, පසුගිය&nbsp; දින 7 තුළ ඔබගේ නිවසේ,</b><div><font color="#0000ff"><b>අඩු කැමති හා අඩු වියදම් ආහාර මත රඳා පැවතියේද (එනම් මිල අඩු හා ගුණාත්මක බවින් අඩු ආහාර )?&nbsp;</b></font></div><p></p>
+          TA: |
+            <p><b><font color="#ff00ff">FIMSEC2Q2</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>கடந்த 7 நாட்களில் உங்கள் குடித்தனத்தில், உங்களுக்கோ அல்லது உங்கள் வீட்டில் உள்ள எவருக்கோ உணவு அல்லது உணவு வாங்க பணம் இல்லாத காரணத்தால்;</b></font></p><p><b style="color: rgb(0, 0, 255);">குறைந்த விருப்பமான மற்றும் குறைந்த விலையுள்ள உணவில் (அதாவது மலிவான குறைந்த தரமான உணவு) தங்கியிருக்கிறீர்களா?</b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q3
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q3</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>In your household in the past 7 days, because you or anyone in your household did not have food or money to buy food;</b></font><b style="color: rgb(0, 0, 255);">Borrow food or relied on help from relative(s) or friend(s)?</b></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q3</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">ඔබට&nbsp; හෝ&nbsp; ඔබගේ නිවසේ&nbsp; කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් නොමැති වීම නිසා, පසුගිය&nbsp; දින 7 තුළ ඔබගේ නිවසේ,</b><b style="color: rgb(0, 0, 255);">ආහාර සදහා ණය හෝ අසල්වැසියන්ගේ හෝ යහළුවන්ගේ උදව් මත රඳා පැවතියේ ද?&nbsp;</b></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q3</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 7 நாட்களில் உங்கள் குடித்தனத்தில், உங்களுக்கோ அல்லது உங்கள் வீட்டில் உள்ள எவருக்கோ உணவு அல்லது உணவு வாங்க பணம் இல்லாத காரணத்தால்;</b></p><p><font color="#0000ff"><b>உணவைக் கடன் வாங்கினீர்களா அல்லது உறவினர்(கள்) அல்லது நண்பர்(கள்) உதவியில் தங்கியிருந்தீர்களா?</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q4
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q4</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>In your household in the past 7 days, because you or anyone in your household did not have food or money to buy food;</b></font><b style="color: rgb(0, 0, 255);">Reduce number of meals eaten in a day?</b></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q4</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">&nbsp;ඔබට&nbsp; හෝ&nbsp; ඔබගේ නිවසේ&nbsp; කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් නොමැති වීම නිසා, පසුගිය&nbsp; දින 7 තුළ ඔබගේ නිවසේ,</b><b style="color: rgb(0, 0, 255);">දිනකට අනුභව ආහාර වේල් ගණන අඩු වුණි ද?</b></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q4</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">கடந்த 7 நாட்களில் உங்கள் குடித்தனத்தில், உங்களுக்கோ அல்லது உங்கள் வீட்டில் உள்ள எவருக்கோ உணவு அல்லது உணவு வாங்க பணம் இல்லாத காரணத்தால்;</b></p><p><font color="#0000ff"><b>ஒரு நாளில் உண்ணும் உணவின் (சாப்பாட்டின்) எண்ணிக்கையை குறைத்தீர்களா?</b></font></p><p><br></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q5
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q5</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>In your household in the past 7 days, because you or anyone in your household did not have food or money to buy food;</b></font><b style="color: rgb(0, 0, 255);">Limit portion size at meals (different from above: i.e. less food per meal)?</b></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q5</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">ඔබට&nbsp; හෝ&nbsp; ඔබගේ නිවසේ&nbsp; කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් නොමැති වීම නිසා, පසුගිය&nbsp; දින 7 තුළ ඔබගේ නිවසේ,</b><b style="color: rgb(0, 0, 255);">ආහාර වේලෙහි ප්‍රමාණය වෙනස් වී ද? (එනම් වේලකට අඩු ආහාර ප්‍රමාණයක් )</b></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q5</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 7 நாட்களில் உங்கள் குடித்தனத்தில், உங்களுக்கோ அல்லது உங்கள் வீட்டில் உள்ள எவருக்கோ உணவு அல்லது உணவு வாங்க பணம் இல்லாத காரணத்தால்;</b></p><p><b><font color="#0000ff">சாப்பாடில் பகுதியின் அளவைக் கட்டுப் (வரம்புப்) படுத்தினீர்களா? (மேலேயுள்ளதிலிருந்து வேறுபட்டது: அதாவது சாப்பாடு ஒன்றிக்கு குறைவான உணவு)</font></b></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q6
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q6</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;In your household in the past 7 days, because you or anyone in your household did not have food or money to buy food;</b></font><b style="color: rgb(0, 0, 255);">Restrict consumption by adults in order for small children to eat?</b></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q6</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">ඔබට&nbsp; හෝ&nbsp; ඔබගේ නිවසේ&nbsp; කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් නොමැති වීම නිසා, පසුගිය&nbsp; දින 7 තුළ ඔබගේ නිවසේ,</b><b style="color: rgb(0, 0, 255);">කුඩා දරුවන්ගේ&nbsp; කෑමට සඳහා වැඩිහිටියන් විසින් පරිභෝජනය සීමා කෙරුනේද?</b></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q6</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;</b></font><b style="color: rgb(0, 0, 255);">கடந்த 7 நாட்களில் உங்கள் குடித்தனத்தில், உங்களுக்கோ அல்லது உங்கள் வீட்டில் உள்ள எவருக்கோ உணவு அல்லது உணவு வாங்க பணம் இல்லாத காரணத்தால்;</b></p><p><font color="#0000ff"><b>சிறிய குழந்தைகள் உண்ணுவதற்காக பெரியவர்கள் சாப்பிடுவதை கட்டுப்படுத்தினார்களா?</b></font></p><p></p>
+  - name: BLOCK003
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b style="color: rgb(255, 0, 255);">For the&nbsp;</b><b style="color: rgb(255, 0, 255);">past 30 days</b></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            <p></p><p><font color="#ff00ff"><b>පසුගිය දින 30 සඳහා</b></font></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><font color="#ff00ff"><b>கடந்த 30 நாட்களுக்காக</b></font></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q8
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q8</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p style="text-align: left;"><b style="color: rgb(0, 0, 255);">Sold household assets/goods (radio, furniture, refrigerator, television, etc.)&nbsp;</b></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q8</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">&nbsp;පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>ගෘහ උපකරණ විකිණීම (රේඩියෝ,&nbsp; ගෘහ භාණ්ඩ , ශීතකරණය, රූපවාහිනී&nbsp; ආදිය .)&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q8</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>குடித்தனச் சொத்துக்கள்/பொருட்கள் (வானொலி, தளபாடங்கள், குளிர்சாதனப் பெட்டி, தொலைக்காட்சி, நகைகள் போன்றவை) விற்கப்பட்டது</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q9
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q9</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p style="text-align: left;"><b style="color: rgb(0, 0, 255);">Purchased food/non-food on credit (incur debts)&nbsp;</b></p><p><font color="#0000ff"><b><br></b></font></p><p><font color="#0000ff"><b><br></b></font></p><p><font color="#0000ff"></font></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q9</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>ආහාර / ආහාර නොවන ද්‍රව්‍ය ණයට මිලදී ගැනීම (incur debts)&nbsp;&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q9</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>உணவு/உணவு அல்லாதவை கடனில் (கடன்களை உருவாக்கிறது ) வாங்கியது</b></font></p><p><font color="#0000ff"><b><br></b></font></p><p><font color="#0000ff"><b><br></b></font></p><p><font color="#0000ff"></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q10
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q10</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Spent savings and/or skipped debt payment&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q10</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>ඉතිරි කිරීම් වියදම් කිරීම / ණය වාරික ගෙවීම මග හැරීම</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q10</font><font color="#0000ff">:</font></b><b><font color="#0000ff">&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>சேமிப்பை செலவழித்தது மற்றும் / அல்லது கடனைச் செலுத்துவதைத் தவிர்த்தது</b></font></p><p><br></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q11
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q11</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Sent household members to eat elsewhere&nbsp;</b></font></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q11</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>නිවසේ සාමාජිකයන් ආහාර ලබාගැනීම සඳහා වෙනත් ස්ථානයකට යැවීම&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q11</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;</b></font><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>குடித்தன அங்கத்தவர்களை வேறு இடங்களுக்கு உணவிற்கு அனுப்பியது</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q12
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q12</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Sold productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, etc.)&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q12</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>ආදායම් ඉපයිය හැකි උපකරණ හෝ වාහන විකිණීම (මහන මැෂින්, විල්බැරෝ, බයිසිකල්, කාර්, ආදිය.)&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q12</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>உற்பத்திச் சொத்துக்கள் அல்லது போக்குவரத்துச் சாதனங்கள் (தையல் இயந்திரம், சக்கர வண்டி, சைக்கிள், கார் போன்றவை) விற்கப்பட்டது</b></font></p><p><br></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q13
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q13</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>English : During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p style="text-align: left;"><font color="#0000ff"><b><br></b></font><b style="color: rgb(0, 0, 255);">Reduced expenses on health (including drugs) or education&nbsp;</b></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q13</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">&nbsp;පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>සෞඛ්‍ය වියදම් (බෙහෙත් ඇතුළුව) හෝ අධ්‍යාපන වියදම් අඩු කිරීම</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q13</font><font color="#0000ff">:&nbsp;</font></b><b><font color="#0000ff">&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b><br>உடல்நலம் (மருந்துகள் உட்பட) அல்லது கல்விக்கான செலவுகள் குறைக்கப்பட்டது</b></font></p><p></p>
+  - name: BLOCK004
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><font color="#ff00ff"><b>For&nbsp;the&nbsp;past 30 days</b></font></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b style="color: rgb(255, 0, 255);">For the past 30 days</b></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><font color="#ff00ff"><b>கடந்த 30 நாட்களுக்காக</b></font></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q14
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q14</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Withdrew children from school&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q14</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>දරුවන් පාසලින් ඉවත් කර ගැනීම&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q14</font><font color="#0000ff">:&nbsp;</font></b><b><font color="#0000ff">&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>குழந்தைகளை பள்ளியிலிருந்து விலக்கி வைத்தது</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q15
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q15</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Mortgaged/Sold house or land&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q15</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>නිවාස / ඉඩම්උකස් කිරීම හෝ විකිණීම&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q15</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>வீடு அல்லது நிலத்தை அடமானம் வைத்தது/விற்றது</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q16
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q16</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Begged and/or scavenged (asked strangers for money/food)&nbsp;</b></font></p><p><br></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q16</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>බැගෑපත්වීම සහ / හෝ අයැදීම (අන් අයගෙන් මුදල් / ආහාර ඉල්ලා සීටීම)</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q16</font><font color="#0000ff">:&nbsp;</font></b><b><font color="#0000ff">&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><b style=""><font color="#0000ff">பிச்சையெடுத்தல் மற்றும் / அல்லது உணவை</font></b><font color="#0000ff"><b style="">க்</b><b>&nbsp;</b><b>கேட்ட</b><b>ல்</b><b>&nbsp;(அந்நியர்களிடம் பணம் / உணவு கேட்டது)</b></font></p><p><br></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q17
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q17</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Engaged in illegal income activities (theft, prostitution)&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q17</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;</b></font><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>නීතිවිරෝධී ආදායම් ලබන කාර්යයන්හි නිරත වීම (සොරකම් කිරීම, ගණිකා වෘත්තිය,&nbsp; නීතිවිරෝධී ද්‍රව්‍ය විකිණීම)&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q17</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;</b></font><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>சட்டவிரோத வருமான நடவடிக்கைகளில் (திருட்டு, விபச்சாரத்தில்) ஈடுபட்டது</b></font></p><p><br></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q18
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q18</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Borrow money from a formal lender/bank (including pawning)&nbsp;&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q18</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>අවසර ලත් මුල්‍ය ආයතන/ බැංකු (උකස් ආයතන ඇතුළුව) වලින් මුදල් ණයට ගැනීම</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q18</font><font color="#0000ff">:</font></b><b><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>முறையான கடன் வழங்குபவரிடம் / வங்கியில் (அடகு வைப்பது உட்பட) கடன் வாங்கினது</b></font></p><p><br></p><p></p>
+  - name: BLOCK005
+    conditions:
+      - questionText:
+          EN: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b style="color: rgb(255, 0, 255);">For&nbsp;the&nbsp;past 30 days</b></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b style="color: rgb(255, 0, 255);">For&nbsp;the&nbsp;past 30 days</b></p>
+          TA: |
+            <p></p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><font color="#ff00ff"><b>கடந்த 30 நாட்களுக்காக</b></font></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q19
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q19</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Household have to sell your gold jewelries&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q19</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>රන් ආභරණ විකිණීම&nbsp;</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q19</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>தங்க நகைகளை குடித்தனத்தில் உள்ளவர்கள் விற்க வேண்டியிருந்தது</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q20
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q20</font><font color="#0000ff">:</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Entire household have to migrate&nbsp;</b></font></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q20</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>පවුලේ සියළු සාමාජිකයන්ට සාමාන්‍ය පදිංචිය වෙනස් කිරීමට සිදුවීම</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q20</font><font color="#0000ff">:</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>முழு குடித்தனமும் இடம்பெயர வேண்டி ஏற்பட்டது</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q21
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q21</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Any household member has to migrate abroad&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q21</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>පවුලේ එක් සාමාජිකයෙකු හෝ විදේශගත වීමට සිදුවීම</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q21</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>குடித்தனத்தில் உள்ள யாராவது ஒரு உறுப்பினர் வெளிநாடு செல்ல வேண்டிய நிலை ஏற்பட்டது</b></font></p><p><br></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q22
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q22</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</b></font></p><p><font color="#0000ff"><b>Any household member has to migrate internally&nbsp;</b></font></p><p><br></p><p></p>
+          SI: |
+            <p><b><font color="#ff00ff">FIMSEC2Q22</font><font color="#0000ff">:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">පසුගිය දින 30 තුලදී, ඔබේ නිවසේ කිසිවකුට ආහාර හෝ ආහාර මිලදී ගැනීමට මුදල් හිඟ වීම නිසා, ඔබ නිවසේ කිසිවෙකුට හෝ පහත සඳහන් කාර්යයන් කිරීමට සිදු වූවාද?</b></p><p><font color="#0000ff"><b>පවුලේ එක් සාමාජිකයෙකු හෝ මෙරට වෙනත් ස්ථානයකට යාමට සිදුවීම</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q22</font><font color="#0000ff">:&nbsp;</font></b><b><font color="#0000ff">&nbsp;</font></b><b style="color: rgb(0, 0, 255);">கடந்த 30 நாட்களில், உணவை வாங்க பணமில்லாத அல்லது உணவுப் பற்றாக்குறையின் காரணமாக உங்கள் குடித்தனத்தில் உள்ள யாராவது பின்வரும் செயல்களில் ஈடுபட வேண்டியிருந்ததா?</b></p><p><font color="#0000ff"><b>குடித்தனத்தில் உள்ள யாராவது ஒரு உறுப்பினர் உள்நாட்டில் இடம்பெயர வேண்டிய நிலை ஏற்பட்டது</b></font></p><p></p>
+  - name: FOODINSMODDIC_DICT.SAVESTATUS_FSMOD
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q22</font><font color="#0000ff">: Save Food Insecurity Information</font></b></p><p></p>
+          SI: |
+            <p></p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b><font color="#ff00ff">FIMSEC2Q22</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>ආහාර සුරක්ෂිතතා මොඩියුලයේ&nbsp; තොරතුරු සුරකින්න</b></font></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">FIMSEC2Q22</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>உணவுப் பாதுகாப்பின்மை தகவலைச் சேமிக்குக.&nbsp;</b></font></p><p></p>
+  - name: BLOCK001
+    conditions:
+      - questionText:
+          EN: |
+            <p><p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            </p><p><font color="#ff00ff"><b>For the last 12 months </b></font></p>
+          SI: |
+            <p><p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~FOODINSMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~FOODINSMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            </p><p><b style="color: rgb(255, 0, 255);">For the last 12 months</b></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q1
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><br></p><p></p>
+  - name: FOODINSMODDIC_DICT.FIMSEC2Q7
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 12px;">MRCB</span></b><br></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 12px;">PSU</span></b><br></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 12px;">SSU</span></b><br></td><td><font color="#0000ff"><span style="font-size: 12px;"><b>HH</b></span></font></td></tr><tr><td><span style="font-size: 12px;">~~ FOODINSMODDIC_DICT.A0_MRCB~~</span><br></td><td><span style="font-size: 12px;">~~ FOODINSMODDIC_DICT.PSU~~</span><br></td><td><span style="font-size: 12px;">~~ FOODINSMODDIC_DICT.SSU~~</span><br></td><td><span style="font-size: 12px;">~~ FOODINSMODDIC_DICT.HH~~</span><br></td></tr></tbody></table><p><font color="#0000ff"><b><br></b></font></p><p><b style=""><font color="#ff00ff">FIMSEC2Q7</font><font color="#0000ff">: During the past 30 days, did anyone in your household have to engage in any following activities due to lack of food or money to buy it?</font></b><br></p><p></p>
+...

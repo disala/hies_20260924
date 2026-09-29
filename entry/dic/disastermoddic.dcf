@@ -1,0 +1,553 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=disastermoddic
+Name=DISASTERMODDIC_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=160A4629C7E587382BC2F3F3EE273A1B325EE42DA4551F4A9175A6FC79086F9F
+
+[Languages]
+EN=English
+SI=Sinhala
+TA=Tamil
+
+[Level]
+Label=disastermoddic Level
+Name=DISASTERMODDIC_LEVEL
+
+[IdItems]
+
+[Item]
+Label=ModuleNo
+Name=MODULENO
+Start=2
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=ModuleNo
+Name=MODULENO_VS1
+Value=1;HIES/CHILD Module|ගෘහ ඒකක ආදායම් වියදම් හා ළමා මොඩියුලය
+Value=2;Disaster Module|ආපදා මොඩියුලය
+Value=3;Food Insecurity Module|ආහාර සුරක්ෂිතතාව මොඩියුලය
+Value=4;Food Sheet|ආහාර සම්බන්ධ  වියදම් (Food Sheet) මොඩියුලය
+Value=5;Non-Food Module -Part 1|ආහාර නොවන වියදම් මොඩියුලය -1 කොටස
+Value=6;Non-Food Module -Part 2|ආහාර නොවන වියදම් මොඩියුලය - 2 කොටස
+Value=7;Housing Information|ගෘහ එකක තොරතුරු මොඩියුලය
+Value=8;Final Result|අවසන් ප්‍රතිඵල කේතය
+
+[Item]
+Label=Enumeratorsid
+Name=ENUID
+Start=3
+Len=6
+DataType=Alpha
+
+[Item]
+Label=A0_MRCB
+Name=A0_MRCB
+Start=9
+Len=6
+DataType=Numeric
+
+[Item]
+Label=PSU Number
+Name=PSU
+Start=15
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=SSU Number
+Name=SSU
+Start=18
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HouseHold Number
+Name=HH
+Start=20
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=control
+Name=CONTROL
+RecordTypeValue='2'
+RecordLen=21
+
+[Record]
+Label=M2Disaster_roaster
+Name=M2DISASTER_ROASTER
+RecordTypeValue='1'
+MaxRecords=5
+RecordLen=32
+OccurrenceLabel=1,Flood|ගංවතුර|வெள்ளம் காரணமாக
+OccurrenceLabel=2,Drought|නියඟය|வறட்சி காரணமாக
+OccurrenceLabel=3,Landslides|නාය යෑම්|நிலச்சரிவுகள் காரணமாக
+OccurrenceLabel=4,High wind / cyclone|අධික සුළං / සුළි කුණාටු|உயர் காற்று / சூறாவளி / புயல் காரணமாக
+OccurrenceLabel=5,Wild animal attack|වන සතුන්ගේ විය හැකි හානි|காட்டு விலங்குகளின் தாக்குதல் காரணமாக
+
+[Item]
+Label=M21IFDisaster
+Name=M21IFDISASTER
+Start=22
+Len=1
+DataType=Numeric
+OccurrenceLabel=1,dis1
+
+[ValueSet]
+Label=M21IFDisaster
+Name=M21IFDISASTER_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=M21B_Did affected by any natural disaster at the same place of this housing unit?
+Name=M21B
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21B_Did affected by any natural disaster at the same place of this housing unit?
+Name=M21B_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21C_Property loss
+Name=M21C
+Start=24
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21C_Property loss
+Name=M21C_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21D_Property damage
+Name=M21D
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21D_Property damage
+Name=M21D_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21E_Livestock
+Name=M21E
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21E_Livestock
+Name=M21E_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21F_Crops
+Name=M21F
+Start=27
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21F_Crops
+Name=M21F_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21G_Livelihood
+Name=M21G
+Start=28
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21G_Livelihood
+Name=M21G_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21H_Loss of lives
+Name=M21H
+Start=29
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21H_Loss of lives
+Name=M21H_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21I_Injuries
+Name=M21I
+Start=30
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21I_Injuries
+Name=M21I_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21J_Safe drinking water
+Name=M21J
+Start=31
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21J_Safe drinking water
+Name=M21J_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21Continue
+Name=M21CONTINUE
+Start=32
+Len=1
+DataType=Numeric
+
+[Record]
+Label=other_rec
+Name=OTHER_REC
+RecordTypeValue='5'
+RecordLen=37
+
+[Item]
+Label=M22DOther
+Name=M22DIFOTHER
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22DOther
+Name=M22DIFOTHER_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=M22DOtherSpecify
+Name=M22DOTHER
+Start=23
+Len=15
+DataType=Alpha
+
+[Record]
+Label=M2Disaster_roaster2
+Name=M2DISASTER_ROASTER2
+RecordTypeValue='4'
+RecordLen=30
+OccurrenceLabel=1,Other (Specify)
+
+[Item]
+Label=M21B_Did affected by any natural disaster at the same place of this housing unit?
+Name=M21B1
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21B_Did affected by any natural disaster at the same place of this housing unit?
+Name=M21B_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21C_Property loss
+Name=M21C1
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21C_Property loss
+Name=M21C_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21D_Property damage
+Name=M21D1
+Start=24
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21D_Property damage
+Name=M21D_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21E_Livestock
+Name=M21E1
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21E_Livestock
+Name=M21E_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21F_Crops
+Name=M21F1
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21F_Crops
+Name=M21F_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21G_Livelihood
+Name=M21G1
+Start=27
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21G_Livelihood
+Name=M21G_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21H_Loss of lives
+Name=M21H1
+Start=28
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21H_Loss of lives
+Name=M21H_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21I_Injuries
+Name=M21I1
+Start=29
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21I_Injuries
+Name=M21I_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M21J_Safe drinking water
+Name=M21J1
+Start=30
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M21J_Safe drinking water
+Name=M21J_VS11
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Record]
+Label=M2AdaptiveCapacity
+Name=M2ADAPTIVECAPACITY
+RecordTypeValue='3'
+RecordLen=29
+
+[Item]
+Label=M22D7
+Name=M22D7
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D7
+Name=M22D7_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M22D8_A_Safe location/shelters
+Name=M22D8_A
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D8_A_Safe location/shelters
+Name=M22D8_A_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M22D8_B_Early warning system
+Name=M22D8_B
+Start=24
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D8_B_Early warning system
+Name=M22D8_B_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M22D8_C_Emergency bag(ID,deeds,certificates,medicine etc)
+Name=M22D8_C
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D8_C_Emergency bag(ID,deeds,certificates,medicine etc)
+Name=M22D8_C_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M22D8_D_Regular climate advisories
+Name=M22D8_D
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D8_D_Regular climate advisories
+Name=M22D8_D_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M22D8_E_Evacation routes
+Name=M22D8_E
+Start=27
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D8_E_Evacation routes
+Name=M22D8_E_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M22D9
+Name=M22D9
+Start=28
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D9
+Name=M22D9_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Item]
+Label=M22D10
+Name=M22D10
+Start=29
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=M22D10
+Name=M22D10_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+Value=3;Don't Know / can't say / refuced| නොදනී / කිව නොහැක / ප්‍රතික්ෂේප කරන ලදී.|தெரியாது / சொல்ல முடியாது / மறுக்கப்பட்டது
+
+[Record]
+Label=DisasterMod_Save
+Name=DISASTERMOD_SAVE
+RecordTypeValue='>'
+RecordLen=23
+
+[Item]
+Label=SaveStatus_DMOD
+Name=SAVESTATUS_DISASTERMOD
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=SaveStatus_DMOD
+Name=SAVESTATUS_DISASTERMOD_VS1
+Value=1;Module Completed (Save)|සුරකින්න, සම්පූර්ණ කර ඇත|தொகுதி முடிந்தது (சேமி)
+Value=2;Save But Not Completed|සුරකින්න, නමුත් සම්පූර්ණ කර නැත|சேமிக்கவும் ஆனால் முடிக்கப்படவில்லை
+Value=3;Exit Without Saving|සුරැකීමකින් තොරව පිටවන්න|சேமிக்காமல் வெளியேறவும்
+
+[Item]
+Label=DisasterModComplete
+Name=COMP_DISASTERMOD
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=DisasterModComplete
+Name=COMP_DISASTERMOD_VS1
+Value=1;Completed| සම්පූර්ණ කර ඇත|பூர்த்திசெய்யப்பட்டது
+Value=2;Not Completed| සම්පූර්ණ කර නැත|பூர்த்திசெய்யப்பட்டவில்லை

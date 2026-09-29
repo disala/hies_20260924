@@ -1,0 +1,1501 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=housinginfodic
+Name=HOUSINGINFODIC_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=7BE944670C44E0BF3A8FDC08C646FB3490BBFF2360D40197EF3B5AC4232A1ED4
+
+[Languages]
+EN=English
+TA=Tamil
+SI=Sinhala
+
+[Level]
+Label=housinginfodic Level
+Name=HOUSINGINFODIC_LEVEL
+
+[IdItems]
+
+[Item]
+Label=ModuleNo
+Name=MODULENO
+Start=2
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Enumeratorsid
+Name=ENUID
+Start=3
+Len=6
+DataType=Alpha
+
+[Item]
+Label=A0_MRCB
+Name=A0_MRCB
+Start=9
+Len=6
+DataType=Numeric
+
+[Item]
+Label=PSU Number
+Name=PSU
+Start=15
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=SSU Number
+Name=SSU
+Start=18
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HouseHold Number
+Name=HH
+Start=20
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=housinginfodic Record
+Name=HOUSINGINFODIC_REC
+RecordTypeValue='1'
+RecordLen=21
+
+[Record]
+Label=CONTROL
+Name=CONTROL
+RecordTypeValue='3'
+RecordLen=29
+
+[Item]
+Label=SurveyDate
+Name=SURVEYDAY
+Start=22
+Len=8
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Section - 8 - Housing
+Name=SEC_8_HOUSING
+RecordTypeValue=''
+Required=No
+RecordLen=326
+
+[Item]
+Label=Type of Structure
+Name=S8Q1
+Start=22
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type of Structure
+Name=S8Q1_VS1
+Value=1;Single House  - Single Floor|தனி வீடு – ஒரு தளம்|තනි නිවාස - තනි මහල
+Value=2;Single House  - Double Floor|தனி வீடு – இரு தளங்கள்|තනි නිවාස - දෙමහල්
+Value=3;Single House  - More than double floor|தனி வீடு – இரண்டிற்கு மேற்பட்ட தளங்கள்|තනි නිවාස - මහල 2කට වඩා ඇති
+Value=4;Attached house / Annex|அனெக்ஸ்/ இணை வீடு|අනුයුක්ත නිවස / උප ගෘහය
+Value=5;Flat|அடுக்கு மாடி வீடு|තට්ටු නිවාසය
+Value=6;Condominium  Luxury apartments|சொகுசு மாடி வீடு|සුපිරි තට්ටු නිවාසය
+Value=7;Twin houses|இரட்டை வீடு|යුගල නිවාස
+Value=8;Line room / row house|லயன் வீடு/ வரிசை வீடு|පේලි නිවාස / ලයින් කාමර
+Value=9;Slum / Shanty|குடிசைகள்/ சேரிகள்|පැල්පත් නිවාස / මුඩුක්කු නිවාස
+Value=99;Other (Specify)|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify-TypeofStructure
+Name=OTHERSPECIFY_S8Q1
+Start=24
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Number of bed rooms
+Name=S8Q2
+Start=49
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Number of bed rooms
+Name=S8Q2_VS1
+Value=0:20
+
+[Item]
+Label=Total floor area (Sq. feet)
+Name=S8Q3
+Start=51
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Total floor area (Sq. feet)
+Name=S8Q3_VS1
+Value=1;Less than 100|100 க்குக் குறைவான|100 ට අඩු
+Value=2;100 - less than 250|100 – 250 க்குக் குறைவான|100 - 250 ට අඩු
+Value=3;250 - less than 500|250 – 500 க்குக் குறைவான|250 - 500 ට අඩු
+Value=4;500 - less than 750|500 – 750 க்குக் குறைவான|500 - 750 ට අඩු
+Value=5;750 - less than 1000|750 – 1000 க்குக் குறைவான|750 - 1000 ට අඩු
+Value=6;1000 - less than 1500|1000 – 1500 க்குக் குறைவான|1000 - 1500 ට අඩු
+Value=7;1500 - less than 3000|1500 – 3000 க்குக் குறைவான|1500 - 3000 ට අඩු
+Value=9;3000 & more|3000 மற்றும் அதற்கு மேல்|3000 සහ ඊට වැඩි
+
+[Item]
+Label=Principle materials of Construction (A) Wall
+Name=S8Q4A
+Start=52
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Principle materials of Construction (A) Wall
+Name=S8Q4A_VS1
+Value=1;Bricks|செங்கல்|ගඩොල්
+Value=2;Cement blocks|சீமெந்து கல்|සිමෙන්ති ගල්
+Value=3;Stone/Cube stone|கல்/ கருங்கல்|කළුගල්/කැට ගල්
+Value=4;Cabook|கபொக்|කබොක්
+Value=5;Press soil block|மண் தொகுதியை அழுத்தவும்
+Value=6;Mud|அழுத்தப்பட்ட மண்கல்|මැටි ගල්
+Value=7;Cadjan/Palmyrah|களிமண்/ வேலித்தட்டி|පොල් අතු/තල් අතු
+Value=8;Wooden/Takaram/Asbestos|தென்னோலை/ பனை ஓலை|ලෑලි / ටකරන්/ ඇස්බැස්ටෝස්
+Value=9;Metal Sheet|பலகை/ தகரம்/ அஸ்பெஸ்ட்|ඇළුමිනියම් මිශ්‍ර තහඩු
+Value=10;Other (Specify)|உலோகத்தகடு|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q4A
+Start=54
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Principle materials of Construction (B) floor
+Name=S8Q4B
+Start=79
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Principle materials of Construction (B) floor
+Name=S8Q4B_VS1
+Value=1;Cement|சீமெந்து|සිමෙන්ති
+Value=2;Teraso / Tile/Granite/Timber|ரெறோனா/ தரை ஓடு/ பளிங்குக்கல்/ பலகை பதிக்கப்பட்ட   |ටෙරාසෝ / පිඟන් ගඩොල්/ග්‍රැනයිට්/ලී(සකස් කරන ලද )
+Value=3;Concrete|களிமண்|කොන්ක්‍රීට්
+Value=4;Mud|பலகை|මැටි
+Value=5;Wood|மணல்|ලෑලි
+Value=6;Sand|கொங்கிரீட்|වැලි
+Value=9;Other ( Specify)|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q4B
+Start=80
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Principle materials of Construction (C) Roof
+Name=S8Q4C
+Start=105
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Principle materials of Construction (C) Roof
+Name=S8Q4C_VS1
+Value=1;Tile|ஓடு|උළු
+Value=2;Asbestos|அஸ்பெஸ்டஸ்|ඇස්බැස්ටෝස්
+Value=3;Concrete|கொங்ரீட்|කොන්ක්‍රීට්
+Value=4;Metal sheet|அலுமீனியம் கலந்த தகரம்|ඇළුමිනියම් මිශ්‍ර තහඩු
+Value=5;Takaran|தகரம்|ටකරන්
+Value=6;Cadjan / Palmyrah  / Straw|தென்னோலை/ பனை ஓலை/ வைக்கோல்|පොල් අතු / තල් අතු / පිදුරු ආදිය
+Value=9;Other (Specify)|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q4C
+Start=106
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Tenure
+Name=S8Q5
+Start=131
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Tenure
+Name=S8Q5_VS1
+Value=1;Belong to an occupant|குடித்தன அங்கத்தவர்களுக்கு உரிமை|ගෘහ කාණ්ඩයේ සාමාජිකයෙකුට අයිති
+Value=2;Rent / Lease (Govenrment)|வாடகை/ குத்தகைக்கு அரச உரிமை|කුලියට / බද්දට - රජයට අයිතිය
+Value=3;Rent / Lease (Private)|வாடகை/ குத்தகைக்கு தனியார் உரிமை|කුලියට / බද්දට - පුද්ගලික අයිතිය
+Value=4;Rent Free|வாடகையில்லாமல்|කුලියෙන් නිදහස්
+Value=5;Encroached|அனுமதியற்றவர்களின் வாசிப்பு|අනවසරයෙන් පදිංචි
+Value=9;Other|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=Main source of drinking water
+Name=S8Q6A
+Start=133
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Main source of drinking water
+Name=S8Q6A_VS1
+Value=1;Protected well|பாதுகாப்பான கிணறு |ආරක්ෂිත ළිඳ
+Value=2;Semi - Unprotected well|அரை பாதுகாப்பான கிணறு|අර්ධ ආරක්ෂිත ළිඳ
+Value=3;Unprotected well|பாதுகாப்பற்ற கிணறு |අනාරක්ෂිත ළිඳ
+Value=4;Tube well|குழாய்க் கிணறு  |නල ළිඳ
+Value=5;Bubula / Ulpatha|நீரூற்றுகள் (புபுலா/ உள்பத்தக)  |බුබුල / උල්පත
+Value=6;Tap water ( National water board)|குழாய் நீர் (தேசிய நீர் வழங்கல் மற்றும் வடிகாலமைப்புச்  சபை|නල ජලය ( ජාතික ජල සම්පාදන මණ්ඩලය)
+Value=7;Tap water ( Community based)|குழாய் நீர் (சமூக அடிப்படையிலான நீர் வழங்கல் மற்றும் மேலாண்மை நிறுவனங்கள்)|නල ජලය ( ප්‍රජා මූල සංවිධාන)
+Value=8;Tap water ( Local government)|குழாய் நீர் (உள்ளூராட்சி சபைகள்)|නල ජලය ( පළාත් පාලන ආයතන)
+Value=9;Tap water ( Private water project)|குழாய் நீர் (தனியார் குடிநீர்த் திட்டங்கள்)|නල ජලය ( පුද්ගලික ජල ව්‍යාපෘති)
+Value=10;River/ Tank / Streams|ஆறு/ குளங்கள்/ நீரோடைகள்|වැව් /  ගංගා / ඇල දොල / බුබුල
+Value=11;Rain water|மழை நீர்|වැසි ජලය
+Value=12;Bottled water|போத்தலில் அடைக்கப்பட்ட நீர்|බෝතල් කල ජලය
+Value=13;RO plant / filter|ஆலை/ வடிவெட்டிய|RO පිරිපහදු ජලය
+Value=14;Bowser|பவுசர்/ நடமாடும் வாகனம்|බවුසරය
+Value=99;Other (Specify)|ஏனையவை  (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q6A
+Start=135
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Place to take source of drinking water
+Name=S8Q6B1
+Start=160
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Place to take source of drinking water
+Name=S8Q6B1_VS1
+Value=1;Within premises|வளவினுள்|නිවාස ඒකකය පිහිටි ඉඩම තුල
+Value=2;Outside premises|வளவுக்கு வெளியே|නිවාස ඒකකය පිහිටි ඉඩමෙන් පිටත
+
+[Item]
+Label=Distance to take source of drinking water
+Name=S8Q6B2
+Start=161
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Distance to take source of drinking water
+Name=S8Q6B2_VS1
+Value=0:9999
+
+[Item]
+Label=Time to take source of drinking water
+Name=S8Q6B3
+Start=165
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Time to take source of drinking water
+Name=S8Q6B3_VS1
+Value=0:999
+
+[Item]
+Label=Quality of drinking water
+Name=S8Q6C
+Start=168
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Quality of drinking water
+Name=S8Q6C_VS1
+Value=1;Boiling water|நீரைச் சூடாக்குதல்|ජලය උණු කර ගැනීම
+Value=2;use Chlorine / Bleaching powder|சுத்திகரிப்பான்/ குளோரின் சேர்த்தல்|ක්ලෝරීන් / බ්ලීචින් කුඩු යෙදීම
+Value=3;use R O filter|தலைகீழ் சவ்வூடு பரவல் வடிகட்டி (Reverse Osmosis filter) |ප්‍රති ආසෘත (R O filter) භාවිතා කිරීම
+Value=4;Use other filter|ஏனைய வடிகட்டிகள்|වෙනත් ෆිල්ටරයක් භාවිතා කිරීම
+Value=5;Exposure to the sun|சூரிய கிருமி நீக்கம்  (SODIS)|හිරු එළියට නිරාවරණව තැබීම
+Value=6;Keeping water resting|தானாக கழிவுகளை அடைய விடும் முறை|වතුර නිශ්චල වීමට තැබීම
+Value=7;Filtering through a cloth|துணி மூலம் வடிகட்டல் |රෙදි කඩකින් පෙරීම
+Value=8;Don't use any|ஒரு முறையும் பின்பற்றுவதில்லை|භාවිතා නොකරයි
+Value=9;Other (Specify)|ஏனையவை (விபரிக்கவும்) |වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q6C
+Start=169
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Possible to obtain water throughout the year
+Name=S8Q6D
+Start=194
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Possible to obtain water throughout the year
+Name=S8Q6D_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Which month not possible to get water
+Name=S8Q6E
+Start=195
+Len=12
+DataType=Alpha
+
+[ValueSet]
+Label=Which month not possible to get water
+Name=S8Q6E_VS1
+Value='1           ';Jan|ஜனவரி|ජනවාරි
+Value='2           ';Feb|பெப்ரவரி|පෙබරවාරි
+Value='3           ';March|மார்ச்|මාර්තු
+Value='4           ';April|ஏப்ரல்​|අප්‍රේල්
+Value='5           ';May|மே|මැයි
+Value='6           ';June|யூன்|ජූනි
+Value='7           ';July|யூலே|ජූලි
+Value='8           ';August|ஆகஸ்ட்|අගෝස්තු
+Value='9           ';Sep|செப்தம்பர்|සැප්තැම්බර්
+Value='A           ';Oct|ஒக்டோபர்|ඔක්තෝම්බර්
+Value='B           ';Nov|நவம்பர்|නොවැම්බර්
+Value='C           ';Dec|டிசம்பர்|දෙසැම්බර්
+
+[Item]
+Label=Sufficient for drinking months
+Name=S8Q6F1
+Start=207
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Sufficient for drinking months
+Name=S8Q6F1_VS1
+Value=1:12
+
+[Item]
+Label=Sufficient for bathing motnhs
+Name=S8Q6F2
+Start=209
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Sufficient for bathing motnhs
+Name=S8Q6F2_VS1
+Value=1:12
+
+[Item]
+Label=Toilet facilities
+Name=S8Q7A
+Start=211
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Toilet facilities
+Name=S8Q7A_VS1
+Value=1;Exclusive for the household(within unit)|இக் குடித்தனத்தின் தனி பாவனைக்கு மட்டும் (வீட்டுக் கூறினுள்)|ගෘහ කාණ්ඩයේ තනි ප්‍රයෝජනයට (නිවාස ඒකකය තුල)
+Value=2;Sharing with another household(within unit)|வேறு குடித்தனத்துடன் சேர்ந்து (வீட்டுக் கூறினுள்)|වෙනත් ගෘහ කාණ්ඩ සමඟ හවුලේ (නිවාස ඒකකය තුල)
+Value=3;Exclusive for the household(within premises)|வளவுக்குள் இக் குடித்தனத்தின் தனி பாவனைக்கு மட்டும் (வீட்டுக் கூறிற்கு ​​வெளியே)|ගෘහ කාණ්ඩයේ තනි ප්‍රයෝජනයට (නිවාස ඒකකයෙන් පිටත)
+Value=4;Sharing with another household(within premises)|வேறு குடித்தனத்துடன் சேர்த்து  (வீட்டுக் கூறிற்கு ​​வெளியே)|වෙනත් ගෘහ කාණ්ඩ සමඟ හවුලේ (නිවාස ඒකකයෙන් පිටත)
+Value=5;No toilet to housing unit but sharing with another unit|வீட்டுக்குறுக்கு மலசலகூடம் இல்லை ஆனால் வேறு வீட்டுக்   கூறுடன் சேர்ந்து|නිවාස ඒකකයට වැසිකිලියක් නැති නමුත් වෙනත් නිවාස ඒකකයක් සමඟ හවුලේ
+Value=6;Public toilet|பொது மலசல கூடம்|පොදු / ප්‍රසිද්ධ වැසිකිලිය
+Value=7;Not using toilets|மலசலகூடம் பாவனை செய்வதில்லை|වැසිකිළි භාවිතා නොකරයි
+
+[Item]
+Label=Type of Toilet
+Name=S8Q7B
+Start=212
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type of Toilet
+Name=S8Q7B_VS1
+Value=1;Water seal  with Connected  to Seftic Tank|நீரடைப்புடன் கூடிய கழிவுத் தாங்கியுடன் இணைக்கப்பட்டது  |ජල මුද්‍රිත සෙප්ටික් ටැංකියකට සම්බන්ධ
+Value=2;Water seal  with Connected  to Pit|நீரடைப்புடன் கூடிய மலசல குழியுடன் இணைக்கப்பட்டது|ජල මුද්‍රිත වළකට සම්බන්ධ
+Value=3;Water seal  with Connected to drainage system / a piped sewer|நீரடைப்புடன் கூடிய கழிவகற்றும் தொகுதியுடன் இணைக்கப்பட்டது|ජල මුද්‍රිත මළාපවාහන පද්ධතියකට සම්බන්ධ
+Value=4;Water seal  with Connected to rever / sewer|நீரடைப்புடன் கூடிய ஆற்றுடன் அல்லது வடிகாலுடன்  இணைக்கப்பட்டது|ජල මුද්‍රිත ගඟකට හෝ කාණුවකට සම්බන්ධ
+Value=5;Not Water seal  - Connected to closed Pit|நீரடைப்பு அற்ற மூடிய கழிவறைக்கு ழி |ජල මුද්‍රිත නොවන තට්ටුවක සහිත වළ වැසිකිළි
+Value=6;Not Water seal  - Connected to open Pit|நீரடைப்பற்ற திறந்த கழிவறைக்குழி|ජල මුද්‍රිත නොවන තට්ටුවක් රහිත විවෘත වළ වැසිකිළි
+Value=7;No facilities. Use the jungle or open ground|வசதியற்ற (வயல்களையும் பற்றைகளையும் உபயோகிப்பது)|පහසුකම් නැත. කැලය හෝ විවෘත භූමිය භාවිතා කරයි
+Value=9;Other (Specify)|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q7B
+Start=213
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Is Gully Bowser Service
+Name=S8Q7C1
+Start=238
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Is Gully Bowser Service
+Name=S8Q7C1_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Place to wash hand
+Name=S8Q7C21
+Start=239
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Place to wash hand
+Name=S8Q7C21_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Water to wash hand
+Name=S8Q7C22
+Start=240
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Water to wash hand
+Name=S8Q7C22_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Soap to wash hand
+Name=S8Q7C23
+Start=241
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Soap to wash hand
+Name=S8Q7C23_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Disposal of Garbage
+Name=S8Q8
+Start=242
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Disposal of Garbage
+Name=S8Q8_VS1
+Value=1;Collected by garbage truck|உள்ளூராட்சி நிறுவனங்கள் ஊடாக சேகரித்தல்|පළාත් පාලන ආයතන මගින් එකතු කිරීම
+Value=2;Burned|வீட்டு வளவினுள் எரித்தல்|නිවැසියන් විසින් පිළිස්සීම
+Value=3;Dumped within premises|வீட்டு வளவினுள் புதைத்தல்|නිවැසියන් විසින් තම වත්ත තුල බැහැර කිරීම
+Value=4;Process for fertilizer/collect and use for family farming|உரத்துக்காக பதப்படுத்துதல்|නිවැසියන් විසින් කොම්පෝස්ට් පොහොර සෑදීමට ගැනීම/එකතු කර ගොවිතැන් වලට යෙදීම
+Value=5;Dumped / Throw away out side premises|வீட்டில் உள்ளவர்களால்  நெடுஞ்சாலை/ பாதை/ ஆறு/ கால்வாய்/ கடல்/ ஏரி/ காடுகளில் வீசுதல்|නිවැසියන් විසින් නිවාස පරිශ්‍රයෙන් පිටත විසිකර දැමීම
+Value=6;Give to waste material collector||අපද්‍රව්‍ය එකතුකරන්නෙකුට දීම
+Value=9;Other (Specify)|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q8
+Start=243
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Principle Type of Lighting
+Name=S8Q9
+Start=268
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Text From Clipboard
+Name=S8Q9_VS1
+Value=1;Electricity (National EB)|மின்சாரம் (தேசிய விநியோகத்திலிருந்து) |විදුලිය (ජාතික විදුලි බල)
+Value=2;Electricity (Rural hydro project)|மின்சாரம் (கிராமிய நீர்மின் திட்டங்கள்)|විදුලිය (ග්‍රාමීය යෝජනා ක්‍රම)
+Value=3;Kerosene|மண்ணெண்ணெய்|භූමිතෙල්
+Value=4;Solar energy (connect to grid)|சூரிய சக்தி  (வலயமைப்புடன் இணைப்பு)|සූර්ය බල ශක්තිය (ජාලයකට සම්බන්ධ)
+Value=5;Solar energy|சூரிய சக்தி  |සූර්ය බල ශක්තිය
+Value=6;Bio Gas|உயிரியல் வாயு|ජීව වායුව
+Value=7;Generator|ஜெனரேட்டர்|ජෙනරේටරය
+Value=9;Other (Specify)|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q9
+Start=269
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Principle Type of cooking fuel
+Name=S8Q10
+Start=294
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Principle Type of cooking fuel
+Name=S8Q10_VS1
+Value=1;Fire wood|விறகு|දර
+Value=2;Kerosene|மண்ணெண்ணெய்|භූමිතෙල්
+Value=3;Gas|எரிவாயு|ගෑස්
+Value=4;Electricity|மின்சாரம்|විදුලිය
+Value=5;Saw dust / Paddy husk|விறகுத்தூள்/ உமி|ලී කුඩු / දහයියා
+Value=6;Bio Gas|உயிரியல் வாயு|ජීව වායුව
+Value=7;Other (Specify)|ஏனையவை (விபரிக்கவும்)|වෙනත් (විස්තර කරන්න)
+Value=8;Not relevant|பொருத்தமில்லை|අදාල නොවේ
+
+[Item]
+Label=OtherSpecify
+Name=OTHERSPECIFY_S8Q10
+Start=295
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Collecting fire wood
+Name=S8Q11A
+Start=320
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Collecting fire wood
+Name=S8Q11A_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Place of collecting firewood
+Name=S8Q11B1
+Start=321
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Place of collecting firewood
+Name=S8Q11B1_VS1
+Value=1;Own land|தமது வீடு அமைந்த காணியில்|තමාගේම නිවස පිහිටි ඉඩම
+Value=2;Forest|காடு|කැලය
+Value=3;Other land|ஏனைய காணி|වෙනත් ඉඩමක
+
+[Item]
+Label=Distance to collecting firewood
+Name=S8Q11B2
+Start=322
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Distance to collecting firewood
+Name=S8Q11B2_VS1
+Value=0:9999
+
+[Item]
+Label=Number of units
+Name=S8Q12
+Start=326
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Number of units
+Name=S8Q12_VS1
+Value=1;Below 30 KW|30W  இற்கு குறைவாக|කි.වොට් 30 ට අඩු
+Value=2;30 - 59 KW|30 – 59 KW|කි.වොට් 30 - 59
+Value=3;60 - 89 KW||කි.වොට් 60 - 89
+Value=4;90 - 119 KW||කි.වොට් 90 - 119
+Value=5;Equal or above 120 KW|120 KW மற்றும்  120 KW க்கு கூடிய |කි.වොට් 120 ට වැඩි
+Value=6;Not Using Electricity|மின்சாரம் பாவிப்பதில்லை|විදුලිය භාවිතා නොකරයි
+
+[Record]
+Label=Section - 6A.1.F - HH Equipments
+Name=SECTION_6A_1_F_HH_EQUIPMENTS
+RecordTypeValue='7'
+Required=No
+RecordLen=86
+
+[Item]
+Label=Section 6A
+Name=S6AH
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Section 6A
+Name=S6AH_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=comS6A
+Name=COMS6A
+Start=23
+Len=1
+DataType=Numeric
+
+[Item]
+Label=S6Atag
+Name=S6ATAG
+Start=24
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Radio /  Cassette player	5001
+Name=S6A5001
+Start=25
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Television	5002
+Name=S6A5002
+Start=27
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=V.C.D. / D.V.D	5003
+Name=S6A5003
+Start=29
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Sewing machines	5004
+Name=S6A5004
+Start=31
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Washing machines	5005
+Name=S6A5005
+Start=33
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Refrigerators	5006
+Name=S6A5006
+Start=35
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Cookers	5007
+Name=S6A5007
+Start=37
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Electric fans	5008
+Name=S6A5008
+Start=39
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Telephone (Domestic)	5009
+Name=S6A5009
+Start=41
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Telephone (Smart Mobile)	5010
+Name=S6A5010
+Start=43
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Telephone (normal Mobile)	5011
+Name=S6A5011
+Start=45
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Personal Computers	5012
+Name=S6A5012
+Start=47
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Laptop	5013
+Name=S6A5013
+Start=49
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Tablet	5014
+Name=S6A5014
+Start=51
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Camera / Video camera	5015
+Name=S6A5015
+Start=53
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Air conditioners	5016
+Name=S6A5016
+Start=55
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Internet Connection - HomeYN
+Name=S6A5017YN
+Start=57
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Internet Connection - HomeYN
+Name=S6A5017YN_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Internet Connection - Home	5017
+Name=S6A5017
+Start=59
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Bicycles	5018
+Name=S6A5018
+Start=61
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Motor cycles / Scooters	5019
+Name=S6A5019
+Start=63
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Three wheelers	5020
+Name=S6A5020
+Start=65
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Motor cars / Vans	5021
+Name=S6A5021
+Start=67
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Bus / Lorry / Tipper	5022
+Name=S6A5022
+Start=69
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Tractors (Two wheel)	5023
+Name=S6A5023
+Start=71
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Tractors (Four wheel)	5024
+Name=S6A5024
+Start=73
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Sprayers	5025
+Name=S6A5025
+Start=75
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Threshers	5026
+Name=S6A5026
+Start=77
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Water pumps	5027
+Name=S6A5027
+Start=79
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Compound harvesting machines	5028
+Name=S6A5028
+Start=81
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Boats	5029
+Name=S6A5029
+Start=83
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Fishing nets	5030
+Name=S6A5030
+Start=85
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Section - 6BF - Indebtedness
+Name=SECTION_6B_F_INDEBTEDNESS
+RecordTypeValue=''
+Required=No
+RecordLen=47
+
+[Item]
+Label=S6B
+Name=S6B
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=S6B
+Name=S6B_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=OtherSpecify-(S6B)
+Name=OTHERSPECIFY_S6B
+Start=23
+Len=25
+DataType=Alpha
+
+[Record]
+Label=Section - 6B - Indebtedness
+Name=SECTION_6B_INDEBTEDNESS
+RecordTypeValue=''
+Required=No
+MaxRecords=12
+RecordLen=84
+OccurrenceLabel=1,1. Banks (Government / Private) / Finance institute  (Except Samurdhi Community Based Bank)|வங்கிகளுக்கு (அரசாங்க/ தனியார்) (சமுர்த்தி, சமூகம் சார்ந்த வங்கிகள் தவிர்ந்த)|1. බැංකු වලට  (රජයේ  /පෞද්ගලික ) (සමෘද්ධි ප්‍රජාමූල බැංකුව හැර)
+OccurrenceLabel=2,2. Samurdhi Community Based Bank|சமுர்த்தி, சமூகம் சார்ந்த வங்கிகள்|2. සමෘද්ධි ප්‍රජාමූල බැංකුව
+OccurrenceLabel=3,3. Finance Companies / Leasing Companies|நிதி நிறுவனங்கள்/ லீசிங் நிறுவனங்களுக்கு |3. ෆිනැන්ස් ආයතන/ලීසිං  ආයතන වලට
+OccurrenceLabel=4,4. Own place of work( (Departments, Boards, Private Companies etc)|தான் தொழில்  செய்யும் இடத்துக்கு (திணைக்களம்/ நிர்ணயிக்கப்பட்ட சபை/ வியாபார நிறுவனங்கள்/ தனியார் நிறுவனங்கள் என்பன)|4. තමාගේ ‍සේවා ස්ථානයට (දෙපාර්තමේන්තු/ව්‍යාවස්ථාපිත මණ්ඩල/සමාගම්/පෞද්ගලික ආයතන ආදිය)
+OccurrenceLabel=5,5. Money Lenders|பணம் கடனாகக் கொடுப்பவர்களுக்கு|5. මුදල් ණයට දෙන්නන්ට
+OccurrenceLabel=6,6. Prepayment for credit cards|கடனட்டை மூலமான முன்கொடுப்பனவுகள் (Credit Card) |6. ණය කාඩිපත්( credit cards) මගින්
+OccurrenceLabel=7,7. Retail outlets|சில்லறைக் கடைக்கு|7. සිල්ලර කඩවලට
+OccurrenceLabel=8,8. Mortgage companies|சொத்துக்கள் அடகு வைப்பதினால் (காணிகள், வீடுகள், நகைகள் என்பன)|8. උකස් කටයුතු සිදු කරන ආයතන
+OccurrenceLabel=9,9. Durable goods purchased in installments|இலகு கொடுப்பனவு  முறையில் பெற்ற பொருட்களுக்காக|9. පහසු ගෙවීමේ ක්‍රමයට භාණ්ඩ ලබාදෙන ආයතන
+OccurrenceLabel=10,10. Friends and family (with interest)|நண்பர்களுக்கு மற்றும் குடும்பத்துக்கு (வட்டியுடன்)|10.හිත මිතුරන් හා පවුලේ ඥාතීන්ගෙන් (පොලී සහිතව)
+OccurrenceLabel=11,11. Friends and family (without interest)|நண்பர்களுக்கு மற்றும் குடும்பத்துக்கு (வட்டியில்லாமல்)|11. හිත මිතුරන් හා පවුලේ ඥාතීන්ගෙන් (පොලී රහිතව)
+OccurrenceLabel=12,12. Other (Specify)|ஏனையவை (விபரிக்கவும்)|12. වෙනත්(විස්තර කරන්න)
+
+[Item]
+Label=S6BQ1 - Code|S6BQ1 - Code
+Name=S6BQ1_CODE
+Start=22
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S6BQ1 - Code|S6BQ1 - Code
+Name=S6BQ1_CODE_VS1
+Value=1;Banks (Government / Private)  (Except Samurdhi Community Based Bank)||බැංකු වලට  (රජයේ  /පෞද්ගලික ) (සමෘද්ධි ප්‍රජාමූල බැංකුව හැර)
+Value=2;Samurdhi Community Based Bank||සමෘද්ධි ප්‍රජාමූල බැංකුව
+Value=3;Finance Companies / Leasing Companies||ෆිනැන්ස් ආයතන/ලීසිං  ආයතන වලට
+Value=4;Own place of work (Departments, Boards, Private Companies etc)||තමාගේ ‍සේවා ස්ථානයට (දෙපාර්තමේන්තු/ව්‍යාවස්ථාපිත මණ්ඩල/සමාගම්/පෞද්ගලික ආයතන ආදිය)
+Value=5;Money Lenders||මුදල් ණයට දෙන්නන්ට
+Value=6;Prepayment for credit cards||ණය කාඩිපත්( credit cards) මගින්
+Value=7;Retail outlets||සිල්ලර කඩවලට
+Value=8;Morgage companies||උකස් කටයුතු  සිදු කරන ආයතන
+Value=9;Durable goods purchased||පහසු ගෙවීමේ ක්‍රමයට භාණ්ඩ  ලබාදෙන  ආයතන
+Value=10;Friends & Family (with interest)||හිත මිතුරන් හා පවුලේ ඥාතීන්ගෙන් (පොලී සහිතව)
+Value=11;Friends & Family (without interest)||හිත මිතුරන් හා පවුලේ ඥාතීන්ගෙන් (පොලී රහිතව)
+Value=12;Other||වෙනත්(විස්තර කරන්න)
+
+[Item]
+Label=S6BQ2-Yes-No|S6BQ2-YesNo
+Name=S6BQ2_YN
+Start=24
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S6BQ2-YesNo|S6BQ2-YesNo
+Name=S6BQ2_YN_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=S6BQ3 - Amount|S6BQ3- Amount
+Name=S6BQ3_AMOUNT
+Start=25
+Len=8
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S6BQ3 - Amount|S6BQ3- Amount
+Name=S6BQ3_AMOUNT_VS1
+Value=0:99999999
+
+[Item]
+Label=S6BQ4 - Monthly|S6BQ4 - MonthlyTerm
+Name=S6BQ4_MONTHLYTERM
+Start=33
+Len=8
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S6BQ4 - Monthly
+Name=S6BQ4_MONTHLYTERM_VS1
+Value=0:99999999
+
+[Item]
+Label=S6BQ5- Reason|S6BQ5 - Reason|S6BQ5- Reason
+Name=S6BQ5_REASON
+Start=41
+Len=13
+DataType=Alpha
+
+[ValueSet]
+Label=S6BQ5- Reason|S6BQ5 - Reason
+Name=S6BQ5_REASON_VS1
+Value='1            ';For Economic Activity|பொருளாதார நடவடிக்கைக்காக|ආර්ථක කටයුත්තක් සඳහා
+Value='2            ';Build A New Building/House Or Repairing|வீடு கட்டுவதற்கு/ புதுப்பிப்பதற்கு|නිවාස  ගොඩනැගිලි  ඉදි කිරීම / අලුත්වැඩියා කිරීමට
+Value='3            ';Purchase Land/House/Vehicle|நிலம்/ வீடு/ வாகனம் வாங்குவதற்காக|ඉඩම්/නිවාස/වාහන මිලදී  ගැනීමට
+Value='4            ';Purchase Domestic Equipments|வீட்டு உபகரணங்களை வாங்குவதற்கு|ගෘහස්ථ උපකරණ මිලදී ගැනීමට
+Value='5            ';Loan Settlements|முன்னர் பெற்ற கடனை திருப்பிக் கொடுக்க|කලින් ලබාගත් ණය පියවීමට
+Value='6            ';For Foods|உணவுக்காக|ආහාර  අවශ්‍යතා සඳහා
+Value='7            ';For Non Food|உணவு அல்லாதவைக்காக|ආහාර නොවන අවශ්‍යතා සඳහා
+Value='8            ';For Health|சுகாதாரம்/ சிகிச்சை இற்காக|සෞඛ්‍ය /ප්‍රතිකාර සඳහා
+Value='9            ';For Education|கல்விக்காக|අධ්‍යාපනය සඳහා
+Value='A            ';Migration|இடம்பெயர்விற்காக|විදෙස් රටකට සංක්‍රමණය වීම සඳහා
+Value='B            ';Other (Specify)|வேறு (குறிப்பிடவும்)|වෙනත්  (විස්තර කරන්න)
+
+[Item]
+Label=S6BQ5-ReasonOther
+Name=S6BQ5_REASONOTHER
+Start=54
+Len=30
+DataType=Alpha
+
+[Item]
+Label=S6B - Continue|S6B- Continue
+Name=S6BCONTINUE
+Start=84
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Section-7-control
+Name=SECTION_7_CONTROL
+RecordTypeValue='4'
+RecordLen=22
+
+[Item]
+Label=section7_info
+Name=SECTION7_INFO
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=section7_info
+Name=SECTION7_INFO_VS1
+Value=1;Yes|ஆம்|ඔව් 
+Value=2;No|இல்லை|නැත
+
+[Record]
+Label=Section-7.1 - Primary Facilities
+Name=SECTION_7_1_PRIMARY_FACILITIES
+RecordTypeValue=''
+Required=No
+MaxRecords=18
+RecordLen=29
+OccurrenceLabel=1,Bus Halt (nearest)|அண்மையில் உள்ள பஸ் நிறுத்துமிடம் (bus Halt)|ළඟම  ඇති බස් නැවතුම(Bus Halt )
+OccurrenceLabel=2,Pre school / Montessori|சிறுவர் பாடசாலை/ பாலர் பாடசாலை |ළදරු  පාසල/පෙර පාසල
+OccurrenceLabel=3,Primary School|ஆரம்ப பாடசாலை|ප්‍රාථමික විද්‍යාලය
+OccurrenceLabel=4,Maha Vidyalaya  / M.M.V. / National  school|மகா வித்தியாலயம்/ ம.ம.வி./ தேசிய பாடசாலை|මහා විද්‍යාලය/ම.ම.වි./ජාතික  පාසල
+OccurrenceLabel=5,Base Hospital / Teaching Hospital / District Hospital|ஆதார/ போதனா/ மாவட்ட வைத்தியசாலை |මූලික රෝහල/ශික්‍ෂණ රෝහල/දිස්ත්‍රික් රෝහල
+OccurrenceLabel=6,Primary medical care unit (PMC)|முதன்மை மருத்துவ நிலையம் (PMC)|ප්‍රාථමික  වෛද්‍ය මධ්‍යස්ථානය
+OccurrenceLabel=7,Government Dispensary|அரசாங்க மருந்தகம்|රජයේ  ඩිසපැන්සරිය
+OccurrenceLabel=8,Private Dispensary|தனியார் மருந்தகம்|පෞද්ගලික  ඩිසපැන්සරිය
+OccurrenceLabel=9,Clinic (Maternity / Infancy)|பிரசவ சிகிச்சை நிலையம்/ சிறுவர் சிகிச்சை நிலையம்|මාතෘ/ළදරු සායන මධ්‍යස්ථානය
+OccurrenceLabel=10,M. O. H. Office|சுகாதார வைத்திய  உத்தியோகத்தர் அலுவலகம்|සෞඛ්‍ය  වෛද්‍ය නිලධාරි කාර්යාලය
+OccurrenceLabel=11,M.C. / U. C. / P. S.|மாநகர சபை/ நகர சபை/ பிரதேச சபை|මහ නගර සභා/නගර සභා/ප්‍රාදේශිය සභාව
+OccurrenceLabel=12,Divisional Secretariat office|பிரதேச செயலாளர் அலுவலகம்|ප්‍රාදේශිය  ලේකම්  කාර්යාලය
+OccurrenceLabel=13,G. N. Office|கி.உ. அலுவலகம்|ග්‍රා.නි.කාර්යාලය
+OccurrenceLabel=14,Post office / Sub post office|தபால் அலுவலகம்/ உப தபால் அலுவலகம்|තැපැල්/උප තැපැල් කාර්යාලය
+OccurrenceLabel=15,Bank (Govt. / Private)|வங்கி (அரசாங்க/ தனியார்)|රජයේ/පෞද්ගලික  බැංකුව
+OccurrenceLabel=16,ATM|ATM இயந்திரம்|ATM  මධ්‍යස්ථානය
+OccurrenceLabel=17,Agrarian Service Center|கமநலச் சேவை நிலையம்|ගොවිජන සේවා මධ්‍යස්ථානය
+OccurrenceLabel=18,Public child park / playground|பொது சிறுவர் பூங்கா/ விளையாட்டு மைதானம்|මහජන ළමා උදද්‍යානය/ක්‍රීඩාංගනය
+
+[Item]
+Label=S71Q1 - Code
+Name=S71Q1_CODE
+Start=22
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S71Q1 - Code
+Name=S71Q1_CODE_VS1
+Value=1;Bus Halt (nearest)||ළඟම  ඇති බස් නැවතුම(Bus Halt )
+Value=2;Pre school / Montessori||ළදරු  පාසල/පොර පාසල
+Value=3;Primary School||ප්‍රාථමික විද්‍යාලය
+Value=4;Maha Vidyalaya  / M.M.V. / National  school||මහා විද්‍යාලය/ම.ම.වි./ජාතික  පාසල
+Value=5;Base Hospital / Teaching Hospital / District Hospital||මූලික රෝහල/ශික්‍ෂණ රෝහල/දිස්ත්‍රික් රෝහල
+Value=6;Primary Medical Care Unit||ප්‍රාථමික  වෛද්‍ය මධ්‍යස්ථානය
+Value=7;Government Dispensary||රජයේ  ඩිසපැන්සරිය
+Value=8;Private Dispensary||පෞද්ගලික  ඩිසපැන්සරිය
+Value=9;Clinic (Maternity / Infancy)||මාතෘ/ළදරු සායන මධ්‍යස්ථානය
+Value=10;M. O. H. Office||සෞඛ්‍ය  වෛද්‍ය නිලධාරි කාර්යාලය
+Value=11;M.C. / U. C. / P. S||මහ නගර සභා/නගර සභා/ප්‍රාදේශිය සභාව
+Value=12;Divisional Secretariat office||ප්‍රාදේශිය  ලේකම්  කාර්යාලය
+Value=13;G. N. Office||ග්‍රා.නි.කාර්යාලය
+Value=14;Post office / Sub post office||තැපැල්/උප තැපැල් කාර්යාලය
+Value=15;Bank (Govt. / Private)||රජයේ/පෞද්ගලික  බැංකුව
+Value=16;ATM||ATM  මධ්‍යස්ථානය
+Value=17;Agrarian Service Center||ගොවිජන සේවා මධ්යස්ථානය
+Value=18;Public Child Park / Playground||මහජන ළමා උදද්‍යානය/ක්‍රීඩාංගනය
+
+[Item]
+Label=S71Q2 - Distance
+Name=S71Q2_DISTANCE
+Start=24
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S71Q2 - Distance
+Name=S71Q2_DISTANCE_VS1
+Value=0:99
+
+[Item]
+Label=S71Q3 - Time
+Name=S71Q3_TIME
+Start=26
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S71Q2 - Distance
+Name=S71Q3_TIME_VS1
+Value=0:999
+
+[Item]
+Label=S6B - Continue|S6B- Continue|S71 - Continue
+Name=S71CONTINUE
+Start=29
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Section - 7.2 - Primary Facilities
+Name=SECTION_7_2_PRIMARY_FACILITIES
+RecordTypeValue=''
+Required=No
+RecordLen=24
+
+[Item]
+Label=Access to Primary facilities :Electricity
+Name=S72Q11
+Start=22
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Access to Primary facilities :Electricity
+Name=S72Q1_VS11
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Access to Primary facilities :Telephone
+Name=S72Q21
+Start=23
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Access to Primary facilities :Telephone
+Name=S72Q2_VS11
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=Access to Primary facilities :pipe borne line
+Name=S72Q31
+Start=24
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Access to Primary facilities :pipe borne line
+Name=S72Q3_VS11
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Record]
+Label=Section - 9 - is a land
+Name=SECTION_9_IS_A_LAND
+RecordTypeValue=''
+Required=No
+RecordLen=22
+
+[Item]
+Label=Agricultural Holdings & Livestock
+Name=S91Q0
+Start=22
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Agricultural Holdings & Livestock
+Name=S91Q0_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Record]
+Label=Section - 9F - Land Types
+Name=SECTION_9F_LAND_TYPES
+RecordTypeValue=''
+RecordLen=24
+
+[Item]
+Label=S9F
+Name=S9F
+Start=22
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=S9F
+Name=S9F_VS1
+Value='1  ';Paddy Land|வயல் நிலம்|කුඹුරු ඉඩම්
+Value='2  ';High Land|மேட்டு நிலம்|ගොඩ ඉඩම්
+Value='3  ';Land area with occupied housing units|குடியிருக்கும் குடித்தனக்கூறுடன் நிலப் பிரதேசம்|නිවස පිහිටි භූමි  ප්‍රමාණය
+
+[Record]
+Label=Section - 9.1 - Land and animal
+Name=SEC_9_LAND_ANIMAL
+RecordTypeValue=''
+Required=No
+MaxRecords=3
+RecordLen=34
+
+[Item]
+Label=Land Type
+Name=LANDCODE
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Land Type
+Name=LANDCODE_VS1
+Value=1;Paddy Land|வயல் நிலம்|කුඹුරු ඉඩම්
+Value=2;High Land|மேட்டு நிலம்|ගොඩ ඉඩම්
+Value=3;Land area with occupied housing units|குடியிருக்கும் குடித்தனக்கூறுடன் நிலப் பிரதேசம்|නිවස පිහිටි භූමි  ප්‍රමාණය
+
+[Item]
+Label=Owned Acres
+Name=S921A
+Start=23
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Owned Acres
+Name=S921A_VS1
+Value=0:999
+
+[Item]
+Label=Owned Rudes
+Name=S921R
+Start=26
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Owned Rudes
+Name=S921R_VS1
+Value=0:3
+
+[Item]
+Label=Owned Perches
+Name=S921P
+Start=27
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Owned Perches
+Name=S921P_VS1
+Value=0:39
+
+[Item]
+Label=Cultivated Acres
+Name=S922A
+Start=29
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Cultivated Acres
+Name=S922A_VS1
+Value=0:999
+
+[Item]
+Label=Cultivated Rudes
+Name=S922R
+Start=32
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Cultivated Rudes
+Name=S922R_VS1
+Value=0:3
+
+[Item]
+Label=Cultivated Perches
+Name=S922P
+Start=33
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Cultivated Perches
+Name=S922P_VS1
+Value=0:39
+
+[Record]
+Label=Section - 9.2.F - Livestock
+Name=SECTION_9_2_F_LIVESTOCK
+RecordTypeValue=''
+Required=No
+RecordLen=42
+
+[Item]
+Label=S9BQ1
+Name=S9BQ1
+Start=22
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Usual Residence
+Name=S9BQ1_VS1
+Value=1;Yes|ஆம் |ඔව්
+Value=2;No|இல்லை|නැත
+
+[Item]
+Label=S9B
+Name=S9B
+Start=23
+Len=20
+DataType=Alpha
+
+[ValueSet]
+Label=S9B
+Name=S9B_VS1
+Value='9201                ';Cattle / Buffaloes|மாடு/ எருமை|එළහරක්/ මී හරක්
+Value='9202                ';Goats / Sheep|ஆடு/ செம்மறியாடு|එළුවන්/බැටළුවන්
+Value='9203                ';Swine (Pigs)|பன்றி|ඌරන්
+Value='9204                ';Poultry|கோழி|කුකුළන්
+Value='9205                ';Other|ஏனையவை|වෙනත්
+
+[Record]
+Label=Section-9.2-Owned Livestocks
+Name=SECTION_9_2_OWNED_LIVESTOCKS
+RecordTypeValue=''
+Required=No
+MaxRecords=5
+RecordLen=29
+
+[Item]
+Label=S92.LCode
+Name=S92_LCODE
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S92.LCode
+Name=S92_LCODE_VS1
+Value=9201;Cattle / Buffaloes|மாடு/ எருமை|එළහරක්/ මී හරක්
+Value=9202;Goats / Sheep|ஆடு/ செம்மறியாடு|එළුවන්/බැටළුවන්
+Value=9203;Swine (Pigs)|பன்றி|ඌරන්
+Value=9204;Poultry|கோழி|කුකුළන්
+Value=9205;Other|ஏனையவை|වෙනත්
+
+[Item]
+Label=S92.LQty
+Name=S92_LQTY
+Start=26
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=S92.LQty
+Name=S92_LQTY_VS1
+Value=1:1000
+
+[Record]
+Label=SaveHHrecMod
+Name=SAVEHHRECMOD
+RecordTypeValue='2'
+RecordLen=23
+
+[Item]
+Label=SaveStatus_HMOD
+Name=SAVESTATUS_HMOD
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=SaveStatus_HMOD
+Name=SAVESTATUS_HMOD_VS1
+Value=1;Module Completed (Save)|தொகுதி பூர்த்தி செய்யப்பட்டுள்ளது  (சேமிக்கவும்)|සුරකින්න, සම්පූර්ණ කර ඇත
+Value=2;Save But Not Completed|சேமிக்கவும் ஆனால் பூர்த்தி செய்யப்படவில்லை|සුරකින්න, නමුත් සම්පූර්ණ කර නැත
+Value=3;Exit Without Saving|சேமிக்காமல் வெளியேறவும்|සුරැකීමකින් තොරව පිටවන්න
+
+[Item]
+Label=HInfoModComplete
+Name=COMP_HINFOMOD
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=HInfoModComplete
+Name=COMP_HINFOMOD_VS1
+Value=1;Complete
+Value=2;Not Completed

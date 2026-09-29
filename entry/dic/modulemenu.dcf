@@ -1,0 +1,184 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=modulemenu
+Name=MODULEMENU_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=694F7C1E77397F5A0FABC82AEB50427ADC2DA9ADCCAAAD19699926E620CD7759
+
+[Languages]
+EN=English
+SI=Sinhala
+TA=Tamil
+
+[Level]
+Label=modulemenu Level
+Name=MODULEMENU_LEVEL
+
+[IdItems]
+
+[Item]
+Label=ModuleNo
+Name=MODULENO
+Start=2
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Enumeratorsid
+Name=ENUID
+Start=3
+Len=6
+DataType=Alpha
+
+[Item]
+Label=A0_MRCB
+Name=A0_MRCB
+Start=9
+Len=6
+DataType=Numeric
+
+[Item]
+Label=PSU Number
+Name=PSU
+Start=15
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=SSU Number
+Name=SSU
+Start=18
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HouseHold Number
+Name=HH
+Start=20
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=modulemenu Record
+Name=MODULEMENU_REC
+RecordTypeValue='1'
+RecordLen=380
+
+[Item]
+Label=Interview Status
+Name=INTERVIEW_STATUS
+Start=22
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Interview Status
+Name=INTERVIEW_STATUS_VS1
+Value=-1;Back to Main Menu|ප්‍රධාන මෙනුව වෙත ආපසු යන්න|பிரதான மெனுவிற்கு திரும்புக
+Value=1;Suitable Respondent Available|සුදුසු ප්‍රතිචාරකයෙකු ඇත|பொருத்தமான பதிலளிப்பவர் இருக்கிறார்
+Value=2;Deferred|කල් දමන ලදී|ஒத்திவைக்கப்பட்டது
+Value=3;Not competent respondent at home|සුදුසු ප්‍රතිචාරකයෙකු නොමැත.|வீட்டில் தகுந்த பதிலளிப்பவர் இல்லை
+Value=4;Refused|ප්‍රතික්ෂේප කරන ලදී.|நிராகரிக்கப்பட்டுள்ளது
+Value=5;Housing unit is temporarily closed|නිවාස ඒකකය තාවකාලිකව වසා ඇත|வீட்டுக்கூறு தற்காலிகமாக மூடப்பட்டுள்ளது
+Value=6;Housing unit is demolished / Vacant/empty|නිවාස ඒකකය කඩා දමා ඇත. / හිස් ඒකකයකි|வீட்டுக்கூறு உடைக்கப்பட்டுள்ளது/ காலியாகவுள்ளது/ வெற்றிடமாகவுள்ளது
+Value=7;Presently not a housing unit|දැනට නිවාස ඒකකයක් නොවේ|தற்போது வீட்டுக் கூறு ஒன்றல்ல
+Value=9;Other|වෙනත්|ஏனைவை (அடுத்து விபரிக்கவும்) _________________
+
+[Item]
+Label=Interview Status_OtherSpecify
+Name=INT_STATUS_OTHERSPECIFY
+Start=24
+Len=50
+DataType=Alpha
+
+[Item]
+Label=selectModule
+Name=SELECTMODULE
+Start=74
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=selectModule
+Name=SELECTMODULE_VS1
+Value=1;HIES/CHILD Module|ගෘහ ඒකක ආදායම් වියදම් හා ළමා මොඩියුලය|HIES/CHILD தொகுதி
+Value=2;Disaster Module|ආපදා මොඩියුලය|பேரிடர் தொகுதி
+Value=3;Food Insecurity Module|ආහාර සුරක්ෂිතතාව මොඩියුලය|உணவுப் பாதுகாப்பின்மை தொகுதி
+Value=4;Food Sheet|ආහාර සම්බන්ධ  වියදම් (Food Sheet) මොඩියුලය|உணவு தாள்
+Value=5;Non-Food Module -Part 1|ආහාර නොවන වියදම් මොඩියුලය -1 කොටස|உணவு அல்லாத தொகுதி -பகுதி 1
+Value=6;Non-Food Module -Part 2|ආහාර නොවන වියදම් මොඩියුලය - 2 කොටස|உணவு அல்லாத தொகுதி -பகுதி 2
+Value=7;Housing Information|ගෘහ එකක තොරතුරු මොඩියුලය|வீட்டு தகவல்
+Value=8;Final Result|අවසන් ප්‍රතිඵල කේතය|இறுதி முடிவு
+Value=9;Module Completeness Report|මොඩියුලයේ සම්පූර්ණත්වය පිළිබඳ වාර්තාව|தொகுதி பூர்த்தியான அறிக்கை
+
+[Item]
+Label=CompleteMCode
+Name=COMPLETEMCODE
+Start=76
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CompleteMCode
+Name=COMPLETEMCODE_VS1
+Value=1;Completed|සම්පුර්ණ  කර ඇත|பூர்த்தி செய்யப்பட்டுள்ளது
+Value=2;Patially Completed|කොටසක් සම්පුර්ණ  කර ඇත|பகுதி பூர்த்தி செய்யப்பட்டுள்ளது
+Value=3;Not Completed|සම්පුර්ණ  කර නැත|முடிக்கப்படவில்லை
+
+[Item]
+Label=Final Result - specify
+Name=FINAL_RESULTOTHER
+Start=77
+Len=300
+DataType=Alpha
+
+[Item]
+Label=saveMenudata
+Name=SAVEMENUDATA
+Start=377
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=saveMenudata
+Name=SAVEMENUDATA_VS1
+Value=1;Yes - Save for future Use|ඔව් - අනාගත භාවිතය සඳහා සුරකින්න|ஆம் - எதிர்கால பயன்பாட்டிற்காக சேமிக்கவும்
+Value=2;No - Exit without Saving|නැත - සුරැකීමකින් තොරව පිටවන්න|இல்லை - சேமிக்காமல் வெளியேறவும்
+
+[Item]
+Label=EndM
+Name=ENDM
+Start=378
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=EndM
+Name=ENDM_VS1
+Value=1;endm
+
+[Item]
+Label=SummaryRep
+Name=SUMMARYREP
+Start=379
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=SummaryRep
+Name=SUMMARYREP_VS1
+Value=-1;Go Back
+Value=1;HIES/CHILD Module Report|ගෘහ ඒකක ආදායම් වියදම් හා ළමා මොඩියුලය|HIES/CHILD தொகுதி
+Value=2;Disaster Module Report|ආපදා මොඩියුලය|பேரிடர் தொகுதி
+Value=3;Food Insecurity Module Report|ආහාර සුරක්ෂිතතාව මොඩියුලය|உணவுப் பாதுகாப்பின்மை தொகுதி
+Value=4;Food Sheet Report|ආහාර සම්බන්ධ  වියදම් (Food Sheet) මොඩියුලය|உணவு தாள்
+Value=5;Non-Food Module -Part 1 Report|ආහාර නොවන වියදම් මොඩියුලය -1 කොටස|உணவு அல்லாத தொகுதி -பகுதி 1
+Value=6;Non-Food Module -Part 2 Report|ආහාර නොවන වියදම් මොඩියුලය - 2 කොටස|உணவு அல்லாத தொகுதி -பகுதி 2
+Value=7;Housing Information Report|ගෘහ එකක තොරතුරු මොඩියුලය|வீட்டு தகவல்

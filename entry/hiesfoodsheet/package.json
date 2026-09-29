@@ -1,0 +1,29 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.7",
+  "name": "FoodsheetEntry",
+  "description": "",
+  "buildTime": "2024-11-28T04:21:40Z",
+  "files": [
+    {
+      "path": ".\\FoodsheetEntry.pen",
+      "signature": "D8CD042BA35E204421543B4C1A9C9A39"
+    },
+    {
+      "path": ".\\FoodsheetEntry.pff",
+      "signature": "84E1DE808E53C6A466B48200079F1E1B"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": "..\\..\\dic\\foodsheetdic.dcf",
+      "uploadForSync": true
+    }
+  ],
+  "deployment": {
+    "type": "LocalFolder",
+    "cswebUrl": "http:\/\/",
+    "ftpUrl": "ftp:\/\/",
+    "localFolderPath": "..\\hiesfoodsheet"
+  }
+}

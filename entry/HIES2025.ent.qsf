@@ -1,0 +1,127 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+  - name: SI
+    label: සිංහල
+  - name: TA
+    label: தமிழ்
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: MENU_DICT.ENUID
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2026</font></b></p>
+          SI: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2026</font></b></p>
+          TA: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b><span style="font-size: 13px;"><font color="#ff0000">Version 13 - 2025.12.22</font></span></b></p><p><font color="#0000ff"><b>கணக்கெடுப்பாளரின் பயனர் பெயரை உள்ளிடுக.</b></font></p>
+  - name: MENU_DICT.MAINMENU
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2026</font></b></p>
+          SI: |
+            <p style="text-align: center; "><font color="#0000ff"><b><span style="font-size: 18px;">ගෘහ ඒකක&nbsp; ආදායම් සහ වියදම් සමීක්ෂණය</span></b></font><br></p><p style="text-align: center; "><b><font color="#0000ff">2026</font></b></p>
+          TA: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p>
+            <p><b><span style="font-size: 13px;"><font color="#ff0000">Version 13 - 2025.12.22</font></span></b><span style="font-size: 11px;">﻿</span><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b>HIES பிரதான பட்டியல் (மெனு)</b></font></p><p></p><br>
+  - name: MENU_DICT.SELECTMRCB
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><b style=""><font color="#ff00ff">Select MRCB Number</font></b></p><p></p><p></p><p></p><p></p><br>
+          SI: |
+            <p style="text-align: center; "><b style="color: rgb(0, 0, 255);"><span style="font-size: 18px;">ගෘහ ඒකක&nbsp; ආදායම් සහ වියදම් සමීක්ෂණය</span></b><br></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><b style=""><font color="#ff00ff">MRCB අංකය තෝරන්න&nbsp;</font></b><br></p><p></p><p></p><p></p><p></p><br>
+          TA: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b>MRCB இலக்கத்தை தெரிவுசெய்க</b></font></p>
+  - name: MENU_DICT.SELECTPSU
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><b style=""><font color="#ff00ff">Select Primary Sampling Unit (PSU)</font></b></p><p></p><p></p><p></p><p></p><br>
+          SI: |
+            <p style="text-align: center; "><b style="color: rgb(0, 0, 255);"><span style="font-size: 18px;">ගෘහ ඒකක&nbsp; ආදායම් සහ වියදම් සමීක්ෂණය</span></b><br></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b style="">ප්‍රාථමික නියැදි ඒකක අංකය&nbsp;</b><b>තෝරන්න&nbsp;</b><br></font></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><br>
+          TA: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b>ஆரம்ப மாதிரிக் கூறின் இலக்கத்தை தெரிவுசெய்க (PSU)</b></font></p><p></p><p></p><p></p><p></p><br>
+  - name: MENU_DICT.SELECTSSU
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><b style=""><font color="#ff00ff">Select Secondary Sampling Unit (SSU)</font></b></p><p></p><p></p><p></p><p></p><br>
+          SI: |
+            <p style="text-align: center; "><b style="color: rgb(0, 0, 255);"><span style="font-size: 18px;">ගෘහ ඒකක&nbsp; ආදායම් සහ වියදම් සමීක්ෂණය</span></b><br></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b style="">ද්විතියික නියැදි ඒකක අංකය&nbsp;</b><b>තෝරන්න&nbsp;</b><br></font></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><br>
+          TA: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b>இரண்டாவது மாதிரிக் கூறின் இலக்கத்தை தெரிவுசெய்க (SSU)</b></font></p><p></p><p></p><p></p><p></p><br>
+  - name: MENU_DICT.SELECTHH
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><b style=""><font color="#ff00ff">Select Household Number</font></b></p><p></p><p></p><p></p><p></p><br>
+          SI: |
+            <p style="text-align: center; "><b style="color: rgb(0, 0, 255);"><span style="font-size: 18px;">ගෘහ ඒකක&nbsp; ආදායම් සහ වියදම් සමීක්ෂණය</span></b><br></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b style="">ගෘහ ඒකක අංකය&nbsp;</b><b>තෝරන්න&nbsp;</b></font><br></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><br>
+          TA: |
+            <p style="text-align: center; "><b style=""><font color="#0000ff">குடித்தனக் கூறின் வருமானம் மற்றும் செலவு பற்றிய அளவீடு </font></b></p><p style="text-align: center; "><b><font color="#0000ff">2025</font></b></p><p><b style=""><font color="#ff00ff"><br></font></b></p>
+            <p><font color="#a300c0"></font></p><p></p><p></p>
+            
+            <p><font color="#ff00ff"><b>குடித்தனக் கூறின் இலக்கத்தை தெரிவுசெய்க (HHU)</b></font></p><p></p><p></p><p></p><p></p><br>
+...

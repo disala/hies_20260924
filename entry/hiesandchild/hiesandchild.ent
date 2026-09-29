@@ -1,0 +1,28 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HIESANDCHILD
+Name=HIESANDCHILD
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CenterForms=Yes
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\hiesandchild.ent.apc
+[Message]
+File=.\hiesandchild.ent.mgf
+[Help]
+File=.\hiesandchild.ent.qsf
+[Forms]
+File=.\hiesandchild.fmf
+[Dictionary Types]
+Dict-Type=..\dic\hiesandchilddic.dcf,Input,.\hiesandchild.fmf

@@ -1,0 +1,23 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=USER
+Name=USER
+AppType=DataEntry
+OperatorID=No
+CAPI=Yes
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\user.ent.apc
+[Message]
+File=.\user.ent.mgf
+[Help]
+File=.\user.ent.qsf
+[Forms]
+File=.\user.fmf
+[Dictionary Types]
+Dict-Type=..\dic\users.dcf,Input,.\user.fmf

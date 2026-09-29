@@ -1,0 +1,2397 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=nonfooddic
+Name=NONFOODDIC_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=0C21ADECB23B0418D26DD34EAD73C85D0AB35C392566B323BB89013DBB818765
+
+[Languages]
+EN=English
+SI=Sinhala
+TA=Tamil
+
+[Level]
+Label=nonfooddic Level
+Name=NONFOODDIC_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Moduleno
+Name=MODULENO
+Start=2
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Moduleno
+Name=MODULENO_VS1
+Value=1:9
+
+[Item]
+Label=Enumeratorsid
+Name=ENUID
+Start=3
+Len=6
+DataType=Alpha
+
+[Item]
+Label=A0_MRCB
+Name=A0_MRCB
+Start=9
+Len=6
+DataType=Numeric
+
+[Item]
+Label=PSU Number
+Name=PSU
+Start=15
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=SSU Number
+Name=SSU
+Start=18
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=HouseHold Number
+Name=HH
+Start=20
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=CONTROL
+Name=CONTROL
+RecordTypeValue='2'
+RecordLen=47
+
+[Item]
+Label=Schedule 4.2 Household expenditure on Housing
+Name=SCHDULE_42
+Start=22
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Schedule 4.2 Household expenditure on Housing
+Name=SCHDULE_42_VS1
+Value=1;1. Housing(Average per month )|1. නිවාස (සාමාන්‍ය මාසික)     |1. வீட்டு வசதி (மாதாந்த சராசரி )
+Value=2;2. Fuel & Light(Average per month)|2. ඉන්ධන සහ ආලෝකය  (සාමාන්‍ය මාසික)|2. எரிபொருள் மற்றும் வெளிச்சம் (மாதாந்த சராசரி  )
+Value=3;2.2  Fuel & Light(Within Last month)|2.2 ඉන්ධන සහ ආලෝකය (පසුගිය මාසය තුල)  |2.2   எரிபொருள் மற்றும் வெளிச்சம் (மாதாந்த ச ராசரி) (கடந்த மாத்தினுள்)
+Value=7;5. Transport ( Within Last month) Transport fees|5. ප්‍රවාහනය (පසුගිය මාසය තුල) ප්‍රවාහන ගාස්තු    |5. போக்குவரத்து(கடந்த மாத்தினுள்) பிரயாணக் கட்டணங்கள்
+Value=8;5.1 Transport ( Within Last month) Maintenance  of  private Vehicle|5.1 ප්‍රවාහනය (පසුගිය මාසය තුල) පුද්ගලික වාහන නඩත්තු|5.1 போக்குவரத்து (கடந்த மாத்தினுள்) சொந்த வாகனங்களை பராமரித்தல்
+Value=9;5.2 Transport (Within Last 12 months) Maintenance  of  private Vehicle|5.2 ප්‍රවාහනය (පසුගිය මාස 12 තුල) පුද්ගලික වාහන නඩත්තු|5.2 போக்குவரத்து (கடந்த 12 மாதத்தினுள் ) சொந்த வாகனங்களை பராமரித்தல்
+Value=10;6. Communication(Within Last month )|6. පණිවුඩ හුවමාරුව (පසුගිය මාසය තුල)   |6. தொலைத்தொடர்பு (கடந்த மாத்தினுள்)
+Value=11;7. Education(Within Last month )|7. අධ්‍යාපනය (පසුගිය මාසය තුල)|7.கல்வி (கடந்த மாத்தினுள்)
+Value=12;7.1 Education:- School/ Higher education/ Vocational training fees (Within Last 12 months)|7.1 අධ්‍යාපනය:- පාසැල්/උසස්  අධ්‍යාපන/වෘත්තීය පුහුණු  ගාස්තු (පසුගිය මාස 12 තුල)|7.1 கல்வி :- பாடசாலை/உயர் கல்வி/ தொழிற் பயிற்சிக் கட்டணம் (கடந்த 12 மாதத்தினுள்)
+Value=13;8.  Sports, entertainment, cultural & religious activities (Within last month)|8.  ක්‍රීඩා ,විනෝද,සංස්කෘතික සහ ආගමික කටයුතු(පසුගිය මාසය තුල)|8.  விளையாட்டு, களியாட்டம், கலாச்சாரம் மற்றும் சமய நடவடிக்கைகள் (கடந்த மாத்தினுள்)
+Value=15;10. Household Services ( Within Last month )|10. ගෘහ සේවාවන් (පසුගිය මාසය තුල)|10. குடித்தனச் சேவைகள் (கடந்த மாத்தினுள்)
+Value=21;14. Durable household goods( Within Last 12 months )|14. කල් පවතින භාණ්ඩ (පසුගිය මාස 12 තුල)|14. நீடித்து நிலைக்கும் குடித்தன பொருட்கள்  ( கடந்த 12 மாதத்தினுள் )
+Value=22;14.1 Durable goods purchased in installments/Leasing( Within Last month )|14.1 පහසු  ගෙවීමේ ක්‍රමයට ලබාගත්  භාණ්ඩ /ලීසිං පහසු  ගෙවීමේ ක්‍රමයට ලබාගත්  භාණ්ඩ /ලීසිං|14.1 தவணை அல்லது குத்தகை அடிப்படையில் பெற்ற பொருட்கள் (கடந்த மாத்தினுள் )
+Value=23;15. Other  expenses( Within Last month )|15. වෙනත් විවිධ වියදම් (පසුගිය මාසය තුල)|15. ஏனைய நானாவித செலவுகள் (கடந்த மாதத்தினுள்)
+Value=24;16. Other adhoc ( rarely)expenses( Within Last 12 months )|16. වෙනත්  අහඹු වියදම්  (පසුගිය මාස 12 තුල)|16. ஏனைய எதிர்பாராத செலவுகள் (கடந்த 12 மாதங்களினுள்)
+Value=25;Exit Section|සුරකින්න|பகுதியை விட்டு வெளியேறுக
+
+[ValueSet]
+Label=de val
+Name=SCHDULE_42_VS2
+Value=1;1. Housing(Average per month )|1. නිවාස (සාමාන්‍ය මාසික)     |1. வீட்டு வசதி (மாதாந்த சராசரி )
+Value=2;2. Fuel & Light(Average per month)|2. ඉන්ධන සහ ආලෝකය  (සාමාන්‍ය මාසික)|2. எரிபொருள் மற்றும் வெளிச்சம் (மாதாந்த சராசரி  )
+Value=3;2.2  Fuel & Light(Within Last month)|2.2 ඉන්ධන සහ ආලෝකය (පසුගිය මාසය තුල)  |2.2 எரிபொருள் மற்றும் வெளிச்சம் (மாதாந்த ச ராசரி) (கடந்த மாத்தினுள்)
+Value=4;3. Personal care expenses(Within Last month)|3. පෞද්ගලික අවශ්‍යතා සඳහා වියදම   (පසුගිය මාසය තුල)|3. சொந்தப் பாவனைக்கான செலவுகள்  (கடந்த மாத்தினுள்)
+Value=5;4. Health Expenses(Within Last month)|4. සෞඛ්‍ය සඳහා වු වියදම   (පසුගිය මාසය තුල) |4. சுகாதாரத்துக்கான செலவுகள் (கடந்த மாத்தினுள்)
+Value=6;4.2 Health Expenses(Within Last 12 months)|4.2 සෞඛ්‍ය සඳහා වු වියදම (පසුගිය මාස 12 තුල)|4.2 சுகாதாரத்துக்கான செலவுகள் (கடந்த 12 மாதத்தினுள்)
+Value=7;5. Transport ( Within Last month) Transport fees|5. ප්‍රවාහනය (පසුගිය මාසය තුල) ප්‍රවාහන ගාස්තු    |5. போக்குவரத்து(கடந்த மாத்தினுள்) பிரயாணக் கட்டணங்கள்
+Value=8;5.1 Transport ( Within Last month) Maintenance  of  private Vehicle|5.1 ප්‍රවාහනය (පසුගිය මාසය තුල) පුද්ගලික වාහන නඩත්තු|5.1 போக்குவரத்து (கடந்த மாத்தினுள்) சொந்த வாகனங்களை பராமரித்தல்
+Value=9;5.2 Transport (Within Last 12 months) Maintenance  of  private Vehicle|5.2 ප්‍රවාහනය (පසුගිය මාස 12 තුල) පුද්ගලික වාහන නඩත්තු|5.2 போக்குவரத்து (கடந்த 12 மாதத்தினுள் ) சொந்த வாகனங்களை பராமரித்தல்
+Value=10;6. Communication(Within Last month )|6. පණිවුඩ හුවමාරුව (පසුගිය මාසය තුල)   |6. தொலைத்தொடர்பு (கடந்த மாத்தினுள்)
+Value=11;7. Education(Within Last month )|7. අධ්‍යාපනය (පසුගිය මාසය තුල)|7.கல்வி (கடந்த மாத்தினுள்)
+Value=12;7.1 Education:- School/ Higher education/ Vocational training fees (Within Last 12 months)|7.1 අධ්‍යාපනය:- පාසැල්/උසස්  අධ්‍යාපන/වෘත්තීය පුහුණු  ගාස්තු (පසුගිය මාස 12 තුල)|7.1 கல்வி :- பாடசாலை/உயர் கல்வி/ தொழிற் பயிற்சிக் கட்டணம் (கடந்த 12 மாதத்தினுள்)
+Value=13;8.  Sports, entertainment, cultural & religious activities (Within last month)|8.  ක්‍රීඩා ,විනෝද,සංස්කෘතික සහ ආගමික කටයුතු(පසුගිය මාසය තුල)|8. விளையாட்டு, களியாட்டம், கலாச்சாரம் மற்றும் சமய நடவடிக்கைகள் (கடந்த மாத்தினுள்)
+Value=14;9. Non-durable Household goods (Within Last month )|9. කල්  නොපවතින  පාරිභෝගික  භාණ්ඩ (පසුගිය මාසය තුල)|9. நீண்டகாலப் பாவனையற்ற வீட்டுப்பொருட்கள் (கடந்த மாதத்தினுள்)
+Value=15;10. Household Services ( Within Last month )|10. ගෘහ සේවාවන් (පසුගිය මාසය තුල)|10. குடித்தனச் சேவைகள் (கடந்த மாத்தினுள்)
+Value=16;11. Clothing & Textiles( Within Last  6 months )|11. ඇඳුම් සහ රෙදිපිලි ආදිය (පසුගිය මාස 6 තුල)|11. ஆடைகள் மற்றும் துணிகள் ஆகியவை (கடந்த 6 மாதத்தினுள்)
+Value=17;11.1 Clothing & Textiles :- Materials purchased in meters( Within Last  6 months )|11.1 ඇඳුම් සහ රෙදිපිලි ආදිය :- මීටර් වශයෙන් ලබා ගත් රෙදි වර්ග (පසුගිය මාස 6තුල)|11.1 ஆடைகள் மற்றும் துணிகள் :- மீற்றர்களாக கொள்வனவு செய்த துணி வகைகள் (கடந்த 6 மாதத்தினுள்)
+Value=18;11.2 Clothing & Textiles :- Tailoring charges( Within Last  6 months )|11.2 ඇඳුම් සහ රෙදිපිලි ආදිය :- මැහුම් කුලිය (පසුගිය මාස 6තුල)|11.2 ஆடைகள் மற்றும் துணிகள்  :- தையற் கூலி  (கடந்த 6 மாதத்தினுள்)
+Value=19;12. Foot wear & Other Personal effect (Within  Last 6  months )|12. පාවහන් සහ වෙනත් පුද්ගලික  ද්‍රව්‍ය (පසුගිය මාස 6තුල)|12. காலணிகள் மற்றும் ஏனைய தனிப்பட்ட பொருட்கள் (கடந்த 6 மாதத்தினுள்)
+Value=20;13. Durable household Goods  ( Within Last 6 months )|13. කල් පවතින භාණ්ඩ (පසුගිය මාස 6 තුල)|13. நீடித்து நிலைக்கும் குடித்தன பொருட்கள்    (கடந்த 6 மாதத்தினுள் )
+Value=21;14. Durable household goods( Within Last 12 months )|14. කල් පවතින භාණ්ඩ (පසුගිය මාස 12 තුල)|14. நீடித்து நிலைக்கும் குடித்தன பொருட்கள்  (கடந்த 12 மாதத்தினுள் )
+Value=22;14.1 Durable goods purchased in installments/Leasing( Within Last month )|14.1 පහසු  ගෙවීමේ ක්‍රමයට ලබාගත්  භාණ්ඩ /ලීසිං පහසු  ගෙවීමේ ක්‍රමයට ලබාගත්  භාණ්ඩ /ලීසිං|14.1 தவணை அல்லது குத்தகை அடிப்படையில் பெற்ற பொருட்கள் (கடந்த மாத்தினுள் )
+Value=23;15. Other  expenses( Within Last month )|15. වෙනත් විවිධ වියදම් (පසුගිය මාසය තුල)|15. ஏனைய நானாவித செலவுகள் (கடந்த மாதத்தினுள்)
+Value=24;16. Other adhoc ( rarely)expenses( Within Last 12 months )|16. වෙනත්  අහඹු වියදම්  (පසුගිය මාස 12 තුල)|16. ஏனைய எதிர்பாராத செலவுகள் (கடந்த 12 மாதங்களினுள்)
+Value=25;Exit Section|සුරකින්න|பகுதியை விட்டு வெளியேறுக
+
+[Item]
+Label=Com4.2 1
+Name=COM4_2_1
+Start=24
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 21
+Name=COM4_2_21
+Start=25
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 22
+Name=COM4_2_22
+Start=26
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 3
+Name=COM4_2_3
+Start=27
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 41
+Name=COM4_2_41
+Start=28
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 42
+Name=COM4_2_42
+Start=29
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 51
+Name=COM4_2_51
+Start=30
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 52
+Name=COM4_2_52
+Start=31
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 53
+Name=COM4_2_53
+Start=32
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 6
+Name=COM4_2_6
+Start=33
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 71
+Name=COM4_2_71
+Start=34
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 72
+Name=COM4_2_72
+Start=35
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 8
+Name=COM4_2_8
+Start=36
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 9
+Name=COM4_2_9
+Start=37
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 10
+Name=COM4_2_10
+Start=38
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 111
+Name=COM4_2_111
+Start=39
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 112
+Name=COM4_2_112
+Start=40
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 113
+Name=COM4_2_113
+Start=41
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 12
+Name=COM4_2_12
+Start=42
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 13
+Name=COM4_2_13
+Start=43
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 141
+Name=COM4_2_141
+Start=44
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 142
+Name=COM4_2_142
+Start=45
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 15
+Name=COM4_2_15
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Com4.2 16
+Name=COM4_2_16
+Start=47
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Section - 4.2.1.F - Rental Bill Tax
+Name=SECTION_4_2_1_F_RENTAL_BILL_TAX
+RecordTypeValue='F'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F421
+Name=F421
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F421
+Name=F421_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F421Sdate
+Name=F421SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F421tag
+Name=F421TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.1 - Rental Bill Tax
+Name=SECTION_4_2_1_RENTAL_BILL_TAX
+RecordTypeValue='G'
+Required=No
+MaxRecords=3
+RecordLen=47
+
+[Item]
+Label=C421
+Name=C421
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C421
+Name=C421_VS1
+Value=2001;Housing rent|දළ මාසික කුලිය|மாதாந்த சராசரி வாடகை (தனது சொந்த வீட்டில் குடியிருப்பவர்களுக்கு மதிப்பீட்டு வாடகையை நிரல் 5 லும், 6லும் குறிப்பிடவும்)
+Value=2002;Taxes|වරිපනම් බදු|வரிகள்
+Value=9000;Exit|පිටවන්න|வெளியேறுக
+
+[Item]
+Label=U421
+Name=U421
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U421
+Name=U421_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q421
+Name=Q421
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q421
+Name=Q421_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V421
+Name=V421
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V421
+Name=V421_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN421
+Name=IN421
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN421
+Name=IN421_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD421
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD421_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Record]
+Label=Section - 4.2.2.1.F - Electricity Fuel
+Name=SECTION_4_2_2_1_F_ELECTRICITY_FUEL
+RecordTypeValue='H'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4221
+Name=F4221
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4221
+Name=F4221_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4221Sdate
+Name=F4221SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4221tag
+Name=F4221TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.2.1 - Eectricity Fuel
+Name=SECTION_4_2_2_1_EECTRICITY_FUEL
+RecordTypeValue='I'
+Required=No
+MaxRecords=6
+RecordLen=47
+
+[Item]
+Label=C4221
+Name=C4221
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4221
+Name=C4221_VS1
+Value=2102;Solar power|හිරු එළියෙන් ලබාගත් විදුලිය (සුර්ය බල ශක්තිය)|சூரிய ஔியினால் பெறும் மின்சாரம் (சூரிய சக்தி)
+Value=2103;Kerosene oil (monthly average) - ml|භූමිතෙල් (මාසික සාමාන්‍ය) - ml|மண்ணெண்ணெய் (மாதச் சராசரி) - ml
+Value=2104;Fire wood purchased (monthly average) - kg|මිලදී ගත් දර (මාසික සාමාන්‍ය) - kg|விலை கொடுத்து வாங்கிய விறகு (மாதச் சராசரி) - kg
+Value=2105;Fire wood free|අහුලා ගත් දර|பொறுக்கி எடுத்த விறகு/ தென்னோலை தேங்காய் மட்டை ஆகியன
+Value=2106;L.P. Gas(A gas cylinder contains 12,500 g of gas) grams|ගෑස් (A gas cylinder contains 12,500 g of gas) grams|காஸ் (A gas cylinder contains 12,500 g of gas) - grams
+Value=9000;Exit|පිටවන්න|வெளியேறுக
+
+[Item]
+Label=U4221
+Name=U4221
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4221
+Name=U4221_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4221
+Name=Q4221
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4221
+Name=Q4221_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4221
+Name=V4221
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4221
+Name=V4221_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4221
+Name=IN4221
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4221
+Name=IN4221_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4221
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4221_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Record]
+Label=Section - 4.2.2.2.F - Light Fuel
+Name=SECTION_4_2_2_2_F_LIGHT_FUEL
+RecordTypeValue='J'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4222
+Name=F4222
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4222
+Name=F4222_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4222Sdate
+Name=F4222SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4222tag
+Name=F4222TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.2.2 - Light Fuel
+Name=SECTION_4_2_2_2_LIGHT_FUEL
+RecordTypeValue='K'
+Required=No
+MaxRecords=6
+RecordLen=147
+
+[Item]
+Label=C4222
+Name=C4222
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4222
+Name=C4222_VS1
+Value=2107;Normal Bulbs|සාමාන්‍ය විදුලි බුබුළු|சாதாரண  மின்குமிழ்கள்
+Value=2108;Energy saving bulbs|විදුලිය පිරිමැසුම් විදුලි බුබුළු|மின்  ​சேமிப்பு மின்குமிழ்கள்
+Value=2109;Matches|ගිනිපෙට්ටි|தீப்பெட்டி
+Value=2110;Candles|ඉටිපන්දම්|மெழுகுவர்த்தி
+Value=2111;Batteries - Used for lighting|වියළ බැටරි(ආලෝකය ලබා ගැනීම සඳහා පමණි)|உலர் மின்கலம் (பற்றரி)
+Value=2119;Others|වෙනත් (සඳහන් කරන්න)|எரிபொருள் மற்றும் வெளிச்சத்திற்கான ஏனைய செலவுகள் (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வெளியேறுக
+
+[Item]
+Label=U4222
+Name=U4222
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4222
+Name=U4222_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4222
+Name=Q4222
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4222
+Name=Q4222_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4222
+Name=V4222
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4222
+Name=V4222_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4222
+Name=IN4222
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4222
+Name=IN4222_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4222
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4222_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS4222
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Section - 4.2.5.1.F - Transport LM
+Name=SECTION_4_2_5_1_F_TRANSPORT_LM
+RecordTypeValue='R'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4251
+Name=F4251
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4251
+Name=F4251_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4251Sdate
+Name=F4251SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4251tag
+Name=F4251TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.5.1 - Transport LM
+Name=SECTION_4_2_5_1_TRANSPORT_LM
+RecordTypeValue='S'
+Required=No
+MaxRecords=8
+RecordLen=147
+
+[Item]
+Label=C4251
+Name=C4251
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4251
+Name=C4251_VS1
+Value=2401;Train (other than schooling)|දුම්රිය(පාසල් ළමුන් හැර)|புகையிரதம் (பாடசாலைப் பிள்ளைகள் தவிர்ந்த)
+Value=2402;Bus (other than schooling)|බස්රිය (පාසල් ළමුන් හැර)|பஸ் வண்டி (பாடசாலைப் பிள்ளைகள் தவிர்ந்த)
+Value=2403;Van (other than schooling)|වෑන්(පාසල් ළමුන් හැර)|வான் (பாடசாலைப் பிள்ளைகள் தவிர்ந்த)
+Value=2404;Taxi (other than  schooling)|කුළී රිය  (පාසල් ළමුන් හැර)|வாடகை வண்டி (பாடசாலைப் பிள்ளைகள் தவிர்ந்த)
+Value=2405;Three wheelers (other than  schooling)|ත්‍රීවීලර් (පාසල් ළමුන් හැර)|முச்சக்கர வண்டி (பாடசாலைப் பிள்ளைகள் தவிர்ந்த)
+Value=2406;Chargers for schooling/ preschooling|පාසල්/පෙරපාසල් ළමුන් සඳහා ප්‍රවාහන ගාස්තු|பாடசாலை/ ஆரம்ப பாடசாலை பிள்ளைகளுக்கான கட்டணங்கள்
+Value=2407;Ships and Air fare|නැව් සහ ගුවන් යානා|கப்பல் மற்றும் விமானங்கள்
+Value=2409;Others|වෙනත් (සඳහන් කරන්න)|ஏனைய போக்குவரத்து செலவுகள் (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வெளியேறுக
+
+[Item]
+Label=U4251
+Name=U4251
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4251
+Name=U4251_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4251
+Name=Q42511
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4251
+Name=Q42511_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4251
+Name=V4251
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4251
+Name=V4251_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4251
+Name=IN4251
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4251
+Name=IN4251_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4251
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4251_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS4251
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Section - 4.2.5.2.F - Maintenance PV
+Name=SECTION_4_2_5_2_F_MAINTENANCE_PV
+RecordTypeValue='T'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4252
+Name=F4252
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4252
+Name=F4252_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4252Sdate
+Name=F4252SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4252tag
+Name=F4252TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.5.2 - Maintenance PV
+Name=SECTION_4_2_5_2_MAINTENANCE_PV
+RecordTypeValue='U'
+Required=No
+MaxRecords=7
+RecordLen=147
+
+[Item]
+Label=C4252
+Name=C4252
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4252
+Name=C4252_VS1
+Value=2411;Petrol|පෙට්‍රල්|பெற்றோல்
+Value=2412;Diesel|ඩීසල්|டீசல்
+Value=2413;Lubricating oil|ලිහිසි තෙල්|உராய்வு நீக்கிகள்
+Value=2414;Other fuel|වෙනත් ඉන්ධන|ஏனைய எரிபொருள்
+Value=2415;Service charges|වාහන සර්විස් කිරීමේ කුලිය|வாகனங்களை பராமரிப்பு செய்யும் கூலி
+Value=2416;Repair charges|වාහන අළුත්වැඩියා කිරීමේ කුලිය |வாகனங்களைப் பழுது பார்க்கும் கூலி
+Value=2417;Other|වෙනත් (සඳහන් කරන්න)|ஏனைய வாகன பராமரிப்புச் செலவுகள் (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வெளியேறுக
+
+[Item]
+Label=U4252
+Name=U4252
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4252
+Name=U4252_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4252
+Name=Q4252
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4252
+Name=Q4252_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4252
+Name=V4252
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4252
+Name=V4252_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4252
+Name=IN4252
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4252
+Name=IN4252_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4252
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4252_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS4252
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Section - 4.2.5.3.F - Maintenance PV 12M
+Name=SECTION_4_2_5_3_F_MAINTENANCE_PV_12M
+RecordTypeValue='V'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4253
+Name=F4253
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4253
+Name=F4253_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4253Sdate
+Name=F4253SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4253tag
+Name=F4253TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.5.3 - Maintenance PV 12M
+Name=SECTION_4_2_5_3_MAINTENANCE_PV_12M
+RecordTypeValue='W'
+Required=No
+MaxRecords=4
+RecordLen=47
+
+[Item]
+Label=C4253
+Name=C4253
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4253
+Name=C4253_VS1
+Value=2420;Tire/Tube & other|ටයර්,ටියුබ් සහ අමතර කොටස්|ரயர், ரியூப் மற்றும் உதிரிப் பாகங்கள்
+Value=2421;License fees|බලපත්‍ර ගාස්තු|உத்தரவுப் பத்திரம்
+Value=2422;Insurance fees|රක්‍ෂණ ගාස්තු|காப்புறுதிக் கட்டணம்
+Value=2423;Vehicle Emission Test|දුම් පරික්‍ෂාව|வாகன புகை பரிசோதனை
+Value=9000;Exit|පිටවන්න|வெளியேறுக
+
+[Item]
+Label=U4253
+Name=U4253
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4253
+Name=U4253_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4253
+Name=Q4253
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4253
+Name=Q4253_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4253
+Name=V4253
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4253
+Name=V4253_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4253
+Name=IN4253
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4253
+Name=IN4253_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4253
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4253_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Record]
+Label=Section - 4.2.6.F - Communication
+Name=SECTION_4_2_6_F_COMMUNICATION
+RecordTypeValue='X'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F426
+Name=F426
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F426
+Name=F426_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F426Sdate
+Name=F426SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F426tag
+Name=F426TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.6 - Communication
+Name=SECTION_4_2_6_COMMUNICATION
+RecordTypeValue='Y'
+Required=No
+MaxRecords=6
+RecordLen=147
+
+[Item]
+Label=C426
+Name=C426
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C426
+Name=C426_VS1
+Value=2501;Postal and Telegraph charges|තැපැල් හා විදුලි පණිවුඩ ගාස්තු|தபால் மற்றும் தந்திக் கட்டணங்கள்
+Value=2504;Telephone charges (taken outside)|දුරකථන ගාස්තු(පිටතදී ලබා ගත්)|தொலைபேசிக் கட்டணங்கள் (வெளியிலிருந்து எடுத்தவை)
+Value=2505;Email/internet charges|ඊමේල්,අන්තර්ජාල කුළිය|மின்னஞ்சல், இணையம் கட்டணங்கள்
+Value=2509;Other|වෙනත් (සඳහන් කරන්න)|ஏனையவை (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வௌியேறுக
+
+[Item]
+Label=U426
+Name=U426
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U426
+Name=U426_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q426
+Name=Q426
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q426
+Name=Q426_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V426
+Name=V426
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V426
+Name=V426_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN426
+Name=IN426
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN426
+Name=IN426_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD426
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD426_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS426
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Section - 4.2.7.2.F - Education 12M
+Name=SECTION_4_2_7_2_F_EDUCATION_12M
+RecordTypeValue='\'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4272
+Name=F4272
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4272
+Name=F4272_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4272Sdate
+Name=F4272SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4272tag
+Name=F4272TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.7.2 - Education 12M
+Name=SECTION_4_2_7_2_EDUCATION_12M
+RecordTypeValue=']'
+Required=No
+MaxRecords=5
+RecordLen=47
+
+[Item]
+Label=C4272
+Name=C4272
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4272
+Name=C4272_VS1
+Value=2609;School facility fees (government)|පාසල්  පහසුකම්  ගාස්තු /සංවර්ධන සමිතියේ ගාස්තු (රජයේ පාසල්)|பாடசாலை வசதிக் கட்டணம்/ அபிவிருத்திச் சபை கட்டணம் (அரசு)
+Value=2610;School fees (private)|පාසල් ගාස්තු (පුද්ගලික  පාසල්)|பாடசாலைக் கட்டணம் (தனியார் பாடசாலை)
+Value=2611;School fees (international)|පාසල් ගාස්තු (ජාත්‍යන්තර පාසල්)|பாடசாலைக் கட்டணம் (சர்வதேச பாடசாலை)
+Value=2612;Course fees (Higher education)|උසස් අධ්‍යාපන පාඨමාලා සඳහා ගාස්තු (උපාධි/පශ්චාත් උපාධි ,ඩිප්ලෝමා  ආදී)|உயர் கல்விக்கான கட்டணம் (பட்டம்/ பட்டப்பின் படிப்பு/ டிப்ளோமா)
+Value=2613;Course fees (vocational training)|වෘත්තීය පුහුණු පාඨමාලා සඳහා ගාස්තු|தொழில்நுட்பப் பயிற்சிக்கான கட்டணம்
+Value=2608;Other education expenses (last month)|වෙනත් (පසුගිය මාසය තුල )|ஏனைய கல்விக்கான கட்டணங்கள் (கடந்த மாதத்திற்குள்)
+Value=9000;Exit|පිටවන්න |வெளியேறுக
+
+[Item]
+Label=U4272
+Name=U4272
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4272
+Name=U4272_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4272
+Name=Q4272
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4272
+Name=Q4272_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4272
+Name=V4272
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4272
+Name=V4272_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4272
+Name=IN4272
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4272
+Name=IN4272_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4272
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4272_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Record]
+Label=Section - 4.2.8.F - Sports Ent. Cultural
+Name=SECTION_4_2_8_F_SPORTS_ENT_CULTURAL
+RecordTypeValue='^'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F428
+Name=F428
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F428
+Name=F428_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F428Sdate
+Name=F428SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F428tag
+Name=F428TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.8 - Sports Ent. Cultural
+Name=SECTION_4_2_8_SPORTS_ENT_CULTURAL
+RecordTypeValue='_'
+Required=No
+MaxRecords=14
+RecordLen=147
+
+[Item]
+Label=C428
+Name=C428
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C428
+Name=C428_VS1
+Value=2701;Cinemas/ Drama/ Video films|චිත්‍රපටි/නාට්‍ය වීඩියෝ  පට(CD/ DVD/VCD)|சினிமாப் படங்கள்/ நாடகங்கள்/ வீடியோ சுருள்கள் (CD/DVD/ VCD)
+Value=2702;Books/ News papers/ Magazines (CD/DVD/VCD)|පොත්/පුවත්පත්/සඟරා|புத்தகங்கள்/ பத்திரிகைகள்/ சஞ்சிகைகள்
+Value=2703;Lotteries/ Betting|ස්විප් ටිකට්ස්/ඔට්ටු ඇල්ලීම්|லொத்தர் சீட்டுக்கள்/ பந்தயம்
+Value=2704;Room charges for Excursion|කාමර ගාස්තු  වන්දනා ගමන්/විනෝද ගමන් හැර|வழிபாட்டுப் பிரயாணங்கள்/ உல்லாசப் பிரயாணங்களுக்கான அறைக் கட்டணம்
+Value=2705;Excursions and Pilgrimages|වන්දනා ගමන්/විනෝද ගමන්/කාමර ගාස්තු|வழிபாட்டுப் பிரயாணங்கள்/ உல்லாசப் பிரயாணங்கள் (அறைக் கட்டணம் தவிர)
+Value=2706;Arts/ Music/ Dancing|කලා/සංගීත/නැටුම්|கலை/ சங்கீதம்/ நடனம்
+Value=2707;Sports|ක්‍රීඩා|விளையாட்டுக்கள்
+Value=2708;Pets/ Aquariums|සුරතල් සතුන්/මාළු ඇති කිරීම|செல்லப் பிராணிகள்/ மீன் வளர்த்தல்
+Value=2709;Toys|සෙල්ලම් බඩු|விளையாட்டுப் பொருள்
+Value=2710;Maintenance of Radio/ TV/ Video decks|ගුවන් විදුලි/රූපවාහිනි/ ඩෙක් යන්ත්‍ර නඩත්තු කිරීමේ ගාස්තු|வானொலி/  தொலைக்காட்சி/ வீடியோ டெக் இயந்திரங்களைப் பேணும் கட்டணங்கள்
+Value=2711;Sacred goods|පූජා භාණ්ඩ|பூஜைப் பொருட்கள்
+Value=2712;Cable/Satellite/TV chagers|කේබල්/සැටලයිට් ටීවී  ගාස්තු|கேபல்/ செய்மதி தொலைக்காட்சி கட்டணம்
+Value=2713;Astrology charges|කේන්ද්‍ර බැලීම්/යන්ත්‍ර මන්ත්‍ර ගුරුකම්|சோதிடம் பார்த்தல்/ மந்திரம், யந்திரம் செய்தல்
+Value=2719;Other|වෙනත් (සඳහන් කරන්න)|ஏனையவை (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வௌியேறுக
+
+[Item]
+Label=U428
+Name=U428
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U428
+Name=U428_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q428
+Name=Q428
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q428
+Name=Q428_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V428
+Name=V428
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V428
+Name=V428_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN428
+Name=IN428
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN428
+Name=IN428_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD428
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD428_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS428
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Section - 4.2.10.F - HH Services
+Name=SECTION_4_2_10_F_HH_SERVICES
+RecordTypeValue='b'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4210
+Name=F4210
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4210
+Name=F4210_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4210Sdate
+Name=F4210SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4210tag
+Name=F4210TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.10 - HH Services
+Name=SECTION_4_2_10_HH_SERVICES
+RecordTypeValue='c'
+Required=No
+MaxRecords=7
+RecordLen=47
+
+[Item]
+Label=C4210
+Name=C4210
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4210
+Name=C4210_VS1
+Value=2901;Laundry Charges|ඇපල්ලුම්  ගාස්තු|சலவைக் கட்டணங்கள்
+Value=2902;Grinding Charges|කෙටීම්/ඇඹරුම් ගාස්තු|இடிக்கும், அரைக்கும் கட்டணங்கள்
+Value=2903;Wages to Servants|සේවකයින්ට  වැටුප්|பணியாட்களின் சம்பளம்
+Value=2904;Wages to Drivers|රියදුරන්ට වැටුප්|சாரதிகளின் சம்பளம்
+Value=2905;Charges for Children Day care Centers|දිවා සුරැකුම්  මධ්‍යස්ථාන සඳහා ගාස්තු|பகல் நேர குழந்தைப் பாதுகாப்பு நிலையத்திற்கான கட்டணம்
+Value=2906;Charges for elder homes|වැඩිහිටි නිවාස ආදිය  සඳහා ගාස්තු|முதியோர் இல்லம் போன்றவற்றிற்கான கட்டணம்
+Value=2909;Payments / expenses for other household services|වෙනත් (සඳහන් කරන්න)|ஏனைய குடித்தனச் சேவைகளுக்கான கட்டணம்
+Value=9000;Exit|පිටවන්න|வௌியேறுக
+
+[Item]
+Label=U4210
+Name=U4210
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4210
+Name=U4210_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4210
+Name=Q4210
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4210
+Name=Q4210_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4210
+Name=V4210
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4210
+Name=V4210_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4210
+Name=IN4210
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4210
+Name=IN4210_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4210
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4210_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Record]
+Label=Section - 4.2.14.1.F - DHH Goods 12M
+Name=SECTION_4_2_14_1_F_DHH_GOODS_12M
+RecordTypeValue='q'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F42141
+Name=F42141
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F42141
+Name=F42141_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F42141Sdate
+Name=F42141SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F42141tag
+Name=F42141TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.14.1 - DHH Goods 12M
+Name=SECTION_4_2_14_1_DHH_GOODS_12M
+RecordTypeValue='w'
+Required=No
+MaxRecords=38
+RecordLen=147
+
+[Item]
+Label=C42141
+Name=C42141
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C42141
+Name=C42141_VS1
+Value=3301;Chairs (plastic)|පුටු-(ප්ලාස්ටික්)|நாற்காலி (பிளாஸ்டிக்)
+Value=3302;Chairs (wood)|පුටු-(ලී)|நாற்காலி (பலகை)
+Value=3303;Chairs (steel)|පුටු-(වානේ)|நாற்காலி (இரும்பு)
+Value=3304;Tables|මේස|மேசை
+Value=3305;Settees|පුටු සෙටි|நாற்காலி செட்
+Value=3306;Almyras (Wood)|අල්මාරි(ලී)|அலுமாரி (பலகை)
+Value=3307;Almyras (Steel)|අල්මාරි(වානේ)|அலுமாரி (இரும்பு)
+Value=3308;Beds|ඇඳන්|கட்டில்
+Value=3309;Other furniture|වෙනත් ගෘහ භාණ්ඩ|ஏனைய தளபாடங்கள்
+Value=3310;Clocks/ Watches|ඔරලෝසු (අත් ඔරලෝසු ඇතුලුව)|கடிகாரம் (கைக் கடிகாரம் உட்பட)
+Value=3311;Cookers (Kerosene)|උඳුන්  (භූමිතෙල්)|அடுப்பு (மண்ணெண்ணெய்)
+Value=3312;Cookers (Electric)|උඳුන්  (විදුලි)|அடுப்பு (மின்சாரம்)
+Value=3313;Cookers (Gas)|උඳුන්(ගෑස්)|அடுப்பு (காஸ்)
+Value=3314;Mixers, Grinders, Beaters etc.|මිශ්‍රණ ඇඹරුම් සහ කලත්තන උපකරණ|கலவை இடிக்கும்/ கரைக்கும்/அரைக்கும் இயந்திரம்
+Value=3315;Irons|ඉස්ත්‍රික්ක|ஸ்திரிகைப் பெட்டி (அயன்)
+Value=3316;Refrigerators|ශීතකරණ|குளிர்சாதனப் பெட்டி
+Value=3317;Oven(Gas/Electric)|පෝරණු (විදුලි/ගෑස්)|அவண் (மின்சாரம்/ காஸ்)
+Value=3318;Fans|විදුලි පංකා|மின்விசிறி
+Value=3319;Sewing machines|මහන මැෂින්|தையல் மெசின்
+Value=3320;Radio/CD/DVD|ගුවන්විදුලි යන්ත්‍ර / CD,DVD තැටි|வானொலி/ இசைத் தட்டு
+Value=3321;Record players, Tape recorders|වාදන යන්ත්‍ර සහ පටිගත කිරීමේ යන්ත්‍ර|மீள் இசைக் கருவி/ நாடா ஒலிப்பதிவுக் கருவி
+Value=3322;Television/Video decks|රූපවාහිනි සහ වීඩියෝ යන්ත්‍ර|தொலைக்காட்சி/ வீடியோ இயந்திரம்
+Value=3323;Washing machines|රෙදි සෝදන යන්ත්‍ර|சலவை இயந்திரம்
+Value=3324;Musical instruments|සංගීත භාණ්ඩ|இசைக் கருவிகள்
+Value=3325;Bicycles|බයිසිකල් (පාපැදි)|சைக்கிள்
+Value=3326;Motor cycles/ Scooters|මෝටර් බයිසිකල්/ස්කූටර්|மோட்டார் சைக்கிள்/ ஸ்கூட்டர்
+Value=3327;Three wheelers|ත්‍රීවිලර් |முச்சக்கர வண்டி
+Value=3328;Motor cars/ Vans|මෝටර් රථ / වෑන් |மோட்டார் வாகனம்/ வான்
+Value=3329;Prams/ Go-carts/ Tricycles|ප්‍රෑම්ස්/ගෝකාට්ස්/ට්‍රයිසිකල්|பிராம்ஸ்/ கோகாட்ஸ்/ முச்சக்கரவண்டி
+Value=3330;Agricultural Equipments|වතු වැඩ කරන උපකරණ|தோட்ட வேலை செய்யும் உபகரணங்கள்
+Value=3331;Cameras|කැමරා|கமரா மற்றும் புறொஜெக்டர்
+Value=3332;Tablet Computers|ටැබ්ලට් පරිගණක|டப்லட் கணணிகள்
+Value=3333;Computers/ computer parts|පරිගණක යන්ත්‍ර/උපාංග|கணணிகள்/ உதிரிப் பாகங்கள்
+Value=3334;Jewelleries|ස්වර්ණභරණ|ஆபரணங்கள்
+Value=3335;Telephones/ Mobile phones|දුරකථන /ජංගම දුරකථන /උපාංග|தொலைபேசி/ கைத் தொலைபேசி/ இணை உபகரணங்கள்
+Value=3336;Other electric equipments (heaters etc)|මුළුතැන්ගෙයි භාවිතා කරන වෙනත් විදුලි  උපකරණ (හීටර්ස් රයිස් කුකර් ආදිය)|சமயலறையில் பயன்படுத்தும் மின் உபகரணங்கள் (Heaters, Rice Cookers)
+Value=3337;Security camera systems (CCTV camera)|ආරක්ෂිත කැමරා පද්ධති (CCTV)/උපාංග|பாதுகாப்புக் கமெரா பொறிமுறை (CCTV camera)
+Value=3339;Other|වෙනත් (සඳහන් කරන්න)|ஏனையவை (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வௌியேறுக
+
+[Item]
+Label=U42141
+Name=U42141
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U42141
+Name=U42141_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q42141
+Name=Q42141
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q42141
+Name=Q42141_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V42141
+Name=V42141
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V42141
+Name=V42141_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN42141
+Name=IN42141
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN42141
+Name=IN42141_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD42141
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD42141_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS42141
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Section - 4.2.14.2.F - DHH Goods LM
+Name=SECTION_4_2_14_2_F_DHH_GOODS_LM
+RecordTypeValue='n'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F42142
+Name=F42142
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F42142
+Name=F42142_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F42142Sdate
+Name=F42142SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F42142tag
+Name=F42142TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.14.2 - DHH Goods LM
+Name=SECTION_4_2_14_2_DHH_GOODS_LM
+RecordTypeValue='r'
+Required=No
+MaxRecords=2
+RecordLen=47
+
+[Item]
+Label=C42142
+Name=C42142
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C42142
+Name=C42142_VS1
+Value=3341;Goods purchased on installments|පහසු ගෙවීමේ  ක්‍රමයට  ලබාගත් භාණ්ඩ සඳහා|தவணை முறையில் கொள்வனவு செய்யப்பட்ட நீண்டகாலப் பொருட்கள்
+Value=3342;Vehicle Leasing|වාහන ලීසිං|வாகனக் குத்தகைக் கட்டணம்
+Value=9000;Exit|පිටවන්න|வௌியேறுக
+
+[Item]
+Label=U42142
+Name=U42142
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U42142
+Name=U42142_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q42142
+Name=Q42142
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q42142
+Name=Q42142_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V42142
+Name=V42142
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V42142
+Name=V42142_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN42142
+Name=IN42142
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN42142
+Name=IN42142_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD42142
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD42142_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Record]
+Label=Section - 4.2.15.F - Other Exp
+Name=SECTION_4_2_15_F_OTHER_EXP
+RecordTypeValue='t'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4215
+Name=F4215
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4215
+Name=F4215_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4215Sdate
+Name=F4215SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4215tag
+Name=F4215TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.15 - Other Exp
+Name=SECTION_4_2_15_OTHER_EXP
+RecordTypeValue='y'
+Required=No
+MaxRecords=9
+RecordLen=147
+
+[Item]
+Label=C4215
+Name=C4215
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4215
+Name=C4215_VS1
+Value=3401;Provident fund / W. & O. P. fund|අර්ථ සාධක අරමුදල්,වැන්දඹු හා අනත් දරු විශ්‍රාම වැටුප් අරමුදල් ආදියට|ஊழியர் சேமிப்பு நிதியம், விதவை அநாதை ஓய்வூதிய நிதியங்கள் என்பவற்றுக்கு
+Value=3402;Contribution to unions, societies|වෘත්තීය ,මරණාධාර ,සුබ  සාධක සහ වැඩිහිට  සමිති ආදියට දායක මුදල්|தொழிற் சங்கம், மரண உதவி சங்கம், நலன்புரி சங்கம், முதியோர் சங்கம் என்பவற்றுக்கான சந்தாப்பணங்கள்/ பங்களிப்புப் பணம்
+Value=3403;Health Insurance|සෞඛ්‍ය  රක්ෂණ|சுகாதார காப்புறுதி/ காப்பீடு
+Value=3404;Insurance/ Agrahara|රක්‍ෂණ වාරික , අග්‍රහාර ආදිය|காப்புறுதித் தவணைகள்/ அக்ரஹார என்பவற்றுக்கு
+Value=3405;Other savings (including Seettu)|ඉතිරී කිරීම් (සීට්ටු  හා වාරික ඇතුළුව)|ஏனைய சேமிப்புக்கள் (சீட்டு மற்றும் மாதாந்த முறையான சேமிப்புக்கள் உட்பட)
+Value=3406;Payments of debts/ pawning (including interest)|මාසික ණය /උකස් සඳහා ගෙවීම් (පොලී ඇතුළුව)|மாதாந்த கடன்/ அடைவு வைத்தல்களிற்கான கொடுப்பனவு (வட்டி உட்பட)
+Value=3407;Money lending|ණයට දීම|கடன் கொடுத்தல்
+Value=3408;Income tax|ආදායම් බදු|வருமான வரி
+Value=3419;Other|වෙනත් (සඳහන් කරන්න)|ஏனைய நானாவித செலவுகள்  (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வௌியேறுக
+
+[Item]
+Label=U4215
+Name=U4215
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4215
+Name=U4215_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4215
+Name=Q4215
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4215
+Name=Q4215_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4215
+Name=V4215
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4215
+Name=V4215_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4215
+Name=IN4215
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4215
+Name=IN4215_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4215
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4215_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS4215
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=Section - 4.2.16.F - Other Adhoc
+Name=SECTION_4_2_16_F_OTHER_ADHOC
+RecordTypeValue='u'
+Required=No
+RecordLen=31
+
+[Item]
+Label=F4216
+Name=F4216
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=F4216
+Name=F4216_VS1
+Value=1;Yes|ඔව්|ஆம்
+Value=2;No|නැත|இல்லை
+
+[Item]
+Label=F4216Sdate
+Name=F4216SDATE
+Start=23
+Len=8
+DataType=Numeric
+
+[Item]
+Label=F4216tag
+Name=F4216TAG
+Start=31
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Section - 4.2.16 - Other Adhoc
+Name=SECTION_4_2_16_OTHER_ADHOC
+RecordTypeValue='o'
+Required=No
+MaxRecords=8
+RecordLen=147
+
+[Item]
+Label=C4216
+Name=C4216
+Start=22
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=C4216
+Name=C4216_VS1
+Value=3501;Expenses. on weddings, funerals|පවුලේ සාමාජිකයින්ගේ විවාහ /මරණ සඳහා|குடித்தனத்தின் அங்கத்தவர்களின் விவாக/ மரணங்களுக்காக
+Value=3502;Social activities/ceremonies|වෙනත් සමාජ කටයුතු/උත්සව|ஏனைய சமூக அலுவல்கள்/  கொண்டாட்டங்கள்/ விழாக்கள்
+Value=3503;Litigation|නීතිමය කටයුතු සඳහා|சட்ட முறையான  அலுவல்களுக்கான கட்டணங்கள்
+Value=3504;Gifts/Donation/Transfers|ත්‍යාග ,පරිත්‍යාග/පැවරීම්|அன்பளிப்புக்கள்/ நன்கொடை/ பரிசு மற்றும் அதையொத்த கையளிப்புக்கள் (பணப்பரிமாற்றங்கள்)
+Value=3505;Maintenance/ Reconstruction|නිවාස නඩත්තු  කිරීම්/අලුත්වැඩියා කිරීම්|வீடு பராமரித்தல்/ பழுது பார்த்தல்
+Value=3506;Purchasing of properties|ඉඩම්/ගෙවල් මිලදී ගැනීම්|காணி/ வீடு கொள்வனவு
+Value=3507;Build a new house|නව නිවාස ඉදිකිරීම|புது வீடு அமைப்பதற்காக
+Value=3519;Other|වෙනත්|ஏனையவை (குறிப்பிடவும்)
+Value=9000;Exit|පිටවන්න|வௌியேறுக
+
+[Item]
+Label=U4216
+Name=U4216
+Start=26
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=U4216
+Name=U4216_VS1
+Value=1;grams||கிராம்
+Value=2;Number||எண்
+Value=4;kg||கி.கி
+Value=5;ml||மி.லீ
+Value=6;Centimeter||செ.மீ
+Value=9;other||ஏனையவை
+Name=REFUSED,Special
+Value=' ';blank( not relvant)||வெற்றிடம் (சம்பந்தமில்லை)
+Name=NOTAPPL,Special
+
+[Item]
+Label=Q4216
+Name=Q4216
+Start=27
+Len=6
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Q4216
+Name=Q4216_VS1
+Value=0:999999
+Value='      '
+Name=NOTAPPL,Special
+
+[Item]
+Label=V4216
+Name=V4216
+Start=33
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=V4216
+Name=V4216_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=IN4216
+Name=IN4216
+Start=40
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=IN4216
+Name=IN4216_VS1
+Value=0:9999999
+Value='       '
+Name=NOTAPPL,Special
+
+[Item]
+Label=Add New
+Name=ADD4216
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Add New
+Name=ADD4216_VS1
+Value=1;Go to next Item|ඊළඟ අයිතමයට යන්න|அடுத்த பொருளுக்குச் செல்லவும்
+Value=2;End of Item|අයිතමයේ අවසානය|பொருளின் முடிவு
+
+[Item]
+Label=OS4216
+Name=OS4216
+Start=48
+Len=100
+DataType=Alpha
+
+[Record]
+Label=NonFoodMod_Save
+Name=NONFOODMOD_SAVE
+RecordTypeValue='>'
+RecordLen=23
+
+[Item]
+Label=SaveStatus_NonFoodMOD
+Name=SAVESTATUS_NONFOODMOD
+Start=22
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=SaveStatus_NonFoodMOD
+Name=SAVESTATUS_NONFOODMOD_VS1
+Value=1;Module Completed (Save)|සුරකින්න, සම්පූර්ණ කර ඇත|தொகுதி பூர்த்தி செய்யப்பட்டுள்ளது  (சேமிக்கவும்)
+Value=2;Save But Not Completed|සුරකින්න, නමුත් සම්පූර්ණ කර නැත|சேமிக்கவும் ஆனால் பூர்த்தி செய்யப்படவில்லை
+Value=3;Exit Without Saving|සුරැකීමකින් තොරව පිටවන්න|சேமிக்காமல் வெளியேறவும்
+Value=4;View Report|වාර්තාව බලන්න|அறிக்கையைக் காண்க
+
+[Item]
+Label=NonFoodModComplete
+Name=COMP_NONFOODMOD
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=NonFoodModComplete
+Name=COMP_NONFOODMOD_VS1
+Value=1;Complete|සම්පූර්ණයි|பூர்த்திசெய்யப்பட்டுள்ளது
+Value=2;Not Completed|සම්පූර්ණ නැත|பூர்த்திசெய்யப்படவில்லை

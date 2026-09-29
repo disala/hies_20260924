@@ -1,0 +1,557 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+  - name: SI
+    label: Sinhala
+  - name: TA
+    label: Tamil
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: DISASTERMODDIC_DICT.MODULENO
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: DISASTERMODDIC_DICT.M21IFDISASTER
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            
+            <p><font color="#9c00ff"><b><i>Experienced disaster and extent of damage in the last 5 years</i>&nbsp;</b></font><br></p><p><b style="text-align: center;"><font color="#ff00ff">M21B:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff" style="text-align: center;"><b>Did&nbsp;</b></font><b style="color: rgb(0, 0, 255); text-align: center;">this housing unit&nbsp;</b><font color="#0000ff" style="text-align: center;"><b>affected by</b></font><font color="#ff0000"><font style="text-align: center;">&nbsp;</font><b style="text-align: center;">~~getocclabel()~~</b><span style="text-align: center;">&nbsp;</span></font><font color="#0000ff" style="text-align: center;">&nbsp;<b>&nbsp;?</b></font></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            <p><font color="#9c00ff"><b><i>පසුගිය වසර 05 තුල ගෘහ ඒකකය මුහුණ දුන් ආපදා තත්වයන් හා ආපදාවේ ස්වභාවයන්</i></b></font></p><p><b><font color="#ff00ff">M21B:</font><font color="#0000ff">&nbsp;</font></b><b><font color="#ff0000">~~getocclabel()~~</font></b><font color="#ff00ff">&nbsp;</font><font color="#0000ff"><b>නිසා මෙම නිවසට බලපෑමක් සිදුවීද?</b></font></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><font color="#9c00ff"><b><i>Experienced disaster and extent of damage in the last 5 years</i>&nbsp;</b></font><br></p><p style="text-align: start; "><b style="text-align: center;"><font color="#ff00ff">M21B:</font><font color="#0000ff">&nbsp;</font></b><b style="color: rgb(0, 0, 255);">இந்த வீட்டுக் கூ</b><font color="#0000ff"><b>றானது&nbsp;</b></font><b style="color: rgb(255, 0, 0); text-align: center;">~~getocclabel()~~</b><span style="color: rgb(255, 0, 0); text-align: center;">&nbsp;</span><b style="color: rgb(0, 0, 255);">ஆல்&nbsp;</b><b style="color: rgb(0, 0, 255);">பாதிக்கப்பட்டுள்ளதா</b><font color="#0000ff" style="text-align: center;"><b>?</b></font><font color="#0000ff"><b>&nbsp;</b></font></p><p></p>
+  - name: BLOCK000
+    conditions:
+      - questionText:
+          EN: |
+            
+          SI: |
+            
+        helpText:
+          EN: |
+            
+  - name: DISASTERMODDIC_DICT.M21B
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="text-align: center;"><font color="#ff00ff">M21B:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff" style="text-align: center;"><b>Did affected by</b></font><font color="#ff0000"><font style="text-align: center;">&nbsp;</font><b style="text-align: center;">~~getocclabel()~~</b><span style="text-align: center;">&nbsp;</span></font><font color="#0000ff" style="text-align: center;">&nbsp;<b>at the same place of this housing unit?</b></font></p><p></p>
+          SI: |
+            <p></p><p style="text-align: left;"><b><font color="#ff00ff">M21B:</font><font color="#0000ff">&nbsp;</font></b><b><font color="#ff0000">~~getocclabel()~~</font></b><font color="#ff00ff">&nbsp;</font><font color="#0000ff"><b>නිසා මෙම නිවස පිහිටි ස්ථානයට බලපෑමක් සිදුවීද?</b></font></p>
+          TA: |
+            <p><b style="text-align: center;"><font color="#ff00ff">M21B:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>இந்த வீட்டுக் கூறு&nbsp;</b></font><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<b style="color: rgb(0, 0, 255);">ஆல்</b><b style="color: rgb(0, 0, 255);">&nbsp;பாதிக்கப்பட்டுள்ளதா?</b></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21C
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b style="text-align: left;"><font color="#ff00ff">M21C:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff" style="text-align: left;"><b>Due to</b>&nbsp;</font><b style="text-align: left;"><font color="#ff0000">~~getocclabel()~~</font><font color="#0000ff">, Property loss?</font></b></p><p></p>
+          SI: |
+            <p style="text-align: left;"><b><font color="#ff00ff">M21C:</font></b><font color="#ff0000"><b>~~getocclabel()~~</b>&nbsp;</font><font color="#0000ff"><b>හේතුවෙන් දේපල නැතිවීම් සිදු වීද?</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b style="text-align: left;"><font color="#ff00ff">M21C:</font><font color="#0000ff">&nbsp;</font></b><b><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;</b><b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><b><b><font color="#ff00ff">&nbsp;</font><font color="#0000ff">சொத்து இழப்புக்கள் ஏற்பட்டுள்ளதா?</font></b></b></p><p></p><p><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21D
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><font color="#ff00ff"><b>M21D</b>:</font><font color="#0000ff"><b>Due to</b></font><font color="#ff00ff">&nbsp;</font><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<font color="#0000ff"><b>, Property damage?</b></font></p><p></p>
+          SI: |
+            <p style="text-align: center;"><br></p><p><b style="color: rgb(255, 0, 255);">M21D</b><font color="#ff00ff">:</font><b style=""><font color="#0000ff">&nbsp;</font></b><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<b style=""><font color="#0000ff">,&nbsp;</font></b><font color="#0000ff"><b>හේතුවෙන් දේපල හානි සිදු වීද?</b></font><br></p><p></p>
+          TA: |
+            <p style="text-align: left;"><font color="#ff00ff"><b>M21D</b>:</font><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><b style="color: rgb(0, 0, 255);">&nbsp;சொத்துகளுக்கு சேதம் ஏற்பட்டுள்ளதா?</b></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21E
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align:left;"><b><font color="#ff00ff">M21E:</font></b><b><font color="#0000ff">Due to&nbsp;</font></b><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<font color="#0000ff"><b>,&nbsp;livestock damaged?</b></font></p><p></p>
+          SI: |
+            <p style="text-align: center;"><br></p><p><b style="color: rgb(255, 0, 255);">M21E</b><font color="#ff00ff">:</font><b style=""><font color="#0000ff">&nbsp;</font></b><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<b style=""><font color="#0000ff">,&nbsp;</font></b><font color="#0000ff"><b>හේතුවෙන් පශු සම්පත් වලට හානි සිදු වීද?</b></font><br></p><p></p>
+          TA: |
+            <p style="text-align:left;"><b><font color="#ff00ff">M21E:</font></b><font color="#ff0000"><b>~~getocclabel()~~</b>&nbsp;</font><b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><font color="#0000ff"><b>&nbsp;கால்நடைகளுக்கு பாதிப்பு ஏற்பட்டுள்ளதா?&nbsp;</b></font></p><p></p>
+  - name: BLOCK001
+    conditions:
+      - questionText:
+          EN: |
+            
+          SI: |
+            
+        helpText:
+          EN: |
+            
+  - name: DISASTERMODDIC_DICT.M21F
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#ff00ff">M21F:</font><font color="#0000ff">Due to</font><font color="#ff00ff">&nbsp;</font><font color="#ff0000">~~getocclabel()~~</font><font color="#0000ff">&nbsp;,&nbsp;</font></b><font color="#0000ff"><b>&nbsp;crops damaged?</b></font><br></p><p></p>
+          SI: |
+            <p style="text-align: left;"><b><font color="#ff00ff">M21F:</font><font color="#0000ff">&nbsp;</font></b><font color="#ff00ff">&nbsp;</font><b><font color="#ff0000">~~getocclabel()~~</font></b><font color="#0000ff">&nbsp;<b>,&nbsp;හේතුවෙන් භෝග වගාවන්ට හානි සිදු වීද?</b></font></p><p></p>
+          TA: |
+            <p><b><font color="#ff00ff">M21F:</font></b><font color="#ff0000"><b>&nbsp;</b><b>~~getocclabel()~~</b></font><font color="#0000ff"><b>&nbsp;</b></font><b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><font color="#0000ff"><b>&nbsp;பயிர்களுக்கு சேதம் ஏற்பட்டுள்ளதா?</b></font><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21G
+    conditions:
+      - questionText:
+          EN: |
+            
+            <p style="text-align: left;"><font color="#ff00ff"><b>M21G</b>:&nbsp;</font><font color="#ff0000"><b>~~getocclabel()~~</b>&nbsp;</font><b><font color="#0000ff">,&nbsp;</font></b><font color="#0000ff"><b>disrupted livelihoods?</b></font></p><p></p>
+          SI: |
+            <p style="text-align: left;"><font color="#ff00ff"><b>M21G</b>:&nbsp;</font><font color="#ff0000"><b>~~getocclabel()~~</b>&nbsp;</font><b><font color="#0000ff">,&nbsp;</font></b><b style="color: rgb(0, 0, 255);">හේතුවෙන්</b><b><font color="#0000ff">&nbsp;ජීවනෝපායට බලපෑමක් සිදුවීද?&nbsp;</font></b></p><p></p>
+          TA: |
+            <p style="text-align: left;"><font color="#ff00ff"><b>M21G</b>:&nbsp;</font><b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><font color="#0000ff"><b>&nbsp;வாழ்வாதாரம் சீர்குலைந்துள்ளதா?</b></font></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21H
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#ff00ff">M21H :</font></b>&nbsp;<b style=""><font color="#0000ff">Due to&nbsp;</font><font color="#ff0000">~~getocclabel()~~</font><font color="#0000ff">&nbsp;, Loss of lives?</font></b><br></p><p></p>
+          SI: |
+            <p style="text-align: left;"><b style="color: rgb(255, 0, 255);">M21H :</b><font color="#ff00ff">&nbsp;</font><b><font color="#ff0000">~~getocclabel()~~</font>&nbsp;</b><b style="color: rgb(0, 0, 255);">හේතුවෙන්</b><b><font color="#0000ff">&nbsp;ජීවිත හානි සිදුවීද?&nbsp;</font></b></p><p></p>
+          TA: |
+            <p><b><font color="#ff00ff">M21H :</font></b>&nbsp;<b><font color="#ff0000">~~getocclabel()~~</font></b>&nbsp;<b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><font color="#0000ff"><b>&nbsp;உயிர் இழப்புக்கள் இடம்பெற்றுள்ளதா?</b></font><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21I
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#ff00ff">M2HI:</font><font color="#0000ff"> </font></b><font color="#0000ff"><b>Due to</b></font><font color="#ff00ff">&nbsp;</font><b><font color="#ff0000">~~getocclabel()~~</font></b><font color="#0000ff"><b>&nbsp;,&nbsp;injuries happened?</b></font><br></p><p></p>
+          SI: |
+            <p style="text-align: left;"><b><font color="#ff00ff">M2HI:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>&nbsp;</b></font><font color="#ff0000"><b>~~getocclabel()~~</b>&nbsp;</font><font color="#0000ff"><b>,&nbsp;හේතුවෙන් තුවාලවීම් සිදු වීද?</b></font></p><p></p>
+          TA: |
+            <p><b><font color="#ff00ff">M2HI:</font><font color="#0000ff"> </font></b><font color="#ff00ff">&nbsp;</font><b><font color="#ff0000">~~getocclabel()~~</font></b><font color="#0000ff"><b>&nbsp;</b></font><b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><b style="color: rgb(0, 0, 255);">&nbsp;காயங்கள் இடம்பெற்றுள்ளதா??</b></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21J
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#ff00ff">M21J:</font><font color="#0000ff">&nbsp;Due to&nbsp;</font></b><b><font color="#ff0000">~~getocclabel()~~</font></b><font color="#0000ff"><b>,&nbsp;Safe drinking water?</b></font><br></p><p></p>
+          SI: |
+            <p style="text-align: left;"><b style="color: rgb(255, 0, 255);">M21J:&nbsp;</b><font color="#ff0000">&nbsp;</font><b><font color="#ff0000">~~getocclabel()~~ </font><font color="#0000ff">,</font></b><b><font color="#0000ff">&nbsp;නිසා ආරක්ෂිත පානීය ජලය ලබා ගැනීමට නොහැකි වීද?&nbsp;</font></b></p><p><br></p><p></p>
+          TA: |
+            <p><b><font color="#ff00ff">M21J:</font><font color="#0000ff">&nbsp;</font></b><b><font color="#ff0000">~~getocclabel()~~&nbsp;</font></b><b style="color: rgb(0, 0, 255);">காரணமாக</b><b><font color="#0000ff">,</font></b><font color="#0000ff">&nbsp;<b>பாதுகாப்பான குடிநீரைப் பெற முடியவில்லையா?</b></font><br></p><p></p><p><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22DIFOTHER
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b><font color="#ff00ff">M22D: </font><font color="#0000ff">If&nbsp;Other&nbsp;</font></b></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b><font color="#ff00ff">M22D:</font></b><b><font color="#0000ff">වෙනත්</font></b></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p></p><p><b><font color="#ff00ff">M22D:&nbsp;</font></b><b style="color: rgb(0, 0, 255);">ஏனையவை</b></p>
+  - name: DISASTERMODDIC_DICT.M22DOTHER
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b style=""><font color="#ff00ff">M22D</font></b><b style="color: rgb(0, 0, 255);">: Please Specify</b><br></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">M22D:</font></b><b style="color: rgb(0, 0, 255);">&nbsp;</b><font color="#0000ff"><b>කරුණාකර සඳහන් කරන්න.</b></font></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b style=""><font color="#ff00ff">M22D</font></b><b style="color: rgb(0, 0, 255);">:&nbsp;</b><font color="#0000ff"><b>தயவுசெய்து குறிப்பிடுக</b></font><br></p><p></p>
+  - name: BLOCK002
+    conditions:
+      - questionText:
+          EN: |
+            
+          SI: |
+            
+  - name: DISASTERMODDIC_DICT.M21B1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="text-align: center;"><font color="#ff00ff">M21B1:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff" style="text-align: center;"><b>Did affected by</b></font><font color="#ff0000"><font style="text-align: center;">&nbsp;</font></font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#ff0000"><span style="text-align: center;">&nbsp;</span></font><font color="#0000ff" style="text-align: center;">&nbsp;<b>at the same place of this housing unit?</b></font></p><p></p>
+          SI: |
+            <p><b style="text-align: center;"><font color="#ff00ff">M21B1:</font></b><font color="#ff0000"><font style="text-align: center;">&nbsp;</font></font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#ff0000"><span style="text-align: center;">&nbsp;</span></font><font color="#0000ff" style="text-align: center;">&nbsp;</font><b style="color: rgb(0, 0, 255);">නිසා මෙම නිවස පිහිටි ස්ථානයට බලපෑමක් සිදුවීද?</b></p><p></p>
+          TA: |
+            <p><b style="text-align: center;"><font color="#ff00ff">M21B1:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>இந்த வீட்டுக் கூறு&nbsp;</b></font><b style="color: rgb(255, 0, 0);">~~M22DOTHER~~</b><font color="#0000ff"><b>&nbsp;பாதிக்கப்பட்டுள்ளதா?</b></font></p><p></p>
+  - name: DISASTERMODDIC_DICT.M21C1
+    conditions:
+      - questionText:
+          EN: |
+            <b><font color="#ff00ff">M21C1:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>Due to</b>&nbsp;</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">, Property loss?</font></b><p></p>
+          SI: |
+            <b><font color="#ff00ff">M21C1:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff">&nbsp;</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">,&nbsp;</font></b><b style="color: rgb(0, 0, 255);">හේතුවෙන් දේපල නැතිවීම් සිදු වීද?</b><p></p>
+          TA: |
+            <b><font color="#ff00ff">M21C1:</font><font color="#0000ff">&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#0000ff"><b>, சொத்து இழப்புக்கள் ஏற்பட்டுள்ளதா?</b></font><p></p>
+  - name: DISASTERMODDIC_DICT.M21D1
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#ff00ff"><b>M21D1</b>:</font><font color="#0000ff"><b>Due to</b></font><font color="#ff00ff">&nbsp;</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b>&nbsp;<font color="#0000ff"><b>, Property damage?</b></font><p></p>
+          SI: |
+            <font color="#ff00ff"><b>M21D1</b>:</font><font color="#ff00ff">&nbsp;</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b>&nbsp;<font color="#0000ff"><b>,&nbsp;</b></font><b style="color: rgb(0, 0, 255);">හේතුවෙන් දේපල හානි සිදු වීද?</b><p></p>
+          TA: |
+            <font color="#ff00ff"><b>M21D1</b>:</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b>&nbsp;<font color="#0000ff"><b>, சொத்துகளுக்கு சேதம் ஏற்பட்டுள்ளதா?</b></font><p></p>
+  - name: DISASTERMODDIC_DICT.M21E1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#ff00ff">M21E1:</font></b><b><font color="#0000ff">Due to&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b>&nbsp;<font color="#0000ff"><b>, Livestock?</b></font></p><p></p><p></p>
+          SI: |
+            <b><font color="#ff00ff">M21E1:</font></b><b><font color="#0000ff">&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b>&nbsp;<font color="#0000ff"><b>,&nbsp;</b></font><b style="color: rgb(0, 0, 255);">හේතුවෙන් පශු සම්පත් වලට හානි සිදු වීද?</b><p></p>
+          TA: |
+            <p><b><font color="#ff00ff">M21E1:</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b>&nbsp;<font color="#0000ff"><b>,&nbsp;கால்நடைகளுக்கு பாதிப்பு ஏற்பட்டுள்ளதா?&nbsp;</b></font></p><p></p><p></p>
+  - name: BLOCK003
+    conditions:
+      - questionText:
+          EN: |
+            
+          SI: |
+            
+  - name: DISASTERMODDIC_DICT.M21F1
+    conditions:
+      - questionText:
+          EN: |
+            <b><font color="#ff00ff">M21F1:</font><font color="#0000ff">Due to</font><font color="#ff00ff">&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">&nbsp;, Crops?</font></b><p></p>
+          SI: |
+            <b><font color="#ff00ff">M21F1:</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">&nbsp;,&nbsp;</font></b><b style="color: rgb(0, 0, 255);">හේතුවෙන් භෝග වගාවන්ට හානි සිදු වීද?</b><p></p>
+          TA: |
+            <b><font color="#ff00ff">M21F1:</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">&nbsp;,&nbsp;</font></b><font color="#0000ff"><b>&nbsp;பயிர்களுக்கு சேதம் ஏற்பட்டுள்ளதா?</b></font><p></p>
+  - name: DISASTERMODDIC_DICT.M21G1
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#ff00ff"><b>M21G1</b>:</font><b><font color="#0000ff">Due to&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">, Livelihood?</font></b><p></p>
+          SI: |
+            <font color="#ff00ff"><b>M21G1</b>:</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#ff0000">&nbsp;</font><font color="#0000ff">,&nbsp;</font></b><b style="color: rgb(0, 0, 255);">හේතුවෙන්</b><b><font color="#0000ff">&nbsp;ජීවනෝපායට බලපෑමක් සිදුවීද?&nbsp;</font></b><p></p>
+          TA: |
+            <font color="#ff00ff"><b>M21G1</b>:</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">,&nbsp;</font></b><font color="#0000ff"><b>வாழ்வாதாரம் சீர்குலைந்துள்ளதா?</b></font><p></p>
+  - name: DISASTERMODDIC_DICT.M21H1
+    conditions:
+      - questionText:
+          EN: |
+            <b><font color="#ff00ff">M21H1 :</font></b>&nbsp;<b><font color="#0000ff">Due to&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">&nbsp;, Loss of lives?</font></b><p></p>
+          SI: |
+            <b><font color="#ff00ff">M21H1 :</font></b>&nbsp;<b><font color="#0000ff">&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">&nbsp;,</font></b><b style="color: rgb(0, 0, 255);">හේතුවෙන්</b><b><font color="#0000ff">&nbsp;ජීවිත හානි සිදුවීද?&nbsp;</font></b><p></p>
+          TA: |
+            <b><font color="#ff00ff">M21H1 :</font></b>&nbsp;&nbsp;<font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><b><font color="#0000ff">&nbsp;,&nbsp;</font></b><font color="#0000ff"><b>உயிர் இழப்புக்கள் இடம்பெற்றுள்ளதா?</b></font><p></p>
+  - name: DISASTERMODDIC_DICT.M21I1
+    conditions:
+      - questionText:
+          EN: |
+            <b><font color="#ff00ff">M2HI1:</font><font color="#0000ff">&nbsp;</font></b><font color="#0000ff"><b>Due to</b></font><font color="#ff00ff">&nbsp;</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#0000ff"><b>&nbsp;, Injuries?</b></font><p></p>
+          SI: |
+            <b><font color="#ff00ff">M2HI1:</font><font color="#0000ff">&nbsp;</font></b><font color="#ff00ff">&nbsp;</font><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#0000ff"><b>,&nbsp;</b></font><b style="color: rgb(0, 0, 255);">හේතුවෙන් තුවාලවීම් සිදු වීද?</b><p></p>
+          TA: |
+            <b><font color="#ff00ff">M2HI1:</font><font color="#0000ff">&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#0000ff"><b>&nbsp;,&nbsp;காயங்கள் இடம்பெற்றுள்ளதா?</b></font><p></p>
+  - name: DISASTERMODDIC_DICT.M21J1
+    conditions:
+      - questionText:
+          EN: |
+            <b><font color="#ff00ff">M21J1:</font><font color="#0000ff">&nbsp;Due to&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#0000ff"><b>,&nbsp;Safe drinking water?</b></font><p></p>
+          SI: |
+            <b><font color="#ff00ff">M21J1:</font><font color="#0000ff">&nbsp;&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#0000ff"><b>,&nbsp;</b></font><b><font color="#0000ff">නිසා ආරක්ෂිත පානීය ජලය ලබා ගැනීමට නොහැකි වීද?&nbsp;</font></b><p></p>
+          TA: |
+            <b><font color="#ff00ff">M21J1:</font><font color="#0000ff">&nbsp;</font></b><font color="#ff0000"><b>~~M22DOTHER~~</b></font><b>&nbsp;</b><font color="#0000ff"><b>,&nbsp;பாதுகாப்பான குடிநீரைப் பெற முடியவில்லையா?</b></font><p></p>
+  - name: DISASTERMODDIC_DICT.M22D7
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D7</font><font color="#0000ff">:</font></b> <font color="#0000ff"><b>Do you or any one of your household members have a primary or alternative livelihood / source of income that is not natural resource dependent?</b></font><br></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">M22D7</font><font color="#0000ff">:&nbsp;</font></b><font color="#0000ff"><b>ඔබට හෝ පවුලේ සාමාජිකයින්ට ස්වභාවික සම්පත් මත නොරැඳුන මූලික හෝ විකල්ප ජීවිකාවක් / ආදායම් මාර්ගයක් තිබේද?&nbsp;</b></font></p><p><br></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D7</font><font color="#0000ff">:</font></b>&nbsp;<b style="color: rgb(0, 0, 255);">உங்களுக்கோ அல்லது உங்கள் குடித்தன உறுப்பினர்களுக்கோ இயற்கை வளங்களைச் சார்ந்து இல்லாத முதன்மையான அல்லது மாற்று வருமான ஆதாரம்/மூலம் உள்ளதா?</b><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22D8_A
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            
+            <p><b><font color="#ff00ff">M22D8_A</font><font color="#0000ff">&nbsp;</font></b>:&nbsp;<font color="#0000ff"><b>Does your household have a mechanism in place for disaster preparedness and response?&nbsp; &nbsp; &nbsp;&nbsp;</b></font><br></p><p><b style="color: rgb(0, 0, 255);">Safe location / shelters</b></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            <p style="text-align: left;"><b style="color: rgb(255, 0, 255);">M22D8_A:&nbsp;&nbsp;&nbsp;</b><font color="#0000ff"><b>කිසියම්&nbsp; ස්වභාවික ආපදා තත්වයකදී එයට මුහුණ දීමට හැකි වන ආකාරයේ ආරක්ෂාකාරී නවාතැන් ඔබ ගෘහ ඒකකය සතුව පවතීද?&nbsp;</b></font></p><p><b style="color: rgb(0, 0, 255);">ආරක්ෂිත ස්ථානයක් / කදවුරක්?&nbsp;</b></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D8_A</font><font color="#0000ff">&nbsp;</font></b>:<b style="color: rgb(0, 0, 255);">எந்தவொரு இயற்கைப் பேரிடரையும் சமாளிக்க குடித்தனத்தில் பின்வரும் வசதி / பொறிமுறை ஒன்று உள்ளதா?&nbsp;</b></p><p><font color="#0000ff"><b>பாதுகாப்பான அமைவிடம்/தங்குமிடங்கள்</b></font></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22D8_B
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D8_B:</font></b><font color="#0000ff"><b>Does your household have a mechanism in place for disaster preparedness and response?</b></font><br></p><p><font color="#0000ff"><b>Early warning system</b></font></p><p><br></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">M22D8_B:&nbsp;</font></b><font color="#0000ff"><b>කිසියම්&nbsp; ස්වභාවික ආපදා තත්වයකදී එයට මුහුණ දීමට හැකි වන ආකාරයේ පූර්ව අනතුරු&nbsp; හැඟවීමේ නිවේදන පද්ධතියක් පවතීද?</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D8_B:</font></b><b style="color: rgb(0, 0, 255);">எந்தவொரு இயற்கைப் பேரிடரையும் சமாளிக்க குடித்தனத்தில் பின்வரும் வசதி / பொறிமுறை ஒன்று உள்ளதா?&nbsp;</b></p><p><font color="#0000ff"><b>முன்கூட்டிய எச்சரிக்கை அறிவிப்பு அமைப்பு</b></font></p><p><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22D8_C
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            
+            <p><b><font color="#ff00ff">M22D8_C</font></b>&nbsp;:&nbsp;<font color="#0000ff"><b>Does your household have a mechanism in place for disaster preparedness and response?</b></font><br></p><p><font color="#0000ff"><b>Emergency bag (ID, deeds, certificates, medicine etc.)</b></font></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><p><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></p></td></tr></tbody></table><font color="#ff00ff" style="text-align: center;"><div style="text-align: left;"><font color="#ff00ff"><b>M22D8_C</b></font><font color="#ff00ff">&nbsp;:</font><font color="#0000ff"><b>&nbsp;කිසියම්&nbsp; ස්වභාවික ආපදා තත්වයකදී එයට මුහුණ දීමට හැකි වන ආකාරයේ හදිසි ගමන්මළු (ID, හා සියළු සහතිකපත් හා බෙහෙත් ද්‍රව්‍ය අඩංගු) තිබේද?&nbsp;&nbsp;</b></font></div></font><p><br></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            
+            <p><b><font color="#ff00ff">M22D8_C</font></b>&nbsp;:&nbsp;<b style="color: rgb(0, 0, 255);">எந்தவொரு இயற்கைப் பேரிடரையும் சமாளிக்க குடித்தனத்தில் பின்வரும் வசதி / பொறிமுறை ஒன்று உள்ளதா?&nbsp;</b></p><p><font color="#0000ff"><b>அவசர பை (அ.அட்டை, உறுதி, அனைத்து சான்றிதழ்கள் மற்றும் மருந்துகள் போன்றவற்றுடன் கூடிய) ஒன்று</b></font></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22D8_D
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            
+            <p><b><font color="#ff00ff">M22D8_D:</font></b><b style="color: rgb(0, 0, 255);">&nbsp;</b><font color="#0000ff"><b>Does your household have a mechanism in place for disaster preparedness and response?</b></font><br></p><p><font color="#0000ff"><b>Regular climate advisories (Specify frequency)</b></font></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            <p style="text-align: left;"><font color="#ff00ff"><b>M22D8_D:</b></font><b style="color: rgb(0, 0, 255);">&nbsp;</b><font color="#0000ff"><b>කිසියම්&nbsp; ස්වභාවික ආපදා තත්වයකදී එයට මුහුණ දීමට හැකි වන ආකාරයේ නිරන්තරයෙන්දේශගුණික තත්ව පිළිබඳ&nbsp; උපදෙස් ලබා දී තිබේද?</b></font></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            
+            <p><b><font color="#ff00ff">M22D8_D:</font></b><b style="color: rgb(0, 0, 255);">&nbsp;</b><b style="color: rgb(0, 0, 255);">எந்தவொரு இயற்கைப் பேரிடரையும் சமாளிக்க குடித்தனத்தில் பின்வரும் வசதி / பொறிமுறை ஒன்று உள்ளதா?&nbsp;</b></p><p><font color="#0000ff"><b>தொடர்ச்சியான வானிலை நிலைமை அறிவுறுத்தல்கள் (விசேட அலைவரிசையினூடாக)</b></font></p><p><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22D8_E
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: left;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D8_E</font></b><b style="color: rgb(0, 0, 255);">:&nbsp;</b><b><font color="#0000ff">&nbsp;</font><font color="#0000ff">Does your household have a mechanism in place for disaster preparedness and response?</font></b><br></p><p><font color="#0000ff"><b>Evacuation routes&nbsp;</b></font></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            <p style="text-align: left;"><b><font color="#ff00ff">M22D8_E:&nbsp;</font></b><font color="#0000ff"><b>&nbsp;කිසියම්&nbsp; ස්වභාවික ආපදා තත්වයකදී එයට මුහුණ දීමට හැකි වන ආකාරයේ අනතුර සිදුවන ස්ථානයෙන් බැහැර වීමේ මාර්ග තිබේද?</b></font></p><p></p>
+          TA: |
+            <p style="text-align: left;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D8_E</font></b><b style="color: rgb(0, 0, 255);">:&nbsp;</b><b><font color="#0000ff">&nbsp;</font></b><font color="#0000ff" style="font-weight: bold;">&nbsp;</font><font color="#0000ff"><b>எந்தவொரு இயற்கைப் பேரிடரையும் சமாளிக்க குடித்தனத்தில் பின்வரும் வசதி / பொறிமுறை ஒன்று உள்ளதா?&nbsp;</b></font></p><p><font color="#0000ff"><b>விபத்து நடந்த இடத்தில் இருந்து வெளியேற வழிகள்</b></font></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22D9
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D9</font></b><b style="color: rgb(0, 0, 255);">:&nbsp;</b><b><font color="#0000ff">Does your household have sufficient information on who to inform and approach, should you face a natural disaster in the next 6 months?</font></b><br></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><b><font color="#ff00ff">M22D9:&nbsp;</font></b><font color="#0000ff"><b>ඔබට&nbsp; මීලඟ මාස 06&nbsp; ඇතුළත&nbsp; ස්වභාවික&nbsp; ආපදාවකට&nbsp; මුහුණ පෑමට සිදු වුවහොත්&nbsp; දැනුම්&nbsp; දිය යුතු&nbsp; පුද්ගලයන් හා ආයතනයන් පිලිබඳ&nbsp; ප්‍රමාණවත්&nbsp; තොරතුරු ඔබ සතුව පවතීද?</b></font></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D9</font></b><b style="color: rgb(0, 0, 255);">:&nbsp;</b><b style="color: rgb(0, 0, 255);">அடுத்த 06 மாதங்களுக்குள் நீங்கள் இயற்கைப் பேரிடரை எதிர்கொண்டால், தெரிவிக்கும் நபர்கள் மற்றும் நிறுவனங்களைப் பற்றிய போதுமான தகவல்கள் உங்களுடைய குடித்தனத்திடம் உள்ளதா?</b><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.M22D10
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D10</font></b><b style="color: rgb(0, 0, 255);">:&nbsp;</b><font color="#0000ff" style="font-weight: bold;">&nbsp;</font><b><font color="#0000ff">Does your household have insurance coverage for disaster-related losses ? (e.g. flood insurance, crop insurance)</font></b><br></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><font color="#ff00ff"><b>M22D10:</b></font><b style="color: rgb(0, 0, 255);">&nbsp;&nbsp;</b><font color="#0000ff"><b>ඔබගේ ගෘහ ඒකකය ගංවතුර රක්ෂණය&nbsp; , භෝග රක්ෂණය වැනි කිසියම්&nbsp; හෝ ආපදා&nbsp; රක්ෂණයකින්&nbsp; ආවරණය වී ඇතිද?:</b></font></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><b><font color="#ff00ff">M22D10</font></b><b style="color: rgb(0, 0, 255);">:&nbsp;</b><b style="color: rgb(0, 0, 255);">வெள்ளக் காப்புறுதி, பயிர்க் காப்புறுதி போன்ற ஏதேனும் பேரிடர்&nbsp; இழப்பு தொடர்பான காப்புறுதியை (காப்பீட்டு பாதுகாப்பை) உங்களுடைய குடித்தனத்திடம் உள்ளதா?</b><br></p><p></p>
+  - name: DISASTERMODDIC_DICT.SAVESTATUS_DISASTERMOD
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><b style=""><font color="#ff00ff">Disaster Module Save&nbsp;</font></b></p><p></p>
+          SI: |
+            <p style="text-align: center;"><font color="#0000ff"><b><span style="font-size: 18px;"><span style="font-size: 16px;">ගෘහ ඒකක ආදායම් හා වියදම් සමීක්ෂණය</span>&nbsp;</span></b></font></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <table class="table table-bordered"><tbody><tr><td><font color="#0000ff"><span style="font-size: 14px;"><b>සංගණන කාණ්ඩය හඳුනා ගැනීමේ අංකය&nbsp;</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ප්‍රාථමික නියැදි ඒකක අංකය</b></span></font><span style="color: rgb(0, 0, 255); font-size: 14px;"><b>&nbsp;&nbsp;</b></span></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ද්විතියික නියැදි ඒකක අංකය</b></span></font></td><td><font color="#0000ff"><span style="font-size: 14px;"><b>ගෘහ ඒකක අංකය</b></span></font></td></tr>
+             <tr><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p><font color="#ff00ff"><b>ආපදා මොඩියුලය&nbsp;</b></font><b style="color: rgb(255, 0, 255);">සුරකින්න</b></p><p></p>
+          TA: |
+            <p style="text-align: center;"><b><font color="#0000ff">HOUSEHOLD INCOME AND EXPENDITURE SURVEY</font></b><br></p><p style="text-align: center;"><b><font color="#0000ff">2025</font></b></p>
+            
+            <p></p><table class="table table-bordered"><tbody><tr><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">MRCB Number</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">PSU&nbsp;&nbsp;</span></b></td><td><b style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">SSU</span></b></td><td><b><font color="#0000ff"><span style="font-size: 14px;">HH</span></font></b></td></tr>
+             <tr><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.A0_MRCB~~</span></td><td><span style="font-size: 14px;">
+               ~~ DISASTERMODDIC_DICT.PSU~~</span></td><td><span style="font-size: 14px;">~~ DISASTERMODDIC_DICT.SSU~~</span></td><td><span style="font-size: 14px;">~~DISASTERMODDIC_DICT.HH~~</span></td></tr></tbody></table>
+            
+            <p style="text-align: left;"><font color="#ff00ff"><b>பேரிடர் தொகுதியைத் சேமித்தல்</b></font><b style=""><font color="#ff00ff">&nbsp;</font></b></p><p></p>
+...

@@ -1,0 +1,41 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=users
+Name=USERS_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=6024901BA95D2920DA40BEA44EA0B6328AAF1F5B57982C4E306E64820D1E9D1E
+
+[Languages]
+EN=English
+SI=සිංහල
+TA=தமிழ்
+
+[Level]
+Label=users Level
+Name=USERS_LEVEL
+
+[IdItems]
+
+[Item]
+Label=UserID
+Name=USERID
+Start=2
+Len=6
+DataType=Alpha
+
+[Record]
+Label=users Record
+Name=USERS_REC
+RecordTypeValue='1'
+RecordLen=17
+
+[Item]
+Label=PW
+Name=PW
+Start=8
+Len=10
+DataType=Alpha

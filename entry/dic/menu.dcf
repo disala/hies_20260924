@@ -1,0 +1,101 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=menu
+Name=MENU_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=999D42D7897BED5F009565546D99F7D44DF25E48BCA7DB388B81F5D2D8353AF3
+
+[Languages]
+EN=English
+SI=සිංහල
+TA=தமிழ்
+
+[Level]
+Label=menu Level
+Name=MENU_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Enumeratorsid
+Name=ENUID
+Start=2
+Len=6
+DataType=Alpha
+
+[Record]
+Label=menu Record
+Name=MENU_REC
+RecordTypeValue='1'
+RecordLen=23
+
+[Item]
+Label=mainMenu
+Name=MAINMENU
+Start=8
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=mainMenu
+Name=MAINMENU_VS1
+Value=1;Get Assignments|පැවරුම් ලබා ගන්න|பணிகளைப் பெறுங்கள்
+Value=2;View Assignments|පැවරුම් බලන්න|பணிகளைப் பார்க்கவும்
+Value=3;Start Survey|සමීක්ෂණය ආරම්භ කරන්න|கணக்கெடுப்பைத் தொடங்கவும்
+Value=4;Create final Data Folder|අවසාන දත්ත ෆෝල්ඩරය සාදන්න|இறுதி தரவு கோப்புறையை உருவாக்கவும்
+Value=5;Send data to HQ|ප්‍රධාන කාර්යාලයට දත්ත යවන්න|தலமைக் காரியாலயத்திற்கு தரவை அனுப்பவும்
+Value=99;Exit|වැඩසටහනෙන් ඉවත් වන්න|வெளியேறுக
+
+[Item]
+Label=selectMRCB
+Name=SELECTMRCB
+Start=10
+Len=6
+DataType=Numeric
+
+[Item]
+Label=selectPSU
+Name=SELECTPSU
+Start=16
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=selectSSU
+Name=SELECTSSU
+Start=19
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=selectHH
+Name=SELECTHH
+Start=21
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=selectModule
+Name=SELECTMOD
+Start=23
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=selectModule
+Name=SELECTMOD_VS1
+Value=1;HIES/CHILD Module|ගෘහ ඒකක ආදායම් වියදම් හා ළමා මොඩියුලය|HIES/CHILD தொகுதி
+Value=2;Disaster Module|ආපදා මොඩියුලය|பேரிடர் தொகுதி
+Value=3;Food Insecurity Module|ආහාර සුරක්ෂිතතාව මොඩියුලය|உணவுப் பாதுகாப்பின்மை தொகுதி
+Value=4;Food Sheet|ආහාර සම්බන්ධ  වියදම් (Food Sheet) මොඩියුලය|உணவு தாள்
+Value=5;Non-Food Module -Part 1|ආහාර නොවන වියදම් මොඩියුලය -1 කොටස|உணவு அல்லாத தொகுதி -பகுதி 1
+Value=6;Non-Food Module -Part 2|ආහාර නොවන වියදම් මොඩියුලය - 2 කොටස|உணவு அல்லாத தொகுதி -பகுதி 2
+Value=7;Housing Information|ගෘහ එකක තොරතුරු මොඩියුලය|வீட்டு தகவல்
+Value=8;Final Result|අවසන් ප්‍රතිඵල කේතය|இறுதி முடிவு

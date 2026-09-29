@@ -1,0 +1,8 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[Files]
+Application=.\nonfoodp2.ent
+InputData=..\nonfood\d1.csdb
+Paradata=.\nonfoodp2.cslog

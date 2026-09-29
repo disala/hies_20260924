@@ -1,0 +1,8 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[Files]
+Application=.\user.ent
+InputData=..\..\support\users.csdb
+Paradata=.\user.cslog

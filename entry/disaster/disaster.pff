@@ -1,0 +1,17 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\disaster.ent
+InputData=|type=None
+Paradata=.\disaster.cslog
+
+[ExternalFiles]
+MENU_DICT=|type=None
+
+[UserFiles]
+DISASTERFILE=.\reports\DisasterReport.html

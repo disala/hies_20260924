@@ -1,0 +1,28 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=FOODSECURITY
+Name=FOODSECURITY
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CenterForms=Yes
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\foodsecurity.ent.apc
+[Message]
+File=.\foodsecurity.ent.mgf
+[Help]
+File=.\foodsecurity.ent.qsf
+[Forms]
+File=.\foodsecurity.fmf
+[Dictionary Types]
+Dict-Type=..\dic\foodinsmoddic.dcf,Input,.\foodsecurity.fmf
