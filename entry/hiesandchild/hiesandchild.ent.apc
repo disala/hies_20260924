@@ -1566,7 +1566,7 @@ string vilatedSN;
 	endif;
 end;//K02_900_C10
 
-// K03 start
+// K03 start pavithra
 function numeric K03_910_S1Q1_S1Q7_S1Q3_S2Q2 ()
 // K03-910 Everybody aged 3 - 19 and usual residents (col-3 = 1) 
 // in section 1 should be available in section 2 (School education)
