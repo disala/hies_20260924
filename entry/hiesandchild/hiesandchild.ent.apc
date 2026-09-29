@@ -1679,6 +1679,81 @@ String vilatedSN;
 	endif;
 end;
 // K03 end
+// K05 start
+
+function K05_1810_TOTALINCOMESEC51_S51A ()
+//K05 1810-If Employment income is available 
+// then Yes/No code should be Yes or 
+// Otherway around in section 5.1
+string vilatedSN_gr0;
+string vilatedSN_0orno;
+string vilatedSN;
+numeric totPersonHasIncome;
+	do varying numeric i=1 until i>totocc(SEC_5_1_EMP_INCOME)
+		if TOTALINCOMESEC51(i)>0 then
+			totPersonHasIncome=totPersonHasIncome+1;
+			vilatedSN_gr0=vilatedSN_gr0+ maketext("[Row: %d, SN: %d] ",i,S51BQ2(i));
+		else
+			vilatedSN_0orno=vilatedSN_0orno+ maketext("[Row: %d, SN: %d] ",i,S51BQ2(i));
+		endif;
+	enddo;
+	
+	if totPersonHasIncome>0 and S51A<>1 then
+		vilatedSN=vilatedSN_gr0;
+	endif;
+	if totPersonHasIncome=0 and S51A=1 then
+		vilatedSN=vilatedSN_0orno;
+	endif;
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001810,vilatedSN),"E");
+		errmsg (7001810,vilatedSN) select("Edit Income",SEC_5_1_EMP_INCOME000,"Pass",continue);
+		pass();
+	endif;
+end;
+
+function numeric K05_1820_S51BQ2 () 
+// K05 1820-Only one record is allowed for a same person 
+// in Section 5.5.1 (Other income)
+list lstSN;
+String vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_5_1_EMP_INCOME)
+		if lstSN.seek(S51BQ2(i))=0 then
+			lstSN(lstSN.length()+1)=S51BQ2(i);
+		else
+			vilatedSN=vilatedSN+ maketext("SN: %d] ",S51BQ2(i));
+		endif;
+	enddo;	
+
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001820,vilatedSN),"E");
+		errmsg (7001820,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Income",SEC_5_1_EMP_INCOME000,"Pass",continue);
+		pass();
+	endif;
+end;
+
+function numeric K05_1830_S1Q1_S1Q21_S51BQ2 () 
+//K05 1830-All persons with employment status (col 21) in section 1  
+//as 1, 2, 3 or 4 (Gov, Semi gov., or Private employee) should be
+//included in the persons in section 5.1 
+String vilatedSN;
+numeric found;
+	do varying numeric i=1 until i>totocc(SEC_1_DEMOGRAPHY)
+		if S1Q21(i) in 1:4 then
+			found=seek(SEC_5_1_EMP_INCOME.S51BQ2=S1Q1(i));
+			if found=0 then
+				vilatedSN=vilatedSN+ maketext("[Row: %d, SN: %d] ",i,S1Q1(i));
+			endif;
+		endif;
+	enddo;	
+
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001830,vilatedSN),"E");
+		errmsg (7001830,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Income",SEC_5_1_EMP_INCOME000,"Pass",continue);
+		pass();
+	endif;
+end;
+
+// K05 end
 
 {-- Edit Functions End}
 function saveIdsForLogin() 
@@ -3877,37 +3952,9 @@ endif;
 endif;
 endif;
 PROC SEC_5_1_EMP_INCOME000
-{preproc
-Ask if S51A = 1;
-
-valueset allMembers_51;
-
-do varying numeric i = 1 while i <= totocc(SEC_1_DEMOGRAPHY000)
-
-//if S1Q3(i) = 1  AND S1Q21(i) in 1:4 and S1Q7(i) in 15:100 then
-if S1Q3(i) = 1  AND S1Q7(i) in 15:100 and S1Q21(i) in 1,2,4  then  // changed 20250106  and S1Q21(i) in 1,2,4  then
-
-   allMembers_51.add(S1Q2(i),S1Q1(i));
- endif;
-  
-enddo;
-
-setvalueset(S51BQ2,allMembers_51);
-
-
-{numeric noofSec51=count(SEC_1_DEMOGRAPHY000 where (S1Q21 in 1:4 and S1Q3=1 and S1Q7 in 15:100));
-
-if noofSec51=0 then  S1Q21 in 1,2,4 
-    skip to S52A;
-endif;}
-
-//numeric noofSec51=count(SEC_1_DEMOGRAPHY000 where S1Q3=1 and S1Q7 in 15:100);
-numeric noofSec51=count(SEC_1_DEMOGRAPHY000 where(S1Q21 in 1,2,4 and S1Q3=1 and S1Q7 in 15:100));
-
-if noofSec51=0 then
-    skip to S52A;
-endif;}
-
+	K05_1810_TOTALINCOMESEC51_S51A (); // 1810
+	K05_1820_S51BQ2 (); // 1820
+	K05_1830_S1Q1_S1Q21_S51BQ2 (); // 1830
 PROC S51BQ2
 preproc 
 

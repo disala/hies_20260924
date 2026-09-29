@@ -109,6 +109,10 @@ Language=EN
 7001520 K04 1520 Serial numbers of the all persons in section 1 column 3 and filled with code 1 should be included In column 2. Count of persons in here should be equal to count of persons with code 1 in section 1 column 3 (RN: %s)
 7001530 K04 1530 column 3 can not be blank for all person, has to be filled with 1 or 2. if it is 2, he/she need to be directed to column 6 (RN: %s)
 
+7001810 K05 1810-If Employment income is available then Yes/No code should be Yes or Otherway around in section 5.1 (RN: %s)
+7001820 K05 1820-Only one record is allowed for a same person in Section 5.5.1 (Other income) (RN: %s)
+7001830 K05 1830-All persons with employment status (col 21) in section 1  as 1, 2, 3 or 4 (Gov, Semi gov., or Private employee) should be included in the persons in section 5.1 (RN: %s)
+
 
 1000 Household Income And Expenditure Survey
 1001 Do you want to exit from the program?
