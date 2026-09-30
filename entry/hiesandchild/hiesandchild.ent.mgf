@@ -132,10 +132,10 @@ Language=EN
 7001750 K04 1750 - Column 6 can not be blank for all persons included in column 1, and has to be filled with 1, 2, 3 or 4 (RN: %s)
 7001760 K04 1760 - Column 7 can not be blank for all persons included in column 1, and has to be filled with 1 or 2. if it is 2, he/she need to be directed to column 10 (RN: %s)
 7001770 K04 1770 - Column 8 can not be blank for persons filled 1 in column 7, and has to be filled with 1 or 2. If it is 2 in column 7, this should remain blank (RN: %s)
-7001780 K04 1 (RN: %s)
-7001790 K04 1 (RN: %s)
-7001800 K04 1 (RN: %s)
-7001810 K04 1 (RN: %s)
+7001780 K04 1780 - If 1 for column 8, column 9 should be 1, 2, 3, 4 or 5. If it is 2 in column 8, this should remain blank (RN: %s)
+7001790 K04 1790 - Column 10 can not be blank for all persons included in column 1, and has to be filled with 1 or 2 (RN: %s)
+7001800 K04 1800 - Column 11 can not be blank for all persons included in column 1, and has to be filled with 1 or 2 (RN: %s)
+7001810 K04 1810 - Column 12 can not be blank for all persons included in column 1, and has to be filled with 1 or 2 (RN: %s)
 
 1000 Household Income And Expenditure Survey
 1001 Do you want to exit from the program?

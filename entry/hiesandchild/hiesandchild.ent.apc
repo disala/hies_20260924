@@ -2182,6 +2182,81 @@ function numeric K04_1770_S3BQ8 ()
 		pass();
 	endif;
 end;
+
+function numeric K04_1780_S3BQ8_S3BQ9 ()
+// K04 1780-If 1 for column 8, column 9 should be 1, 2, 3, 4 or 5. 
+//If it is 2 in column 8, this should remain blank.
+	String vilatedSN;
+	do varying numeric i=1 until i>totocc(SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC)
+		if S3BQ8(i)=1 then
+			if NOT S3BQ9(i) in 1,2,3,4,5 then	
+				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+			endif;
+		endif;
+		if S3BQ8(i)=2 then 
+			if S3BQ9(i)<>NOTAPPL then
+				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+			endif;
+		endif;
+	enddo;
+
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001780,vilatedSN),"E");
+		errmsg (7001780,vilatedSN) select("Edit Health",SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC000,"Pass",continue);
+		pass();
+	endif;
+end;
+
+function numeric K04_1790_S3BQ10 ()
+// K04 1790-column 10 can not be blank for all persons included in column 1, 
+//and has to be filled with 1 or 2. 
+	String vilatedSN;
+	do varying numeric i=1 until i>totocc(SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC)
+		if S3BQ10(i)=NOTAPPL or NOT S3BQ10(i) in 1,2 then 
+			vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+		endif;
+	enddo;
+
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001790,vilatedSN),"E");
+		errmsg (7001790,vilatedSN) select("Edit Health",SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC000,"Pass",continue);
+		pass();
+	endif;
+end;
+
+function numeric K04_1800_S3BQ11 ()
+// K04 1800-column 11 can not be blank for all persons included in column 1, 
+//and has to be filled with 1 or 2.  
+	String vilatedSN;
+	do varying numeric i=1 until i>totocc(SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC)
+		if S3BQ11(i)=NOTAPPL or NOT S3BQ11(i) in 1,2 then 
+			vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+		endif;
+	enddo;
+
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001800,vilatedSN),"E");
+		errmsg (7001800,vilatedSN) select("Edit Health",SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC000,"Pass",continue);
+		pass();
+	endif;
+end;
+
+function numeric K04_1810_S3BQ12 ()
+// K04 1810-column 12 can not be blank for all persons included in column 1, 
+//and has to be filled with 1 or 2.  
+	String vilatedSN;
+	do varying numeric i=1 until i>totocc(SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC)
+		if S3BQ12(i)=NOTAPPL or NOT S3BQ12(i) in 1,2 then 
+			vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+		endif;
+	enddo;
+
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001810,vilatedSN),"E");
+		errmsg (7001810,vilatedSN) select("Edit Health",SECTION_3B_SECTION_3B_HEALTH_NEUROLOGIC000,"Pass",continue);
+		pass();
+	endif;
+end;
 // K04 end
 
 {-- Edit Functions End}
