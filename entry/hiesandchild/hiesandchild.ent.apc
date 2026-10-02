@@ -1567,6 +1567,7 @@ string vilatedSN;
 end;//K02_900_C10
 
 // K03 start
+// K03 start pavithra
 function numeric K03_910_S1Q1_S1Q7_S1Q3_S2Q2 ()
 // K03-910 Everybody aged 3 - 19 and usual residents (col-3 = 1) 
 // in section 1 should be available in section 2 (School education)
@@ -1606,6 +1607,468 @@ String vilatedSN;
 	endif;
 end;
 
+function numeric K03_930_S1Q3_S1Q7_S2Q3() 
+//K03-930 Only the persons If section 1 Col7 =3 or 4 and 
+//Col 3 = 1 should be  In school col 3 in section 2 (School education).
+
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S1Q3(i) = 1 then
+					if NOT S1Q7(i) in 3:4 then 
+							if NOT S2Q3(i) = 1 then 
+							vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+						endif;
+				endif;
+			endif;
+	enddo;	
+
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7000930,vilatedSN),"E");
+		errmsg (7000930,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass();
+	endif;
+end; //K03_930_S1Q3_S1Q7_S2Q3
+
+function numeric K03_940_S2Q3_S1Q13() 
+//K03-940 If In preschool (col 3 = 1) in section 2 (School education) col 13(Cur edu) 
+//should be 1 (Pre School) in section 1.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 1 then
+					if NOT S1Q13(i)= 1 then 
+							vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+						endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7000940,vilatedSN),"E");
+		errmsg (7000940,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass();
+	endif;
+end; //K03_940_S2Q3_S1Q13
+
+function numeric K03_950_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10() 
+//K03 950- If attending Preschool (col 3 = 1) in section 2 (School education) 
+//then col 5 to 10 can not be blank.
+
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q3(i) = 1 then
+					if	S2Q5(i) = notappl or S2Q6(i) = notappl or S2Q7(i) = notappl or
+						S2Q8(i) = notappl or S2Q9(i) = notappl  or S2Q10(i) = notappl then 	 
+									vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+					endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7000950,vilatedSN),"E");
+		errmsg (7000950,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+	endif;
+end; //K03_950_S2Q3_S1Q13
+
+function numeric K03_960_S2Q3_S2Q4_S2Q11_S2Q12_S2Q13() 
+//K03 960- If attending pre School (col 3 = 1) in section 2 (School education) 
+//then col  4 and 11 to 13 should be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 1 then
+			if	S2Q4(i) = notappl or S2Q11(i) = notappl or S2Q12(i) = notappl 
+				or S2Q13(i) = notappl  then 	 
+							vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+						endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7000960,vilatedSN),"E");
+		errmsg (7000960,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+	endif;
+end; //K03_960_S2Q3_S2Q4_S2Q11_S2Q12_S2Q13
+
+function numeric K03_970_S2Q3_S1Q13()
+//K03 970- If In prechool (col 3 = 2) in section 2 (School education) 
+//col 13(Cur edu) should be 9 (School) in section 1.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q3(i) = 2 then
+					if S1Q13(i) <> 9 then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7000970,vilatedSN),"E");
+		errmsg (7000970,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+	endif;
+end; //K03_970_S2Q3_S1Q13
+
+function numeric K03_980_S2Q3_S2Q11()
+//K03 980- If never attending preSchool (col 3 = 2) in section 2 (School education)
+// then col  11 can not be blank
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q3(i) = 2 then
+					if S2Q11(i) = notappl then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7000980,vilatedSN),"E");
+		errmsg (7000980,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+	endif;
+end; //K03_980_S2Q3_S2Q11
+
+function numeric K03_990_S2Q3_S2Q4_S2Q11_S2Q12_S2Q13() 
+//K03 990- If Never attended preschool (col 3 = 2) in section 2 (School education)
+// then col 4 to 10 and 12 to 13 should be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 2 then
+				if	S2Q4(i) = notappl or S2Q5(i) = notappl or S2Q6(i) = notappl or 
+					S2Q7(i) = notappl or S2Q8(i) = notappl or S2Q9(i) = notappl or
+					S2Q10(i) = notappl or S2Q12(i) = notappl or S2Q13(i) = notappl  then 	 
+								vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+							endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7000990,vilatedSN),"E");
+		errmsg (7000990,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+	endif;
+end; //K03_990_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q12_S2Q13
+
+function numeric K03_1000_S2Q3_S1Q13()
+//K03 1000- If In preschool (col 3 = 3) in section 2 (School education) 
+//col 13(Cur edu) should be 9 (School) in section 1. 
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q3(i) = 3 then
+					if S1Q13(i) <> 9 then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001000,vilatedSN),"E");
+		errmsg (7001000,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1000_S2Q3_S1Q13
+
+function numeric K03_1010_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q11_S2Q12_S2Q13()
+//K03 1010- If attended preschool in the past (col 3 = 3) in section 2 (School education) 
+//then col 4 to 13 should be blank. 
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 3 then
+				if	S2Q4(i) = notappl or S2Q5(i) = notappl or S2Q6(i) = notappl or 
+					S2Q7(i) = notappl or S2Q8(i) = notappl or S2Q9(i) = notappl or
+					S2Q10(i) = notappl or S2Q11(i) = notappl or S2Q12(i) = notappl or S2Q13(i) = notappl  then 	 
+								vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+							endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001010,vilatedSN),"E");
+		errmsg (7001010,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1010_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q11_S2Q12_S2Q13
+
+function numeric K03_1020_S2Q3_S1Q13()
+//K03 1020- If In preschool (col 3 = 4) in section 2 (School education) col 13(Cur edu)
+// should be 3 (School) in section 1. 
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q3(i) = 4 then
+					if S1Q13(i) <> 3 then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001020,vilatedSN),"E");
+		errmsg (7001020,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1020_S2Q3_S1Q13
+
+function numeric K03_1030_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10()
+//K03 1030- If attending to special education (col 3 = 4) in section 2 (School education) 
+// then col 5 to 10 can not be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 4 then
+				if	S2Q5(i) = notappl or S2Q6(i) = notappl or 
+					S2Q7(i) = notappl or S2Q8(i) = notappl or S2Q9(i) = notappl or
+					S2Q10(i) = notappl   then 	 
+								vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+							endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001030,vilatedSN),"E");
+		errmsg (7001030,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1030_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10
+
+function numeric K03_1040_S2Q4_S2Q11_S2Q12_S2Q13()
+//K03 1040- If attending to special education (col 3 = 4) in section 2 (School education) //
+//then col  4 and 11 to 13 should be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 4 then
+				if	 S2Q4(i) <> notappl or S2Q11(i) <> notappl or 
+					 S2Q12(i) <> notappl or S2Q13(i) <> notappl    then 	 
+								vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+							endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001040,vilatedSN),"E");
+		errmsg (7001040,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1040_S2Q4_S2Q11_S2Q12_S2Q13()
+
+function numeric K03_1050_S1Q1_S1Q3_S1Q7 ()
+// [ICT] K03 1050- Only the persons If section 1 Col7 =5 to 19 and 
+// Col 3 = 1 should be  In school col 4 in section 2 (School education).
+String vilatedSN;
+numeric found;
+	do varying numeric i=1 until i>totocc(SEC_1_DEMOGRAPHY)
+		if S1Q3(i)=1 and S1Q7(i) in 5:19 then
+			found=seek(SEC_2_PRESCHOOL_SCHOOL.S2Q2=S1Q1(i));
+			if found=0 then
+				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+			endif;
+		endif;
+	enddo;
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001050,vilatedSN),"E");
+		errmsg (7001050,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass();
+	endif;
+end; //K03_1050_S1Q1_S1Q3_S1Q7()
+
+function numeric K03_1060_S2Q4_S2Q11_S2Q12_S2Q13()
+//K03 1060- If In preschool (col 4 = 1 or 2) in section 2 (School education) 
+//col 13(Cur edu) should be 2 (School) in section 1.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q4(i) in 1:2 then
+				if	 S1Q13(i) <> 2 then 	 
+				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+							endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001060,vilatedSN),"E");
+		errmsg (7001060,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1060_S2Q4_S1Q13
+
+function numeric K03_1070_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10()
+//K03 1070- If attending school (col 4 = 1 or 2 ) in section 2 (School education) 
+//then col 5 to 10 can not be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q4(i) in 1:2 then
+				if	 S2Q5(i) = notappl or S2Q6(i) = notappl or 
+					 S2Q7(i) = notappl or S2Q8(i) = notappl or
+					 S2Q9(i) = notappl or S2Q10(i) = notappl then 	 
+					 vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001070,vilatedSN),"E");
+		errmsg (7001070,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1070_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10
+
+function numeric K03_1080_S2Q4_S2Q11_S2Q13()
+//K03 1080- If attending School (col 4 = 1) in section 2 (School education)
+// then col 11 to 13 should be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q4(i) = 1 then
+				if	 S2Q11(i) <> notappl or S2Q12(i) <> notappl or S2Q13(i) <> notappl then 	 
+					 vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001080,vilatedSN),"E");
+		errmsg (7001080,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1080_S2Q4_S2Q11_S2Q13
+
+function numeric K03_1090_S2Q4_S1Q13()
+//K03 1090- If In school (col 4 = 3) in section 2 (School education) 
+//col 13(Cur edu) should be 9 (School) in section 1.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q4(i) = 3 then
+					if S1Q13(i) <> 9 then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001090,vilatedSN),"E");
+		errmsg (7001090,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1090_S2Q4_S1Q13
+
+function numeric K03_1100_S2Q4_S1Q11()
+//K03 1100- If never attending School (col 4 = 3) in section 2 
+//(School education) then col  11 can not be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q4(i) = 3 then
+					if S1Q11(i) = NOTAPPL then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001100,vilatedSN),"E");
+		errmsg (7001100,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1100_S2Q4_S1Q11
+
+function numeric K03_1110_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q12_S2Q13()
+//K03 1110- If Never attended school (col 4 = 3) in section 2 
+//(School education) then col 5 to 10 and 12 to 13 should be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q4(i) = 3 then
+				if	 S2Q5(i) <> notappl or S2Q6(i) <> notappl or S2Q7(i) <> notappl or S2Q8(i) <> notappl or S2Q9(i) <> notappl or S2Q10(i) <> notappl or S2Q12(i) <> notappl or S2Q13(i) <> notappl then 	 
+					 vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001110,vilatedSN),"E");
+		errmsg (7001110,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1110_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q12_S2Q13
+
+function numeric K03_1120_S2Q4_S1Q13()
+//K03 1120- If In preschool (col 4= 4) in section 2 (School education) 
+//col 13(Cur edu) should be 9 (School) in section 1.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q4(i) = 4 then
+					if S1Q13(i) <> 9 then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001120,vilatedSN),"E");
+		errmsg (7001120,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1120_S2Q4_S1Q13
+
+function numeric K03_1130_S2Q4_S1Q12_S1Q13()
+//K03 1130- If attended school in the past (col 4 = 4) in section 2 
+//(School education) then col 12 and 13 should not be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+				if S2Q4(i) = 4 then
+					if S1Q12(i)=NOTAPPL or S1Q13(i)=NOTAPPL then 	 
+						vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+								endif;
+				endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001130,vilatedSN),"E");
+		errmsg (7001130,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1130_S2Q4_S1Q12_S1Q13
+
+function numeric K03_1140_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q11()
+//K03 1140- If attended school in the past (col 4 = 4) in section 2 
+//(School education) then col 5 to 11 should be blank
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q4(i) = 4 then
+				if S2Q5(i) <> notappl or S2Q6(i) <> notappl or S2Q7(i) <> notappl or S2Q8(i) <> notappl or S2Q9(i) <> notappl or S2Q10(i) <> notappl or S2Q11(i) <> notappl then 	 
+					 vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001140,vilatedSN),"E");
+		errmsg (7001140,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1140_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q11
+
+function numeric K03_1150_S2Q4_S2Q13()
+//K03 1150- If Inschool (col 4 = 5) in section 2 (School education) 
+//col 13(Cur edu) should be 3 (School) in section 1.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q4(i) = 5 then
+				if S2Q13(i) <> 3 then 	 
+					 vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001150,vilatedSN),"E");
+		errmsg (7001150,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1150_S2Q4_S2Q13
+
+function numeric K03_1160_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10()
+//K03 1160- If attending to special education (col 3 = 4) in section 2 
+//(School education) then col 5 to 10 can not be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 4 then
+				if S2Q5(i) <> notappl or S2Q6(i) <> notappl or S2Q7(i) <> notappl or S2Q8(i) <> notappl or S2Q9(i) <> notappl or S2Q10(i) <> notappl then 	 
+					 vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001160,vilatedSN),"E");
+		errmsg (7001160,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1160_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10
+
+function numeric K03_1170_S2Q3_S2Q11_S2Q12_S2Q13()
+//K03 1170- If attending to special education (col 3 = 4) in section 2 
+//(School education) then col   11 to 13 should be blank.
+string vilatedSN;
+	do varying numeric i=1 until i>totocc(SEC_2_PRESCHOOL_SCHOOL000)
+			if S2Q3(i) = 4 then
+				if S2Q11(i) <> notappl or S2Q12(i) <> notappl or S2Q13(i) <> notappl then 	 
+					 vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
+			endif;
+	enddo;	
+	if strip(vilatedSN)<>"" then
+		sem (maketext(7001170,vilatedSN),"E");
+		errmsg (7001170,vilatedSN) select("Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
+		pass ();
+	endif;
+end; //K03_1170_S2Q3_S2Q11_S2Q12_S2Q13
 
 // K03 end
 
@@ -3303,7 +3766,31 @@ PROC SEC_2_PRESCHOOL_SCHOOL_FORM
 PROC SEC_2_PRESCHOOL_SCHOOL000
 	K03_910_S1Q1_S1Q7_S1Q3_S2Q2 (); // 910
 	K03_920_SEC_1_DEMOGRAPHY_SEC_2_PRESCHOOL_SCHOOL (); // 920
-	
+	K03_930_S1Q3_S1Q7_S2Q3() ; // 930
+	K03_940_S2Q3_S1Q13(); // 940
+	K03_950_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10(); // 950
+	K03_960_S2Q3_S2Q4_S2Q11_S2Q12_S2Q13(); // 960
+	K03_970_S2Q3_S1Q13(); // 970
+	K03_980_S2Q3_S2Q11(); // 980
+	K03_990_S2Q3_S2Q4_S2Q11_S2Q12_S2Q13(); // 990
+	K03_1000_S2Q3_S1Q13(); //1000
+	K03_1010_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q11_S2Q12_S2Q13(); //1010
+	K03_1020_S2Q3_S1Q13(); // 1020
+	K03_1030_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10(); // 1030
+	K03_1040_S2Q4_S2Q11_S2Q12_S2Q13(); // 1040
+	K03_1050_S1Q1_S1Q3_S1Q7 (); // 1050
+	K03_1060_S2Q4_S2Q11_S2Q12_S2Q13(); // 1060
+	K03_1070_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10(); // 1070
+	K03_1080_S2Q4_S2Q11_S2Q13(); // 1080
+	K03_1090_S2Q4_S1Q13(); // 1090
+	K03_1100_S2Q4_S1Q11(); // 1100
+	K03_1110_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q12_S2Q13(); // 1110
+	K03_1120_S2Q4_S1Q13(); // 1120
+	K03_1130_S2Q4_S1Q12_S1Q13(); // 1130
+	K03_1140_S2Q4_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10_S2Q11(); // 1140
+	K03_1150_S2Q4_S2Q13(); // 1150
+	K03_1160_S2Q3_S2Q5_S2Q6_S2Q7_S2Q8_S2Q9_S2Q10(); // 1160
+	K03_1170_S2Q3_S2Q11_S2Q12_S2Q13(); // 1170
 
 PROC S2Q2
 preproc 

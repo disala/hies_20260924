@@ -626,7 +626,6 @@ dirlist(HIES_DS_files, maketext(".\..\checking\%06s",MENU_DICT.ENUID), filter :=
 if HIES_DS_files.length()>0 then
 
 	setfile (HIESANDCHILDDIC_DICT,HIES_DS_files(1),update);
-	
 	forcase HIESANDCHILDDIC_DICT do 
 		
 		if count(HIESANDCHILDDIC_DICT.SEC_1_DEMOGRAPHY)>0 then
@@ -656,7 +655,6 @@ string sssu;
 	numeric ssulists = 0;
 
 	list numeric doneSSUList;
-	
     forcase ASSIGNMENTS_DICT where ASSIGNMENTS_DICT.A0_MRCB=MENU_DICT.SELECTMRCB and 
 			ASSIGNMENTS_DICT.PSU=MENU_DICT.SELECTPSU  do
 		//inc(ssulists); 
@@ -670,12 +668,12 @@ string sssu;
 				ssulist.add (newssu + " " + newHeadName ,ASSIGNMENTS_DICT.SSU);
 			else
 				newssu="[D] SSU - " + edit ("99",ASSIGNMENTS_DICT.SSU);
-				ssulist.add (newssu + " " + ssuInHIESName(ASSIGNMENTS_DICT.SSU) ,ASSIGNMENTS_DICT.SSU);
+				//ssulist.add (newssu + " " + ssuInHIESName(ASSIGNMENTS_DICT.SSU) ,ASSIGNMENTS_DICT.SSU);
+				ssulist.add (newssu + " " ,10);
 			endif; 
 			doneSSUList(doneSSUList.length()+1)=ASSIGNMENTS_DICT.SSU;
 		endif;
 	enddo;
-	
     setvalueset($,ssulist);//ok
 	savesetting(sssu,MENU_DICT.SELECTSSU);
 	
