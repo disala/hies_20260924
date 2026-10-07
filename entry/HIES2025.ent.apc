@@ -668,8 +668,8 @@ string sssu;
 				ssulist.add (newssu + " " + newHeadName ,ASSIGNMENTS_DICT.SSU);
 			else
 				newssu="[D] SSU - " + edit ("99",ASSIGNMENTS_DICT.SSU);
-				//ssulist.add (newssu + " " + ssuInHIESName(ASSIGNMENTS_DICT.SSU) ,ASSIGNMENTS_DICT.SSU);
-				ssulist.add (newssu + " " ,10);
+				ssulist.add (newssu + " " + ssuInHIESName(ASSIGNMENTS_DICT.SSU) ,ASSIGNMENTS_DICT.SSU);
+				//ssulist.add (newssu + " " ,10);
 			endif; 
 			doneSSUList(doneSSUList.length()+1)=ASSIGNMENTS_DICT.SSU;
 		endif;

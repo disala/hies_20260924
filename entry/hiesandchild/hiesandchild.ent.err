@@ -1,9 +1,9 @@
 ﻿Application     D:\Office\H\WORK\restru\cont_wrt_entry_support_checking\entry\hiesandchild\hiesandchild.ent
 Type            Entry
-Date            Oct 01, 2026
-Time            12:39:45
+Date            Oct 07, 2026
+Time            13:05:49
 
 CSPro Error Summary
 
-WARNING(S2Q2, 3309): S3AQ2 should have a subscript - you may get error messages when you run this application
-WARNING(S2Q2, 3325): S3AQ2 should have a subscript - you may get error messages when you run this application
+WARNING(S2Q2, 3805): S3AQ2 should have a subscript - you may get error messages when you run this application
+WARNING(S2Q2, 3821): S3AQ2 should have a subscript - you may get error messages when you run this application

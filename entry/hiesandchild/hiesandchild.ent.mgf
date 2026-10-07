@@ -2,7 +2,7 @@
 Language=EN
 
 7000010 K01 10 - Col 1 to 11 can not be blank for all the persons in section 1. (RN: %s)
-7000020 K01 20 - If code of Col 3 in section 1 is 2 then col 22 and col 23 in section1 should be blank  (RN: %s)
+7000020 K01 20 - [ICT] If code of Col 3 in section 1 is 2 then col 22 and col 23 in section1 should be blank  (RN: %s)
 7000030 K01 30 - [ICT] If code of Col 3 in section 1 is 1 then col 22 and col 23 in section1 should be blank (RN: %s)
 7000040 K01 40 - If code of Col 3 in section 1 is 2 then col 12 to col 21 in section1 should be blank (RN: %s)
 7000050 K01 50 - If code of Col 3 in section 1 is 2 then col-4 (relationship to head of the household )should not be coded as  1 or 6 or 7 (RN: %s)
@@ -17,8 +17,8 @@ Language=EN
 7000140 K01 140 - [ICT] If Age (Col.7) < 12 then NVQ (Col. 15)  should  be blank in section 1 (Persons) (RN: %s)
 7000150 K01 150 - If (col-3) = 1 & Age (Col-7) >= 15 years  then Col-16 can not be blank in section 1 (Persons) (RN: %s)
 7000160 K01 160 - If (col-3) = 2 & Age (Col-7) < 15 years  then Col-16 can  be blank in section 1 (Persons) (RN: %s)
-7000170 K01 170 - If (col-3) = 1 & Age (Col-16) = 1 or 2  years  then Col-17 can not be blank in section 1 (Persons) (RN: %s)
-7000180 K01 180 - If (col-3) = 2 & Age (Col-16) >  2  years  then Col-17 can  be blank in section 1 (Persons) (RN: %s)
+7000170 K01 170 - [ICT] If (col-3) = 1 & Age (Col-16) = 1 or 2  years  then Col-17 can not be blank in section 1 (Persons) (RN: %s)
+7000180 K01 180 - [ICT] If (col-3) = 2 & Age (Col-16) >  2  years  then Col-17 can  be blank in section 1 (Persons) (RN: %s)
 7000190 K01 190 - If (col-3) = 1 & Age (Col-7) >= 15 years  then Col-18 can not be blank in section 1 (Persons) (RN: %s)
 7000200 K01 200 - If (col-3) = 2 & Age (Col-7) < 15 years  then Col-18 can  be blank in section 1 (Persons) (RN: %s)
 7000210 K01 210 - If (col-18) = 1 then Col-21 can not be blank in section 1 (Persons) (RN: %s)
@@ -59,7 +59,7 @@ Language=EN
 7000550 K02 550 The serial number in section 1 of CM should be a number in column 1 of section 1 in HIES Quectionier (RN: %s)
 7000560 K02 560 The serial number of the section 1 of CM can notbe repeated. (DUP: %s)
 7000570 K02 570 Age in section 1 of CM cannot be blank (RN: %s)
-7000580 K02 580 [ICT] ?
+7000580 K02 580 [ICT] ? NO age
 7000590 K02 590 The place of residence of the biological mother of the child cannot be blank in C1_1 in CM (RN: %s)
 7000600 K02 600 The place of residence of biological mother of child should be 1-4 for quection C1_1 in CM (RN: %s)
 7000610 K02 610 If the place of residence of the biological mother of the child in CM C1_1 is equal to 1, then question C1_2 in CM cannot be blank (RN: %s)

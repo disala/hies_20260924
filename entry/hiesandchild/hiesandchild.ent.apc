@@ -89,11 +89,12 @@ numeric foundBlank;
 end;
 
 function K01_20_S1Q3_S1Q22_S1Q23()
-// 20- K01  If code of Col 3 in section 1 is 2 then col 22 and col 23 in section1 should be blank
+// 20- K01  If code of Col 3 in section 1 is 2 then 
+// col 22 and col 23 in section1 should [NOT] be blank (NOT from sinhala)
 string vilatedSN="";
 	do varying numeric i=1 until i>totocc(SEC_1_DEMOGRAPHY)
 		if S1Q3(i)=2 then
-			if S1Q22(i)=notappl or S1Q23(i)=notappl then
+			if S1Q22(i)<>notappl or S1Q23(i)<>notappl then
 				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
 			endif;
 		endif;
@@ -107,7 +108,7 @@ end;
 
 function K01_30_S1Q3_S1Q22_S1Q23()
 // ERROR IN GIVEN BY DIV 9 / we add not 2
-// 30- K01  If code of Col 3 in section 1 is not 2 then 
+// 30- K01  If code of Col 3 in section 1 is [not] 2 then 
 // col 22 and col 23 in section1 should not be blank
 string vilatedSN="";
 	do varying numeric i=1 until i>totocc(SEC_1_DEMOGRAPHY)
@@ -547,7 +548,7 @@ string vilatedSN;
 	enddo;
 	if strip(vilatedSN)<>"" then
 		sem (maketext(7000280,vilatedSN),"E");
-		errmsg (7000280,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Pass",continue);
+		errmsg (7000280,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Borders",SEC_4_3_BOARDERS000,"Pass",continue);
 		pass();
 	endif;
 end;
@@ -808,11 +809,11 @@ function K01_410_S1Q4_S1Q11 ()
 numeric isHeadMarried=0;
 string vilatedSN;
 	do varying numeric i=1 until i>totocc(SEC_1_DEMOGRAPHY)
-		if S1Q4(1)=1 and S1Q11(1)>1 and i=1 then
+		if S1Q4(1)=1 and S1Q11(1) IN 2:3 and i=1 then
 			isHeadMarried=1;
 		endif;
 		if i=1 then next; endif;
-		if isHeadMarried=1 and S1Q4(i)<>2 then
+		if isHeadMarried=1 and not S1Q4(i) in 2:3 then
 			vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
 		endif;
 	enddo;
@@ -866,19 +867,23 @@ function K01_440_S1Q13_S2Q4 ()
 // in section 1 (Persons), then Col-4 of section 2 (School Education)
 // should be 1 (school going) for the person.
 string vilatedSN="";
+numeric found;
 	do varying numeric i=1 until i>totocc(SEC_1_DEMOGRAPHY)
 		if S1Q13(i)=2 then
-			if S2Q4(i)<>1 then
-				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+			found=seek(SEC_2_PRESCHOOL_SCHOOL.S2Q2=S1Q1(i));
+			if found>0 then
+				if S2Q4(found)<>1 then
+					vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
+				endif;
 			endif;
 		endif;
 	enddo;
-
+	
 	if strip(vilatedSN)<>"" then
 		sem (maketext(7000440,vilatedSN),"E");
-		errmsg (7000440,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Pass",continue);
+		errmsg (7000440,vilatedSN) select("Edit Demography",SEC_1_DEMOGRAPHY000,"Edit Pre School",SEC_2_PRESCHOOL_SCHOOL000,"Pass",continue);
 		pass();
-	endif;
+	endif;	
 end;
 
 function K01_450_S1Q13_S1Q7 ()
@@ -1158,7 +1163,7 @@ function numeric K02_610_C1_1_C1_2 ()
 // then question C1_2 in CM cannot be blank.String vilatedSN;
 string vilatedSN;
 	do varying numeric i=1 until i>totocc(M1CHILDREN_REC)
-		if not C1_1(i) = 1 then
+		if C1_1(i) = 1 then
 			if C1_2(i) = NOTAPPL then
 				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
 			endif;
@@ -1178,7 +1183,7 @@ function numeric K02_620_C1_1_C1_2 ()
 // then question C1_2 in CM should be blank
 string vilatedSN;
 	do varying numeric i=1 until i>totocc(M1CHILDREN_REC)
-		if not C1_1(i) in 2:4 then
+		if C1_1(i) in 2:4 then
 			if C1_2(i) <> NOTAPPL then
 				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
 			endif;
@@ -1228,7 +1233,8 @@ string vilatedSN;
 end;
 
 function numeric K02_650_C1_3 () 
-//K02-650-If the place of residence of the biological father of the child in CM C1_3 is equal to 1, 
+//K02-650-If the place of residence of the biological father 
+// of the child in CM C1_3 is equal to 1, 
 //then question C1_4 in CM cannot be blank.
 string vilatedSN;
 	do varying numeric i=1 until i>totocc(M1CHILDREN_REC)
@@ -3192,7 +3198,7 @@ PROC SEC_1_DEMOGRAPHY000
 	K01_410_S1Q4_S1Q11 (); // 410
 	K01_420_S1Q13_S1Q7 (); // 420
 	K01_430_S1Q13_S1Q7 (); // 430
-	K01_440_S1Q13_S2Q4 (); // 440
+
 	K01_450_S1Q13_S1Q7 (); // 450
 	K01_460_S1Q13_S1Q14 (); // 460
 	K01_470_S1Q13_S1Q7 (); // 470
@@ -3764,6 +3770,8 @@ endif;}
 PROC SEC_2_PRESCHOOL_SCHOOL_FORM
 
 PROC SEC_2_PRESCHOOL_SCHOOL000
+	
+	K01_440_S1Q13_S2Q4 (); // 440
 	K03_910_S1Q1_S1Q7_S1Q3_S2Q2 (); // 910
 	K03_920_SEC_1_DEMOGRAPHY_SEC_2_PRESCHOOL_SCHOOL (); // 920
 	K03_930_S1Q3_S1Q7_S2Q3() ; // 930
@@ -6109,6 +6117,7 @@ if S551A =2 then
 endif;
 PROC SEC_5_5_1_OTHER_INCOME000
 	K01_520_S551BQ2 (); // 520
+
 PROC S551BQ2
 preproc 
 Ask if S551A = 1;
