@@ -1239,7 +1239,7 @@ function numeric K02_650_C1_3 ()
 string vilatedSN;
 	do varying numeric i=1 until i>totocc(M1CHILDREN_REC)
 		if C1_3(i) =1 then
-			if C1_4 = NOTAPPL then 
+			if C1_4(i) = NOTAPPL then 
 				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
 			endif;	
 		endif;
@@ -1253,12 +1253,13 @@ string vilatedSN;
 end;
 
 function numeric K02_660_C1_3 () 
-//K02-660-If the place of residence of the biological father of the child in CM C1_3 is equal to 2-4, 
+//K02-660-If the place of residence of the biological 
+// father of the child in CM C1_3 is equal to 2-4, 
 //then question C1_4 in CM should be blank.
 string vilatedSN;
 	do varying numeric i=1 until i>totocc(M1CHILDREN_REC)
 		if C1_3(i) in 2:4 then
-			if C1_4 <> NOTAPPL then 
+			if C1_4(i) <> NOTAPPL then 
 				vilatedSN=vilatedSN+ maketext("[Row: %d] ",i);
 			endif;	
 		endif;
